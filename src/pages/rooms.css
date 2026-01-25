@@ -1,0 +1,497 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rooms-page {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Royal Pattern Background */
+.royal-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 0, 205, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 0, 205, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(0, 0, 205, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #0000CD, #0000FF);
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 205, 0.5);
+  animation: badgePulse 2s ease-in-out infinite;
+  border: 2px solid rgba(0, 0, 205, 0.3);
+}
+
+@keyframes badgePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.section-title-main {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0000CD 0%, #0000FF 50%, #4169E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 205, 0.2));
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Rooms Container */
+.rooms-container {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8e8e8 100%);
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 50px;
+}
+
+.room-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.room-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 0, 205, 0.4);
+  border-color: rgba(0, 0, 205, 0.3);
+}
+
+.room-image-wrapper {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.room-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.room-card:hover .room-image-wrapper img {
+  transform: scale(1.15);
+}
+
+.room-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.room-card:hover .room-overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 205, 0.6);
+  animation: iconBounce 1s ease-in-out infinite;
+  border: 3px solid #0000CD;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.overlay-icon i {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #0000CD, #0000FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.room-info {
+  padding: 40px 30px;
+}
+
+.room-info h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.room-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.room-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.feature-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: linear-gradient(135deg, rgba(0, 0, 205, 0.1), rgba(0, 0, 205, 0.1));
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #0000CD;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 205, 0.2);
+}
+
+.feature-tag i {
+  font-size: 0.8rem;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #0000CD 0%, #0000FF 50%, #4169E1 100%);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 205, 0.5),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+  animation: gradientShift 3s ease infinite;
+  border: 2px solid rgba(0, 0, 205, 0.3);
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.book-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.book-btn:hover::before {
+  left: 100%;
+}
+
+.book-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 205, 0.7),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.book-btn i {
+  transition: transform 0.3s ease;
+}
+
+.book-btn:hover i {
+  transform: translateX(5px);
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0000CD 0%, #00008B 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  background-size: cover;
+}
+
+.cta-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content h2 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-content p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-flex;
+  padding: 20px 60px;
+  background: linear-gradient(135deg, #0000FF, #4169E1);
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  box-shadow: 0 15px 40px rgba(0, 0, 205, 0.6);
+  transition: all 0.4s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  gap: 15px;
+  align-items: center;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 205, 0.8);
+}
+
+.cta-button i {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+  transform: translateX(5px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .rooms-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .section-title-main {
+    font-size: 2.8rem;
+  }
+
+  .room-image-wrapper {
+    height: 280px;
+  }
+
+  .room-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .room-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .section-title-main {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .room-image-wrapper {
+    height: 250px;
+  }
+
+  .room-info {
+    padding: 25px 20px;
+  }
+
+  .room-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .room-info p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .book-btn {
+    padding: 14px 25px;
+    font-size: 1rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta-content p {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rooms-container {
+    padding: 60px 15px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-badge {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .section-title-main {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .rooms-grid {
+    gap: 20px;
+  }
+
+  .room-image-wrapper {
+    height: 200px;
+  }
+
+  .room-info {
+    padding: 20px 15px;
+  }
+
+  .room-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .room-info p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .feature-tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .book-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    gap: 10px;
+  }
+
+  .overlay-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .overlay-icon i {
+    font-size: 2rem;
+  }
+
+  .cta-section {
+    padding: 60px 15px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
