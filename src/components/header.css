@@ -139,7 +139,7 @@
 }
 
 .logo-img {
-  height: 90px;
+  height: 75px;
   width: auto;
   filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
 }
@@ -244,10 +244,10 @@
   background: linear-gradient(135deg, #4169E1, #0e012e);
   color: white;
   border: 2px solid #D4AF37;
-  padding: 12px 28px;
+  padding: 10px 25px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;

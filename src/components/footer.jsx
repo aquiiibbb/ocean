@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from "react";
 import "./footer.css"
 
 export default function Footer(){
@@ -12,7 +11,7 @@ export default function Footer(){
                <div className="footer-section">
                  <div className="footer-logo">
                    <i className="fa-solid fa-crown"></i>
-                   <h2>OCEAN PARADISE</h2>
+                   <h2 style={{color:"#df5334",fontSize:"30px",fontWeight:"600"}}>OCEAN PARADISE</h2>
                  </div>
                  <p>
                    Experience a comfortable, luxurious stay with world-class hospitality. Your comfort is our priority.

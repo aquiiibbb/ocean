@@ -129,6 +129,15 @@ const Header = () => {
             </li>
             <li className="mobile-nav-item">
               <NavLink 
+                to="/dining" 
+                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
+                <span className="nav-icon">🍽️</span>Dining
+              </NavLink>
+            </li>
+            <li className="mobile-nav-item">
+              <NavLink 
                 to="/contact" 
                 className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
                 onClick={closeMenu}

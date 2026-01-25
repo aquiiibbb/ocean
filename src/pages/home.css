@@ -103,10 +103,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-
-
-
-
 .royal-button.centered {
   display: flex;
   margin: 60px auto;
@@ -2004,4 +2000,247 @@ body {
 
 .about-image-right-clone {
   animation-delay: 0.6s;
+}
+/* ===============================
+   GOOGLE FONTS
+================================ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;700&family=Dancing+Script&display=swap");
+
+/* ===============================
+   ROOT + RESET
+================================ */
+:root {
+  --primary: #4169E1;
+  --secondary: #8b1319;
+  --bg-light: #fffaf1;
+  --text-dark: #272727;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: var(--text-dark);
+  background: #fffcf2;
+  line-height: 1.6;
+}
+
+/* ===============================
+   CONTAINER SYSTEM (FIX WIDTH)
+================================ */
+.container,
+.container-clone,
+.widget-wrapper {
+  max-width: 1200px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* ===============================
+   SECTION GLOBAL
+================================ */
+
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+/* ===============================
+   HEADINGS
+================================ */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background: rgba(65,105,225,0.1);
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.section-title-main {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #666;
+}
+
+/* ===============================
+   HERO
+================================ */
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.cta-button {
+  padding: 14px 36px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   FACILITIES
+================================ */
+.facilities-section {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: #fff;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.facility-card {
+  background: rgba(255,255,255,0.15);
+  padding: 26px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===============================
+   FEATURES
+================================ */
+.features-section {
+  background: #f5f7fa;
+}
+
+.feature-item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.feature-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-img {
+  max-width: 460px;
+  border-radius: 16px;
+}
+
+.feature-text h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.feature-text p {
+  font-size: 1.05rem;
+}
+
+/* ===============================
+   REVIEWS
+================================ */
+
+
+
+
+/* ===============================
+   COLLAGE
+================================ */
+.collage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+}
+
+.collage-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.collage-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.collage-box:hover img {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .feature-item,
+  .about-grid-clone {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-item {
+    padding: 28px;
+  }
+
+  .collage-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
 }
