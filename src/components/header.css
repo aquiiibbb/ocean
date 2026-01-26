@@ -86,7 +86,6 @@
 
 .phone-icon {
   font-size: 16px;
-  color: #ff0033;
   animation: pulse 2s infinite;
 }
 
@@ -459,24 +458,34 @@
     font-size: 18px;
   }
 
+  /* Mobile me notice bar inline rakha */
   .notice-bar {
-    flex-direction: column;
-    gap: 5px;
-    padding: 5px 0;
+    flex-direction: row; /* Row mein rakha instead of column */
+    gap: 0;
+    padding: 4px 0;
+    align-items: center;
+  }
+
+  .notice-content {
+    flex: 1;
+    min-width: 0; /* Text overflow ke liye */
   }
 
   .contact-info {
-    width: 100%;
-    justify-content: center;
-    border-radius: 0;
+    flex-shrink: 0; /* Contact info shrink nahi hoga */
+    border-radius: 0 0 0 15px;
     padding: 6px 10px;
   }
 
   .contact-text {
-    font-size: 10px;
+    font-size: 9px; /* Chota font mobile ke liye */
   }
 
   .phone-icon {
     font-size: 12px;
+  }
+
+  .notice-text {
+    font-size: 11px;
   }
 }

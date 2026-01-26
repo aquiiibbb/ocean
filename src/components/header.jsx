@@ -34,7 +34,7 @@ const Header = () => {
         </div>
         <div className="contact-info">
           <div className="contact-item">
-            <i className="fas fa-phone phone-icon"></i>
+            <span className="phone-icon">📞</span>
             <span className="contact-text">CONTACT US - +13 602892040</span>
           </div>
         </div>
