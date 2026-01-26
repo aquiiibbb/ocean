@@ -527,7 +527,7 @@
 .review-card {
   background: linear-gradient(180deg, #ffffff, #f9faff);
   border-radius: 18px;
-  padding: 36px 32px;
+  padding: 26px 22px;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
   border-top: 5px solid #4169E1;
   transition: all 0.35s ease;
@@ -1351,6 +1351,7 @@ body {
   letter-spacing: 3px;
   color: #4169E1;                     /* deep maroon/red tone */
   margin: 0;
+   margin-left: 2px;
 }
 /* ================================
    CARD WRAPPER (GRID LAYOUT)

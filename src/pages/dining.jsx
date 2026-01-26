@@ -61,7 +61,7 @@ export default function Dining() {
   return (
     <div className="dining-page">
      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '5px' }}>
-    <img style={{ width: '100%', height: '60vh', borderRadius: '8px', objectFit: 'cover' }} src={image112} alt="" />
+    <img style={{ width: '100%', height: '70vh', borderRadius: '8px', objectFit: 'cover' }} src={image112} alt="" />
 </div>
       {/* Decorative Pattern */}
       <div className="royal-pattern"></div>

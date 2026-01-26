@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import image12 from "../assest/image/s4logo.png";
 import './header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -117,6 +123,36 @@ const Header = () => {
                 <span className="nav-icon">🏠</span> Home
               </NavLink>
             </li>
+
+<li className="mobile-nav-item">
+              <NavLink 
+                to="/rooms" 
+                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
+                <span className="nav-icon">🛏️</span> Rooms
+              </NavLink>
+            </li>
+ <li className="mobile-nav-item">
+              <NavLink 
+                to="/amenities" 
+                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
+                <span className="nav-icon">✨</span> Amenities
+              </NavLink>
+            </li>
+
+<li className="mobile-nav-item">
+              <NavLink 
+                to="/dining" 
+                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
+                <span className="nav-icon">🍽️</span> Dining
+              </NavLink>
+            </li>
+
             <li className="mobile-nav-item">
               <NavLink 
                 to="/photo" 
@@ -126,15 +162,7 @@ const Header = () => {
                 <span className="nav-icon">📸</span> Photo
               </NavLink>
             </li>
-            <li className="mobile-nav-item">
-              <NavLink 
-                to="/dining" 
-                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
-                onClick={closeMenu}
-              >
-                <span className="nav-icon">🍽️</span> Dining
-              </NavLink>
-            </li>
+            
             <li className="mobile-nav-item">
               <NavLink 
                 to="/contact" 
@@ -144,24 +172,8 @@ const Header = () => {
                 <span className="nav-icon">📞</span> Contact
               </NavLink>
             </li>
-            <li className="mobile-nav-item">
-              <NavLink 
-                to="/rooms" 
-                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
-                onClick={closeMenu}
-              >
-                <span className="nav-icon">🛏️</span> Rooms
-              </NavLink>
-            </li>
-            <li className="mobile-nav-item">
-              <NavLink 
-                to="/amenities" 
-                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
-                onClick={closeMenu}
-              >
-                <span className="nav-icon">✨</span> Amenities
-              </NavLink>
-            </li>
+            
+           
           </ul>
         </nav>
       </div>

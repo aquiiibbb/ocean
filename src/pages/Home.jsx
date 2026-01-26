@@ -5,7 +5,7 @@ import image12 from "../assest/image/s4logo.png";
 import image13 from "../assest/image/log.png";
 import image14 from "../assest/image/123.jpeg";
 import image15 from "../assest/image/236.jpeg";
-import image16 from "../assest/image/hmm.jpg";
+import image16 from "../assest/image/hmm.png";
 import image1123 from "../assest/image/about.jpg";
 import image2123 from "../assest/image/bedroom5.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -82,8 +82,8 @@ export default function Home() { // Header se Home kar diya
   {/* Booking Form */}
   <div style={{
     width: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    padding: isMobile ? '3x 6px' : '10px',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    padding: isMobile ? '2x 4px' : '8px',
     display: 'flex',
     justifyContent: 'center',
     backdropFilter: 'blur(5px)'
@@ -91,7 +91,7 @@ export default function Home() { // Header se Home kar diya
     <div style={{ 
       display: 'flex', 
       flexDirection: 'row',
-      gap: isMobile ? '6px' : '20px',
+      gap: isMobile ? '5px' : '20px',
       maxWidth: isMobile ? '100%' : '800px',
       width: '100%',
       alignItems: 'flex-end'
@@ -135,7 +135,7 @@ export default function Home() { // Header se Home kar diya
         minWidth: isMobile ? '0' : 'auto'
       }}>
         <label style={{ 
-          color: 'white', 
+         color: 'white', 
           fontSize: isMobile ? '10px' : '14px',
           fontWeight: '600',
           display: 'block',
