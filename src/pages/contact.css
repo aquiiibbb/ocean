@@ -23,9 +23,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 5px;
+  margin: 5px;
+  padding-top: 5px;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   min-height: 350px;
   border-radius: 8px;
   background-image: url('https://media.istockphoto.com/id/2093530578/photo/happy-receptionists-cooperating-while-working-on-a-computer-at-hotel-front-desk.jpg?s=612x612&w=0&k=20&c=wbCLdNtAEeGNlzSNKowkduOrRDFQ2sURY6MnTIxvbh4=');
@@ -36,7 +37,7 @@
 
 .hero-overlay {
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 0;
   right: 0;
   bottom: 0;

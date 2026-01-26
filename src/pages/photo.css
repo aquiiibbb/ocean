@@ -33,7 +33,7 @@
 
 /* Hero Section */
 .photos-her {
-  min-height: 60vh;
+  min-height: 80vh;
   background: 
     linear-gradient(
       135deg,
@@ -49,7 +49,7 @@
 
 .photos-her > img {
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 0;
   width: 100%;
   height: 100%;

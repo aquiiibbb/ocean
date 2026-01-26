@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import image12 from "../assest/image/s4logo.png";
-
 import './header.css';
 
 const Header = () => {
@@ -33,9 +32,9 @@ const Header = () => {
             Ocean Paradise Hotel is a comfortable and luxurious seaside hotel offering beautiful ocean views, modern rooms, quality services, and a relaxing stay for guests.
           </span>
         </div>
-        <div className="contact-inf">
+        <div className="contact-info">
           <div className="contact-item">
-            <span className="phone-icon">📞</span>
+            <i className="fas fa-phone phone-icon"></i>
             <span className="contact-text">CONTACT US - +13 602892040</span>
           </div>
         </div>
@@ -45,8 +44,8 @@ const Header = () => {
       <div className="main-header">
         <div className="header-container">
           {/* Logo */}
-          <div className="log">
-            <img src={image12} alt="Summit Hotels & Resorts" className="logo-img" />
+          <div className="logo">
+            <img src={image12} alt="Ocean Paradise Hotel" className="logo-img" />
           </div>
 
           {/* Desktop Navigation */}
@@ -133,7 +132,7 @@ const Header = () => {
                 className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
                 onClick={closeMenu}
               >
-                <span className="nav-icon">🍽️</span>Dining
+                <span className="nav-icon">🍽️</span> Dining
               </NavLink>
             </li>
             <li className="mobile-nav-item">
