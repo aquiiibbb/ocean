@@ -1,11 +1,15 @@
 import './home.css'
 import { NavLink } from 'react-router-dom';
-import React, { useState, useEffect } from "react"; // useEffect add kiya
+import React, { useState, useEffect } from "react";
 import image12 from "../assest/image/s4logo.png";
 import image13 from "../assest/image/log.png";
 import image14 from "../assest/image/123.jpeg";
 import image15 from "../assest/image/236.jpeg";
 import image16 from "../assest/image/hmm.png";
+import image17 from "../assest/image/pic5.png";
+import image18 from "../assest/image/pic2.png";
+import image19 from "../assest/image/pic3.png";
+import image20 from "../assest/image/pic4.png";
 import image1123 from "../assest/image/about.jpg";
 import image2123 from "../assest/image/bedroom5.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,8 +19,12 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 
-export default function Home() { // Header se Home kar diya
+export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Images array - add more images here
+  const sliderImages = [image16, image17, image18, image19,image20]; // Multiple images add kar sakte ho
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -25,197 +33,209 @@ export default function Home() { // Header se Home kar diya
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // 4 seconds
+
+    return () => clearInterval(interval);
+  }, [sliderImages.length]);
+
   return (
     <div className="home-container">
       {/* Hero Section */}
-    <div style={{ 
-  position: 'relative',
-  minHeight: isMobile ? '65vh' : '90vh',
-  backgroundImage: `url(${image16})`,
-  backgroundSize: 'cover',
-  backgroundPosition: '50% 25%',
-  display: 'flex',
-  alignItems: 'flex-end',
-  overflow: 'hidden',
-  marginTop: isMobile ? '60px' : '80px' // Top margin add kiya
-}}>
-  
-  {/* Social Icons */}
-  <div style={{
-    position: 'fixed',
-    right: isMobile ? '10px' : '20px',
-    top: '50%',
-    transform: 'translateY(-50%)',
-    zIndex: 10,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: isMobile ? '10px' : '15px'
-  }}>
-    {[
-      { icon: <FaArrowCircleDown />, bg: '#06469a' },
-      { icon: <FaInstagramSquare />, bg: '#5d0606' },
-      { icon: <FaFacebookSquare />, bg: '#1DA1F2' },
-      { icon: <FaWhatsapp />, bg: '#25D366' }
-    ].map((item, index) => (
-      <a key={index} href="#" style={{
-        width: isMobile ? '35px' : '45px',
-        height: isMobile ? '35px' : '45px',
-        backgroundColor: item.bg,
-        borderRadius: '50%',
+      <div style={{ 
+        position: 'relative',
+        minHeight: isMobile ? '62vh' : '85vh',
+        backgroundImage: `url(${sliderImages[currentImageIndex]})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 25%',
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: 'white',
-        fontSize: isMobile ? '16px' : '20px',
-        textDecoration: 'none',
-        transition: 'transform 0.3s ease',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.3)'
-      }}
-      onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
-      onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-      >
-        {item.icon}
-      </a>
-    ))}
-  </div>
-  
-  {/* Booking Form */}
-  <div style={{
-    width: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    padding: isMobile ? '2x 4px' : '8px',
-    display: 'flex',
-    justifyContent: 'center',
-    backdropFilter: 'blur(5px)'
-  }}>
-    <div style={{ 
-      display: 'flex', 
-      flexDirection: 'row',
-      gap: isMobile ? '5px' : '20px',
-      maxWidth: isMobile ? '100%' : '800px',
-      width: '100%',
-      alignItems: 'flex-end'
-    }}>
+        alignItems: 'flex-end',
+        overflow: 'hidden',
+        marginTop: isMobile ? '60px' : '80px',
+        transition: 'background-image 1s ease-in-out'
+      }}>
       
-      {/* Check In */}
-      <div style={{ 
-        flex: isMobile ? '1' : '1',
-        minWidth: isMobile ? '0' : 'auto'
-      }}>
-        <label style={{ 
-          color: 'white', 
-          fontSize: isMobile ? '10px' : '14px',
-          fontWeight: '600',
-          display: 'block',
-          marginBottom: isMobile ? '4px' : '8px',
-          textShadow: '0 1px 2px rgba(0,0,0,0.5)'
+        {/* Social Icons */}
+        <div style={{
+          position: 'fixed',
+          right: isMobile ? '10px' : '20px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          zIndex: 10,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: isMobile ? '10px' : '15px'
         }}>
-          Check In
-        </label>
-        <input
-          type="date"
-          defaultValue="2025-12-06"
-          style={{
-            padding: isMobile ? '6px 4px' : '12px',
-            width: '100%',
-            height: isMobile ? '36px' : '50px',
-            border: 'none',
-            borderRadius: '4px',
-            fontSize: isMobile ? '10px' : '14px',
-            boxSizing: 'border-box',
-            outline: 'none',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-          }}
-        />
-      </div>
-
-      {/* Check Out */}
-      <div style={{ 
-        flex: isMobile ? '1' : '1',
-        minWidth: isMobile ? '0' : 'auto'
-      }}>
-        <label style={{ 
-         color: 'white', 
-          fontSize: isMobile ? '10px' : '14px',
-          fontWeight: '600',
-          display: 'block',
-          marginBottom: isMobile ? '4px' : '8px',
-          textShadow: '0 1px 2px rgba(0,0,0,0.5)'
+          {[
+            { icon: <FaArrowCircleDown />, bg: '#06469a' },
+            { icon: <FaInstagramSquare />, bg: '#5d0606' },
+            { icon: <FaFacebookSquare />, bg: '#1DA1F2' },
+            { icon: <FaWhatsapp />, bg: '#25D366' }
+          ].map((item, index) => (
+            <a key={index} href="#" style={{
+              width: isMobile ? '35px' : '45px',
+              height: isMobile ? '35px' : '45px',
+              backgroundColor: item.bg,
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'white',
+              fontSize: isMobile ? '16px' : '20px',
+              textDecoration: 'none',
+              transition: 'transform 0.3s ease',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.3)'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              {item.icon}
+            </a>
+          ))}
+        </div>
+      
+        {/* Booking Form */}
+        <div style={{
+          width: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.3)',
+          padding: isMobile ? '8px 4px' : '8px',
+          display: 'flex',
+          justifyContent: 'center',
+          backdropFilter: 'blur(5px)'
         }}>
-          Check Out
-        </label>
-        <input
-          type="date"
-          defaultValue="2025-12-07"
-          style={{
-            padding: isMobile ? '6px 4px' : '12px',
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'row',
+            gap: isMobile ? '5px' : '20px',
+            maxWidth: isMobile ? '100%' : '800px',
             width: '100%',
-            height: isMobile ? '36px' : '50px',
-            border: 'none',
-            borderRadius: '4px',
-            fontSize: isMobile ? '10px' : '14px',
-            boxSizing: 'border-box',
-            outline: 'none',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-          }}
-        />
-      </div>
-
-      {/* Book Button */}
-      <div style={{ 
-        flex: isMobile ? '0 0 auto' : '1',
-        minWidth: isMobile ? '70px' : 'auto'
-      }}>
-        {!isMobile && <div style={{ height: '22px' }} />}
-        <button
-          style={{
-            height: isMobile ? '36px' : '50px',
-            width: '100%',
-            minWidth: isMobile ? '70px' : '120px',
-            background: 'linear-gradient(135deg, #052a54, #073f76)',
-            color: 'white',
-            border: '2px solid #D4AF37',
-            borderRadius: '4px',
-            fontSize: isMobile ? '11px' : '16px',
-            fontWeight: '600',
-            cursor: 'pointer',
-            transition: 'all 0.3s ease',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-            textTransform: 'uppercase',
-            letterSpacing: '0.5px'
-          }}
-          onMouseOver={(e) => {
-            if (!isMobile) {
-              e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.boxShadow = '0 8px 20px rgba(5, 42, 84, 0.4)';
-              e.currentTarget.style.borderColor = '#FFD700';
-            }
-          }}
-          onMouseOut={(e) => {
-            if (!isMobile) {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
-              e.currentTarget.style.borderColor = '#D4AF37';
-            }
-          }}
-        >
-          <NavLink to="/contact" style={{
-            color: 'white',
-            textDecoration: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '100%',
-            height: '100%',
-            fontSize: 'inherit'
+            alignItems: 'flex-end'
           }}>
-            {isMobile ? 'Book' : 'Book Now'}
-          </NavLink>
-        </button>
+          
+            {/* Check In */}
+            <div style={{ 
+              flex: isMobile ? '1' : '1',
+              minWidth: isMobile ? '0' : 'auto'
+            }}>
+              <label style={{ 
+                color: 'white', 
+                fontSize: isMobile ? '10px' : '14px',
+                fontWeight: '600',
+                display: 'block',
+                marginBottom: isMobile ? '4px' : '8px',
+                textShadow: '0 1px 2px rgba(0,0,0,0.5)'
+              }}>
+                Check In
+              </label>
+              <input
+                type="date"
+                defaultValue="2025-12-06"
+                style={{
+                  padding: isMobile ? '6px 4px' : '12px',
+                  width: '100%',
+                  height: isMobile ? '36px' : '50px',
+                  border: 'none',
+                  borderRadius: '4px',
+                  fontSize: isMobile ? '10px' : '14px',
+                  boxSizing: 'border-box',
+                  outline: 'none',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                }}
+              />
+            </div>
+
+            {/* Check Out */}
+            <div style={{ 
+              flex: isMobile ? '1' : '1',
+              minWidth: isMobile ? '0' : 'auto'
+            }}>
+              <label style={{ 
+               color: 'white', 
+                fontSize: isMobile ? '10px' : '14px',
+                fontWeight: '600',
+                display: 'block',
+                marginBottom: isMobile ? '4px' : '8px',
+                textShadow: '0 1px 2px rgba(0,0,0,0.5)'
+              }}>
+                Check Out
+              </label>
+              <input
+                type="date"
+                defaultValue="2025-12-07"
+                style={{
+                  padding: isMobile ? '6px 4px' : '12px',
+                  width: '100%',
+                  height: isMobile ? '36px' : '50px',
+                  border: 'none',
+                  borderRadius: '4px',
+                  fontSize: isMobile ? '10px' : '14px',
+                  boxSizing: 'border-box',
+                  outline: 'none',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                }}
+              />
+            </div>
+
+            {/* Book Button */}
+            <div style={{ 
+              flex: isMobile ? '0 0 auto' : '1',
+              minWidth: isMobile ? '70px' : 'auto'
+            }}>
+              {!isMobile && <div style={{ height: '22px' }} />}
+              <button
+                style={{
+                  height: isMobile ? '36px' : '50px',
+                  width: '100%',
+                  minWidth: isMobile ? '70px' : '120px',
+                  background: 'linear-gradient(135deg, #052a54, #073f76)',
+                  color: 'white',
+                  border: '2px solid #D4AF37',
+                  borderRadius: '4px',
+                  fontSize: isMobile ? '11px' : '16px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px'
+                }}
+                onMouseOver={(e) => {
+                  if (!isMobile) {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 8px 20px rgba(5, 42, 84, 0.4)';
+                    e.currentTarget.style.borderColor = '#FFD700';
+                  }
+                }}
+                onMouseOut={(e) => {
+                  if (!isMobile) {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
+                    e.currentTarget.style.borderColor = '#D4AF37';
+                  }
+                }}
+              >
+                <NavLink to="/contact" style={{
+                  color: 'white',
+                  textDecoration: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '100%',
+                  height: '100%',
+                  fontSize: 'inherit'
+                }}>
+                  {isMobile ? 'Book' : 'Book Now'}
+                </NavLink>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       {/* About Section */}
       <div className="container-clone">
