@@ -6,7 +6,7 @@ import image13 from "../assest/image/log.png";
 import image14 from "../assest/image/123.jpeg";
 import image15 from "../assest/image/236.jpeg";
 import image16 from "../assest/image/hmm.png";
-import image17 from "../assest/image/pic5.png";
+import image17 from "../assest/image/nature.png";
 import image18 from "../assest/image/pic2.png";
 import image19 from "../assest/image/pic3.png";
 import image20 from "../assest/image/pic4.png";

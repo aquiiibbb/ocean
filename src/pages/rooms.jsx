@@ -9,6 +9,7 @@ import image139 from "../assest/image/ph4.jpg";
 import image140 from "../assest/image/ph5.jpg";
 import image1341 from "../assest/image/ph6.jpg";
 import image121 from "../assest/image/bedroom.jpg";
+import image12187 from "../assest/image/s3.jpg";
 import image122 from "../assest/image/area.jpg";
 import image123 from "../assest/image/bedroom2.jpg";
 import image124 from "../assest/image/bedroom3.jpg";
@@ -61,6 +62,25 @@ export default function Rooms() {
 
             <div className="room-card">
               <div className="room-image-wrapper">
+                <img src={image134} alt="QUEEN BED" />
+                <div className="room-overlay" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+                  <div className="overlay-icon">
+                    <i className="fa-solid fa-bed"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="room-info">
+                 <h4>Deluxe King Room</h4>
+            <p>ndulge in an expansive retreat featuring a plush king-sized bed, premium finishes, and a serene atmosphere designed for ultimate relaxation.</p>
+                <button className="book-btn royal-button">
+                  <span>Book Now</span>
+                  <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div className="room-card">
+              <div className="room-image-wrapper">
                 <img src={image137} alt="QUEEN BED" />
                 <div className="room-overlay" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
                   <div className="overlay-icon">
@@ -78,6 +98,24 @@ export default function Rooms() {
               </div>
             </div>
 
+            <div className="room-card">
+              <div className="room-image-wrapper">
+                <img src={image12187} alt="QUEEN BED" />
+                <div className="room-overlay" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+                  <div className="overlay-icon">
+                    <i className="fa-solid fa-bed"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="room-info">
+                <h4>King Room with Sea View</h4>
+                <p>A comfortable and convenient stay designed for relaxation and easy access.</p>
+                <button className="book-btn royal-button">
+                  <span>Book Now</span>
+                  <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
             <div className="room-card">
               <div className="room-image-wrapper">
                 <img src={image9} alt="QUEEN BED" />
@@ -163,8 +201,8 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-             <h4>Your Home Away From Home</h4>
-             <p>Relax in a comfortable space with everything you need to unwind.</p>
+             <h4>Queen Room</h4>
+             <p>Disability Access King Room</p>
                 <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -200,8 +238,8 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-              <h4>Thoughtfully Designed Guest Rooms</h4>
-              <p>Simple, comfortable spaces made for relaxation and convenience.</p>
+              <h4>Deluxe King Room</h4>
+              <p>A perfect blend of luxury and function, featuring a king-sized bed and a spacious layout designed for ultimate relaxation.</p>
                 <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -218,8 +256,8 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-               <h4>Classic & Welcoming</h4>
-               <p>Relax in our cozy double rooms featuring plush bedding and warm, inviting light.</p>
+               <h4>Queen Room with Two Queen Beds</h4>
+               <p>Experience ultimate comfort in our double queen room, outfitted with premium bedding and inviting decor.</p>
                 <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
