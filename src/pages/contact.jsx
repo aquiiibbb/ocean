@@ -17,6 +17,43 @@ export default function Contact() {
   });
 
   const [status, setStatus] = useState("");
+  const [openFAQ, setOpenFAQ] = useState(null);
+
+  // FAQ Data
+  const faqData = [
+    {
+      question: "What are your check-in and check-out times?",
+      answer: "Check-in is at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out may be available upon request, subject to availability."
+    },
+    {
+      question: "Do you offer free Wi-Fi?",
+      answer: "Yes, we provide complimentary high-speed Wi-Fi throughout the hotel, including all guest rooms and common areas."
+    },
+    {
+      question: "Is parking available at the hotel?",
+      answer: "Yes, we offer free on-site parking for all guests. Valet parking service is also available for an additional fee."
+    },
+    {
+      question: "What amenities are included in the room?",
+      answer: "All rooms include air conditioning, flat-screen TV, mini-fridge, coffee maker, complimentary toiletries, and ocean views. Premium rooms also feature balconies."
+    },
+    {
+      question: "Do you allow pets?",
+      answer: "Yes, we are a pet-friendly hotel. We welcome dogs and cats with a small additional fee. Please inform us during booking about your pet."
+    },
+    {
+      question: "Is breakfast included in the room rate?",
+      answer: "Continental breakfast is included with most room packages. Our restaurant also offers à la carte breakfast options with local specialties."
+    },
+    {
+      question: "What is your cancellation policy?",
+      answer: "Free cancellation up to 24 hours before check-in. Cancellations made within 24 hours are subject to a one-night charge."
+    },
+    {
+      question: "Do you have a fitness center or pool?",
+      answer: "We have a fully equipped fitness center open 24/7 and an outdoor heated pool with ocean views, open from 6 AM to 10 PM."
+    }
+  ];
 
   // Handle input change
   const handleChange = (e) => {
@@ -24,6 +61,11 @@ export default function Contact() {
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  // Toggle FAQ
+  const toggleFAQ = (index) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
 
   // Submit form
@@ -171,7 +213,6 @@ export default function Contact() {
                 />
               </div>
 
-
               {/* Message Field */}
               <div className="form-row">
                 <label className="form-label">
@@ -215,6 +256,25 @@ export default function Contact() {
             <p className="section-subtitle">
               Quick answers to common questions about our hotel and services
             </p>
+          </div>
+          
+          <div className="faq-container">
+            {faqData.map((faq, index) => (
+              <div key={index} className="faq-item">
+                <div 
+                  className="faq-question" 
+                  onClick={() => toggleFAQ(index)}
+                >
+                  <h3>{faq.question}</h3>
+                  <span className={`faq-icon ${openFAQ === index ? 'open' : ''}`}>
+                    <i className="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+                <div className={`faq-answer ${openFAQ === index ? 'open' : ''}`}>
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

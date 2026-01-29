@@ -1,66 +1,56 @@
 import React from "react";
-import image1 from "../assest/image/s1.jpg";
-import image2 from "../assest/image/s2.jpg";
-import image3 from "../assest/image/s3.jpg";
-import image4 from "../assest/image/s4.jpg";
-import image5 from "../assest/image/s5.jpg";
-import image6 from "../assest/image/s6.jpg";
-import image7 from "../assest/image/s7.jpg";
-import image9 from "../assest/image/s9.jpg";
-import image10 from "../assest/image/s10.jpg";
-import image11 from "../assest/image/s11.jpg";
-import image12 from "../assest/image/s4logo.png";
-import image13 from "../assest/image/log.png";
+import image1 from "../assest/image/about.jpg";
+import image2 from "../assest/image/area.jpg";
+import image3 from "../assest/image/bed1.jpg";
+import image4 from "../assest/image/bedroom.jpg";
+import image5 from "../assest/image/bedroom2.jpg";
+import image6 from "../assest/image/bedroom3.jpg";
+import image7 from "../assest/image/bedroom4.jpg";
+import image9 from "../assest/image/bedroom5.jpeg";
+import image10 from "../assest/image/chair.jpg";
+import image11 from "../assest/image/ciken.jpg";
+import image12 from "../assest/image/hmm.png";
+import image13 from "../assest/image/IMG_7278.jpeg";
+import image14 from "../assest/image/IMG_7288.jpeg";
+import image15 from "../assest/image/IMG_7293.jpeg";
+import image16 from "../assest/image/IMG_7358.jpeg";
+import image17 from "../assest/image/unnamed (1).jpg";
+import image18 from "../assest/image/unnamed (2)juyj.jpg";
+import image19 from "../assest/image/unnamed (10).jpg";
+import image20 from "../assest/image/unnamed (11).jpg";
+import image21 from "../assest/image/unnamed (17).jpg";
 import imag1 from "../assest/image/bedroom3.jpg";
-
-
-
 import "./photo.css";
-import { NavLink } from 'react-router-dom';
 
 
 export default function Photos() {
   const localImages = [
-    { src: image1, alt: "Hotel Room 1", gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image2, alt: "Hotel Room 2", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image3, alt: "Hotel Lobby", gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)" },
-    { src: image4, alt: "Hotel Exterior", gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)" },
-    { src: image5, alt: "Hotel Amenities", gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)" },
-    { src: image6, alt: "Hotel Restaurant", gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)" },
-    { src: image7, alt: "Hotel Pool", gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)" },
-    { src: image9, alt: "Hotel Conference Room", gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)" },
-    { src: image10, alt: "Hotel Bar", gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image11, alt: "Hotel Gym", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image1, alt: "", gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image2, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image3, alt: "", gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)" },
+    { src: image4, alt: "", gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)" },
+    { src: image5, alt: "", gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)" },
+    { src: image6, alt: "", gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)" },
+    { src: image7, alt: "", gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)" },
+    { src: image9, alt: "", gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)" },
+    { src: image10, alt: "", gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image11, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image12, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image13, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image14, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image15, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image16, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image17, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image18, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image19, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image20, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image21, alt: "", gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
   ];
 
   const unsplashImages = [
 
    
-    {
-      src: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-      alt: "Modern Hotel Room",
-      gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1000&q=80",
-      alt: "Hotel Interior",
-      gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80",
-      alt: "Hotel Dining",
-      gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80",
-      alt: "Hotel Lounge",
-      gradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1496412705862-e0088f16f791?auto=format&fit=crop&w=1000&q=80",
-      alt: "Hotel View",
-      gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"
-    },
+   
   ];
 
   const allImages = [...localImages, ...unsplashImages];

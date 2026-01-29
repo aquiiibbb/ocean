@@ -34,14 +34,8 @@
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .footer-logo {
@@ -63,7 +57,6 @@
   background: linear-gradient(135deg, #4a90e2, #df5334, #d2c5c5);
   -webkit-text-fill-color: transparent;
 }
-
 
 .footer-sectio h3::after {
   content: '';
@@ -208,63 +201,6 @@
   50% { transform: scale(1); }
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .title-line {
-    font-size: 4rem;
-  }
-
-  .section-title-main {
-    font-size: 3rem;
-  }
-
-  .rooms-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  .title-line {
-    font-size: 3rem;
-  }
-
-  .section-title-main {
-    font-size: 2.5rem;
-  }
-
-  .rooms-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-content h2 {
-    font-size: 2.5rem;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-line {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.3rem;
-  }
-
-  .section-title-main {
-    font-size: 2rem;
-  }
-
-  .room-info {
-    padding: 30px 20px;
-  }
-}
-
-/* ===== QUICK LINKS MENU BUTTON (MOBILE & TABLET ONLY) ===== */
 .quick-links-toggle {
   width: 100%;
   background: none;
@@ -275,23 +211,21 @@
   text-align: left;
   padding: 10px 0;
   cursor: pointer;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Arrow animation */
 .quick-links-toggle .arrow {
   font-size: 18px;
   transition: transform 0.3s ease;
 }
 
-/* Rotate arrow when menu open */
 .quick-links-toggle[aria-expanded="true"] .arrow {
   transform: rotate(45deg);
 }
-/* Terms & Policy Hover Tooltip */
+
+/* Terms & Policy Tooltip - Fixed Responsive */
 .terms-policy-item {
   position: relative;
 }
@@ -299,7 +233,8 @@
 .policy-tooltip {
   position: absolute;
   bottom: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
   background: linear-gradient(135deg, #07214b, #1a1a1a);
   border: 2px solid #4a90e2;
   border-radius: 15px;
@@ -309,7 +244,6 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 900;
   backdrop-filter: blur(10px);
@@ -318,7 +252,7 @@
 .terms-policy-item:hover .policy-tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 .policy-content h4 {
@@ -349,42 +283,60 @@
   font-weight: 500;
 }
 
-/* Arrow pointing down */
 .policy-tooltip::after {
   content: '';
   position: absolute;
   top: 100%;
-  left: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 8px solid transparent;
   border-top-color: #4a90e2;
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .title-line { font-size: 4rem; }
+  .section-title-main { font-size: 3rem; }
+  .rooms-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+}
+
 @media (max-width: 768px) {
+  .title-line { font-size: 3rem; }
+  .section-title-main { font-size: 2.5rem; }
+  .rooms-grid { grid-template-columns: 1fr; }
+  .cta-content h2 { font-size: 2.5rem; }
+  .footer-content { grid-template-columns: 1fr; gap: 40px; }
+  
   .policy-tooltip {
     min-width: 280px;
-    max-width: 300px;
-    left: -50px;
-  }
-  
-  .policy-tooltip::after {
-    left: 80px;
+    max-width: 90vw;
   }
 }
 
 @media (max-width: 480px) {
+  .title-line { font-size: 2rem; }
+  .hero-subtitle { font-size: 1.3rem; }
+  .section-title-main { font-size: 2rem; }
+  .room-info { padding: 30px 20px; }
+  
   .policy-tooltip {
     min-width: 250px;
-    max-width: 270px;
-    left: -80px;
+    max-width: 85vw;
     font-size: 0.85rem;
   }
   
   .policy-content li {
     font-size: 0.8rem;
   }
-  
-  .policy-tooltip::after {
-    left: 100px;
+}
+
+@media (max-width: 320px) {
+  .policy-tooltip {
+    min-width: 200px;
+    max-width: 80vw;
+    padding: 8px;
   }
+  
+  .policy-content h4 { font-size: 0.9rem; }
+  .policy-content li { font-size: 0.75rem; }
 }
