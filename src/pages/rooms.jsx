@@ -15,6 +15,9 @@ import image123 from "../assest/image/bedroom2.jpg";
 import image124 from "../assest/image/bedroom3.jpg";
 import image125 from "../assest/image/bedroom4.jpg";
 import image126 from "../assest/image/bedroom5.jpeg";
+import image127 from "../assest/image/upar.jpg";
+import image129 from "../assest/image/bich.webp";
+import image130 from "../assest/image/new1.jpg";
 
 import { NavLink } from 'react-router-dom';
 import { useState } from "react";
@@ -51,15 +54,50 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-            <h4>Where Comfort Meets Style</h4>
-            <p>A beautifully designed space offering calm, comfort, and modern elegance.</p>
-                <button className="book-btn royal-button">
+            <h4>Comfortable Areas for Team Alignment </h4>
+<p>Ideal for team retreats with relaxed spaces for planning and collaboration - informal yet productive.</p>                <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
             </div>
 
+            <div className="room-card">
+              <div className="room-image-wrapper">
+                <img src={image127} alt="QUEEN BED" />
+                <div className="room-overlay" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+                  <div className="overlay-icon">
+                    <i className="fa-solid fa-bed"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="room-info">
+                 <h4>King Room with Sea View</h4>
+                <p>A comfortable and convenient stay designed for relaxation and easy access.</p>
+                <button className="book-btn royal-button">
+                  <span>Book Now</span>
+                  <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div className="room-card">
+              <div className="room-image-wrapper">
+                <img src={image130} alt="QUEEN BED" />
+                <div className="room-overlay" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+                  <div className="overlay-icon">
+                    <i className="fa-solid fa-bed"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="room-info">
+                 <h4>Beachside Location</h4>
+            <p>A few steps from the shoreline, offering immediate access to coastal views, walks and sunsets </p>
+                <button className="book-btn royal-button">
+                  <span>Book Now</span>
+                  <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
             <div className="room-card">
               <div className="room-image-wrapper">
                 <img src={image134} alt="QUEEN BED" />
@@ -71,8 +109,7 @@ export default function Rooms() {
               </div>
               <div className="room-info">
                  <h4>Deluxe King Room</h4>
-            <p>ndulge in an expansive retreat featuring a plush king-sized bed, premium finishes, and a serene atmosphere designed for ultimate relaxation.</p>
-                <button className="book-btn royal-button">
+<p>Indulge in an expansive retreat featuring a plush king-sized bed, premium finishes, and a serene atmosphere designed for ultimate relaxation.</p>                <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </button>
@@ -97,6 +134,24 @@ export default function Rooms() {
                 </button>
               </div>
             </div>
+            <div className="room-card">
+              <div className="room-image-wrapper">
+                <img src={image129} alt="QUEEN BED" />
+                <div className="room-overlay" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+                  <div className="overlay-icon">
+                    <i className="fa-solid fa-bed"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="room-info">
+  <h4>Vacation, Families and Leisure Travel</h4>
+<p>Perfect for family getaways, romantic escapes, or peaceful retreats with comfortable rooms and beach access.</p>
+                <button className="book-btn royal-button">
+                  <span>Book Now</span>
+                  <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
 
             <div className="room-card">
               <div className="room-image-wrapper">
@@ -108,7 +163,7 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-                <h4>King Room with Sea View</h4>
+                <h4> Single Room with Sea View</h4>
                 <p>A comfortable and convenient stay designed for relaxation and easy access.</p>
                 <button className="book-btn royal-button">
                   <span>Book Now</span>
@@ -164,8 +219,8 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-                <h4>Nature at Your Doorstep</h4>
-                <p>Enjoy peaceful surroundings with scenic views just moments away.</p>
+                <h4>Convenient Access to Ocean Shores Attractions</h4>
+                <p>Resturants , cafes ,local shops and popular activities are all within walking distance or a short drive .</p>
                 <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -275,8 +330,8 @@ export default function Rooms() {
                 </div>
               </div>
               <div className="room-info">
-             <h4>Swimming Pool</h4>
-             <p>Dive Into Relaxation Description: Refresh your senses with a dip in our sparkling, temperature-controlled pool.</p>
+             <h4>Indoor Pool and Hot Tub</h4>
+             <p>Perfect for years - round relaxation regardless of weather.</p>
                 <button className="book-btn royal-button">
                   <span>Book Now</span>
                   <i className="fa-solid fa-arrow-right"></i>

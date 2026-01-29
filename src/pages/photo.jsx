@@ -19,6 +19,7 @@ import image18 from "../assest/image/unnamed (2)juyj.jpg";
 import image19 from "../assest/image/unnamed (10).jpg";
 import image20 from "../assest/image/unnamed (11).jpg";
 import image21 from "../assest/image/unnamed (17).jpg";
+import image22 from "../assest/image/upar.jpg";
 import imag1 from "../assest/image/bedroom3.jpg";
 import "./photo.css";
 

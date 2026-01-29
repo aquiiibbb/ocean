@@ -22,36 +22,24 @@ export default function Contact() {
   // FAQ Data
   const faqData = [
     {
-      question: "What are your check-in and check-out times?",
-      answer: "Check-in is at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out may be available upon request, subject to availability."
+      question: "How close is the hotel to the beach?",
+      answer: "Ocean Paradise is located steps from the shoreline, providing quick and easy access to walks, sunsets and daily coastal activities."
     },
     {
-      question: "Do you offer free Wi-Fi?",
-      answer: "Yes, we provide complimentary high-speed Wi-Fi throughout the hotel, including all guest rooms and common areas."
+      question: "What amenities are available?",
+      answer: "Indoor pool, hot tub, spacious rooms, Wi-Fi and practical essentials for a comfortable stay."
     },
     {
-      question: "Is parking available at the hotel?",
-      answer: "Yes, we offer free on-site parking for all guests. Valet parking service is also available for an additional fee."
+      question: "Is the hotel suitable for business teams?",
+      answer: "Yes. Many teams choose our hotel for retreats and planning sessions because of its calm atmosphere and practical location."
     },
     {
-      question: "What amenities are included in the room?",
-      answer: "All rooms include air conditioning, flat-screen TV, mini-fridge, coffee maker, complimentary toiletries, and ocean views. Premium rooms also feature balconies."
+      question: "Do you offer rooms for families and groups?",
+      answer: "Yes. We offer room types suitable for families, groups and small teams."
     },
     {
-      question: "Do you allow pets?",
-      answer: "Yes, we are a pet-friendly hotel. We welcome dogs and cats with a small additional fee. Please inform us during booking about your pet."
-    },
-    {
-      question: "Is breakfast included in the room rate?",
-      answer: "Continental breakfast is included with most room packages. Our restaurant also offers à la carte breakfast options with local specialties."
-    },
-    {
-      question: "What is your cancellation policy?",
-      answer: "Free cancellation up to 24 hours before check-in. Cancellations made within 24 hours are subject to a one-night charge."
-    },
-    {
-      question: "Do you have a fitness center or pool?",
-      answer: "We have a fully equipped fitness center open 24/7 and an outdoor heated pool with ocean views, open from 6 AM to 10 PM."
+      question: "Is parking available?",
+      answer: "Yes. Complimentary parking is available on-site."
     }
   ];
 
@@ -153,15 +141,17 @@ export default function Contact() {
                 />
               </div>
 
-              {/* City Field */}
+              {/* Email Field */}
               <div className="form-row">
                 <label className="form-label">
-                  CITY<span className="required">*</span>
+                  EMAIL<span className="required">*</span>
                 </label>
                 <input
-                  type="text"
-                  name="city"
-                  placeholder="Enter the name of your city"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email ID"
                   className="form-input"
                   required
                 />
@@ -197,17 +187,47 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Email Field */}
+              {/* Subject Field */}
               <div className="form-row">
                 <label className="form-label">
-                  EMAIL<span className="required">*</span>
+                  SUBJECT<span className="required">*</span>
                 </label>
                 <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Enter your email ID"
+                  placeholder="Enter subject"
+                  className="form-input"
+                  required
+                />
+              </div>
+
+              {/* Check-in Date */}
+              <div className="form-row">
+                <label className="form-label">
+                  CHECK-IN<span className="required">*</span>
+                </label>
+                <input
+                  type="date"
+                  name="checkIn"
+                  value={formData.checkIn}
+                  onChange={handleChange}
+                  className="form-input"
+                  required
+                />
+              </div>
+
+              {/* Check-out Date */}
+              <div className="form-row">
+                <label className="form-label">
+                  CHECK-OUT<span className="required">*</span>
+                </label>
+                <input
+                  type="date"
+                  name="checkOut"
+                  value={formData.checkOut}
+                  onChange={handleChange}
                   className="form-input"
                   required
                 />

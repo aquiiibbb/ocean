@@ -10,6 +10,8 @@ import image17 from "../assest/image/area.jpg";
 import image18 from "../assest/image/pic2.png";
 import image19 from "../assest/image/pic3.png";
 import image20 from "../assest/image/pic4.png";
+import image21 from "../assest/image/upar.jpg";
+import image22 from "../assest/image/bich.webp";
 import image1123 from "../assest/image/about.jpg";
 import image2123 from "../assest/image/bedroom5.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,7 +26,7 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Images array - add more images here
-  const sliderImages = [image16,image19,  image18,image20,image17]; // Multiple images add kar sakte ho
+  const sliderImages = [image16,image19,  image18,image20,image17,image21]; // Multiple images add kar sakte ho
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -302,7 +304,7 @@ export default function Home() {
       <div className="container-clone">
         <div className="about-grid-clone">
           <div className="about-image-left-clone">
-            <img src={image2123} alt="Luxury Hotel Lobby" />
+            <img src={image21} alt="Luxury Hotel Lobby" />
           </div>
      
           <div className="about-content-clone">
@@ -318,7 +320,7 @@ export default function Home() {
           </div>
 
           <div className="about-image-right-clone">
-            <img src={image1123} alt="Hotel Room View" />
+            <img src={image22} alt="Hotel Room View" />
           </div>
         </div>
       </div>
