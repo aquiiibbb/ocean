@@ -7,7 +7,6 @@ import Rooms from "./pages/rooms";
 import Amenities from "./pages/amenities";
 import Contact from "./pages/contact";
 import Photo from "./pages/photo";
-import Dining from "./pages/dining";
 
 
 
@@ -30,7 +29,6 @@ function App(){
      <Route path="/amenities" element={<Amenities/>}/>
      <Route path="/contact" element={<Contact/>}/>
      <Route path="/photo" element={<Photo/>}/>
-     <Route path="/dining" element={<Dining/>}/>
 
 
 

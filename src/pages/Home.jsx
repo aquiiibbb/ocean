@@ -1,10 +1,6 @@
 import './home.css'
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
-import image12 from "../assest/image/s4logo.png";
-import image13 from "../assest/image/log.png";
-import image14 from "../assest/image/123.jpeg";
-import image15 from "../assest/image/236.jpeg";
 import image16 from "../assest/image/hmm.png";
 import image17 from "../assest/image/area.jpg";
 import image18 from "../assest/image/pic2.png";
@@ -12,8 +8,6 @@ import image19 from "../assest/image/pic3.png";
 import image20 from "../assest/image/pic4.png";
 import image21 from "../assest/image/upar.jpg";
 import image22 from "../assest/image/bich.webp";
-import image1123 from "../assest/image/about.jpg";
-import image2123 from "../assest/image/bedroom5.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -49,7 +43,7 @@ export default function Home() {
   return (
     <div className="home-container">
       {/* Hero Section */}
-      <div style={{ 
+  <div style={{ 
   position: 'relative',
   minHeight: isMobile ? '50vh' : '90vh',
   backgroundImage: `url(${sliderImages[currentImageIndex]})`,
@@ -59,8 +53,10 @@ export default function Home() {
   alignItems: 'flex-end',
   overflow: 'hidden',
   marginTop: isMobile ? '50px' : '70px',
-  transition: 'background-image 0.8s ease-in-out'
+  // Yahan bas ye change karo - filter transition hata do
+  transition: 'background-image 0.8s ease-in-out', // Sirf background-image transition rakho
 }}>
+
 {/* Social Icons */}
 <div style={{
   position: 'fixed',
@@ -76,25 +72,25 @@ export default function Home() {
     { 
       icon: <FaArrowCircleDown />, 
       bg: '#06469a',
-      href: '#contact', // Scroll to contact section
+      href: '#contact',
       title: 'Contact Us'
     },
     { 
       icon: <FaInstagramSquare />, 
       bg: '#E4405F',
-      href: 'https://instagram.com/yourhandle', // Replace with actual Instagram
+      href: 'https://instagram.com/yourhandle',
       title: 'Follow on Instagram'
     },
     { 
       icon: <FaFacebookSquare />, 
       bg: '#1877F2',
-      href: 'https://facebook.com/yourpage', // Replace with actual Facebook
+      href: 'https://facebook.com/yourpage',
       title: 'Like on Facebook'
     },
     { 
       icon: <FaWhatsapp />, 
       bg: '#25D366',
-      href: 'https://wa.me/919876543210?text=Hi%20there!%20I%20want%20to%20know%20more%20about%20your%20services', // Replace with actual WhatsApp number
+      href: 'https://wa.me/919876543210?text=Hi%20there!%20I%20want%20to%20know%20more%20about%20your%20services',
       title: 'Chat on WhatsApp'
     }
   ].map((item, index) => (
@@ -133,171 +129,165 @@ export default function Home() {
   ))}
 </div>
  
-
-  {/* Booking Form */}
-  <div style={{
+{/* Booking Form */}
+<div style={{
+  width: '100%',
+  backgroundColor: 'rgba(0, 0, 0, 0.15)',
+  padding: isMobile ? '10px 6px' : '12px 15px',
+  display: 'flex',
+  justifyContent: 'center',
+  borderTop: '1px solid rgba(255,255,255,0.1)'
+}}>
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'row',
+    gap: isMobile ? '6px' : '15px',
+    maxWidth: isMobile ? '100%' : '750px',
     width: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.15)',
-    padding: isMobile ? '10px 6px' : '12px 15px',
-    display: 'flex',
-    justifyContent: 'center',
-    borderTop: '1px solid rgba(255,255,255,0.1)'
+    alignItems: 'flex-end',
+    padding: isMobile ? '0 2px' : '0'
   }}>
+  
+    {/* Check In */}
     <div style={{ 
-      display: 'flex', 
-      flexDirection: 'row',
-      gap: isMobile ? '6px' : '15px',
-      maxWidth: isMobile ? '100%' : '750px',
-      width: '100%',
-      alignItems: 'flex-end',
-      padding: isMobile ? '0 2px' : '0'
+      flex: '1',
+      minWidth: '0'
     }}>
-    
-      {/* Check In */}
-      <div style={{ 
-        flex: '1',
-        minWidth: '0'
+      <label style={{ 
+        color: 'white', 
+        fontSize: isMobile ? '9px' : '13px',
+        fontWeight: '600',
+        display: 'block',
+        marginBottom: isMobile ? '3px' : '6px',
+        textShadow: '0 1px 2px rgba(0,0,0,0.7)',
+        textTransform: 'uppercase',
+        letterSpacing: '0.5px'
       }}>
-        <label style={{ 
-          color: 'white', 
+        Check In
+      </label>
+      <input
+        type="date"
+        defaultValue="2025-12-06"
+        style={{
+          padding: isMobile ? '5px 3px' : '10px 8px',
+          width: '100%',
+          height: isMobile ? '32px' : '44px',
+          border: '1px solid rgba(255,255,255,0.2)',
+          borderRadius: '6px',
           fontSize: isMobile ? '9px' : '13px',
-          fontWeight: '600',
-          display: 'block',
-          marginBottom: isMobile ? '3px' : '6px',
-          textShadow: '0 1px 2px rgba(0,0,0,0.7)',
-          textTransform: 'uppercase',
-          letterSpacing: '0.5px'
-        }}>
-          Check In
-        </label>
-        <input
-          type="date"
-          defaultValue="2025-12-06"
-          style={{
-            padding: isMobile ? '5px 3px' : '10px 8px',
-            width: '100%',
-            height: isMobile ? '32px' : '44px',
-            border: '1px solid rgba(255,255,255,0.2)',
-            borderRadius: '6px',
-            fontSize: isMobile ? '9px' : '13px',
-            boxSizing: 'border-box',
-            outline: 'none',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-            backgroundColor: 'rgba(255,255,255,0.95)',
-            transition: 'all 0.2s ease'
-          }}
-          onFocus={(e) => {
-            e.currentTarget.style.borderColor = '#D4AF37';
-            e.currentTarget.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.3)';
-          }}
-          onBlur={(e) => {
-            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
-            e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
-          }}
-        />
-      </div>
+          boxSizing: 'border-box',
+          outline: 'none',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+          backgroundColor: 'rgba(255,255,255,0.95)',
+          transition: 'all 0.2s ease'
+        }}
+        onFocus={(e) => {
+          e.currentTarget.style.borderColor = '#D4AF37';
+          e.currentTarget.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.3)';
+        }}
+        onBlur={(e) => {
+          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
+          e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+        }}
+      />
+    </div>
 
-      {/* Check Out */}
-      <div style={{ 
-        flex: '1',
-        minWidth: '0'
+    {/* Check Out */}
+    <div style={{ 
+      flex: '1',
+      minWidth: '0'
+    }}>
+      <label style={{ 
+        color: 'white', 
+        fontSize: isMobile ? '9px' : '13px',
+        fontWeight: '600',
+        display: 'block',
+        marginBottom: isMobile ? '3px' : '6px',
+        textShadow: '0 1px 2px rgba(0,0,0,0.7)',
+        textTransform: 'uppercase',
+        letterSpacing: '0.5px'
       }}>
-        <label style={{ 
-          color: 'white', 
+        Check Out
+      </label>
+      <input
+        type="date"
+        defaultValue="2025-12-07"
+        style={{
+          padding: isMobile ? '5px 3px' : '10px 8px',
+          width: '100%',
+          height: isMobile ? '32px' : '44px',
+          border: '1px solid rgba(255,255,255,0.2)',
+          borderRadius: '6px',
           fontSize: isMobile ? '9px' : '13px',
-          fontWeight: '600',
-          display: 'block',
-          marginBottom: isMobile ? '3px' : '6px',
-          textShadow: '0 1px 2px rgba(0,0,0,0.7)',
-          textTransform: 'uppercase',
-          letterSpacing: '0.5px'
-        }}>
-          Check Out
-        </label>
-        <input
-          type="date"
-          defaultValue="2025-12-07"
-          style={{
-            padding: isMobile ? '5px 3px' : '10px 8px',
-            width: '100%',
-            height: isMobile ? '32px' : '44px',
-            border: '1px solid rgba(255,255,255,0.2)',
-            borderRadius: '6px',
-            fontSize: isMobile ? '9px' : '13px',
-            boxSizing: 'border-box',
-            outline: 'none',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-            backgroundColor: 'rgba(255,255,255,0.95)',
-            transition: 'all 0.2s ease'
-          }}
-          onFocus={(e) => {
-            e.currentTarget.style.borderColor = '#D4AF37';
-            e.currentTarget.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.3)';
-          }}
-          onBlur={(e) => {
-            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
-            e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
-          }}
-        />
-      </div>
+          boxSizing: 'border-box',
+          outline: 'none',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+          backgroundColor: 'rgba(255,255,255,0.95)',
+          transition: 'all 0.2s ease'
+        }}
+        onFocus={(e) => {
+          e.currentTarget.style.borderColor = '#D4AF37';
+          e.currentTarget.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.3)';
+        }}
+        onBlur={(e) => {
+          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
+          e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+        }}
+      />
+    </div>
 
-      {/* Book Button */}
-      <div style={{ 
-        flex: isMobile ? '0 0 65px' : '0 0 110px'
-      }}>
-        {!isMobile && <div style={{ height: '22px' }} />}
-        <button
-          style={{
-            height: isMobile ? '32px' : '44px',
-            width: '100%',
-            background: 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)',
-            color: 'white',
-            border: '2px solid #D4AF37',
-            borderRadius: '6px',
-            fontSize: isMobile ? '9px' : '14px',
-            fontWeight: '700',
-            cursor: 'pointer',
-            transition: 'all 0.25s ease',
-            boxShadow: '0 3px 12px rgba(5,42,84,0.3)',
-            textTransform: 'uppercase',
-            letterSpacing: isMobile ? '0.3px' : '0.8px',
-            position: 'relative',
-            overflow: 'hidden'
-          }}
-          onMouseOver={(e) => {
-            if (!isMobile) {
-              e.currentTarget.style.transform = 'translateY(-1px)';
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(5,42,84,0.4)';
-              e.currentTarget.style.borderColor = '#FFD700';
-              e.currentTarget.style.background = 'linear-gradient(135deg, #073f76 0%, #0a4d8a 50%, #0d5ba0 100%)';
-            }
-          }}
-          onMouseOut={(e) => {
-            if (!isMobile) {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 3px 12px rgba(5,42,84,0.3)';
-              e.currentTarget.style.borderColor = '#D4AF37';
-              e.currentTarget.style.background = 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)';
-            }
-          }}
-        >
-          <NavLink to="/contact" style={{
-            color: 'white',
-            textDecoration: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '100%',
-            height: '100%',
-            fontSize: 'inherit',
-            fontWeight: 'inherit'
-          }}>
-            {isMobile ? 'Book' : 'Book Now'}
-          </NavLink>
-        </button>
-      </div>
+    {/* Book Button */}
+    <div style={{ 
+      flex: isMobile ? '0 0 65px' : '0 0 110px'
+    }}>
+      {!isMobile && <div style={{ height: '22px' }} />}
+      <a
+        href="https://bookingengine.stayflexi.com/?hotel_id=34243"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          height: isMobile ? '32px' : '44px',
+          width: '100%',
+          background: 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)',
+          color: 'white',
+          border: '2px solid #D4AF37',
+          borderRadius: '6px',
+          fontSize: isMobile ? '9px' : '14px',
+          fontWeight: '700',
+          cursor: 'pointer',
+          transition: 'all 0.25s ease',
+          boxShadow: '0 3px 12px rgba(5,42,84,0.3)',
+          textTransform: 'uppercase',
+          letterSpacing: isMobile ? '0.3px' : '0.8px',
+          position: 'relative',
+          overflow: 'hidden',
+          textDecoration: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+        onMouseOver={(e) => {
+          if (!isMobile) {
+            e.currentTarget.style.transform = 'translateY(-1px)';
+            e.currentTarget.style.boxShadow = '0 6px 20px rgba(5,42,84,0.4)';
+            e.currentTarget.style.borderColor = '#FFD700';
+            e.currentTarget.style.background = 'linear-gradient(135deg, #073f76 0%, #0a4d8a 50%, #0d5ba0 100%)';
+          }
+        }}
+        onMouseOut={(e) => {
+          if (!isMobile) {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 3px 12px rgba(5,42,84,0.3)';
+            e.currentTarget.style.borderColor = '#D4AF37';
+            e.currentTarget.style.background = 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)';
+          }
+        }}
+      >
+        {isMobile ? 'Book' : 'Book Now'}
+      </a>
     </div>
   </div>
+</div>
 </div>
 
       {/* About Section */}

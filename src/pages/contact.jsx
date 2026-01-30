@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./contact.css";
 import { NavLink } from 'react-router-dom';
-import image12 from "../assest/image/s4logo.png";
-import image13 from "../assest/image/log.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -91,27 +89,27 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-page">
+    <div className="contact-main-wrapper">
       {/* Hero Section */}
-      <div className="hero-section">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <p className="hero-welcome">WELCOME</p>
-          <h1 className="hero-title">A modern hotel for the modern world.</h1>
-          <button className="hero-button">GET TO KNOW US</button>
+      <div className="contact-hero-banner">
+        <div className="contact-hero-overlay"></div>
+        <div className="contact-hero-content">
+          <p className="contact-hero-welcome">WELCOME</p>
+          <h1 className="contact-hero-title">A modern hotel for the modern world.</h1>
+          <button className="contact-hero-btn">GET TO KNOW US</button>
         </div>
       </div>
 
       {/* Decorative Pattern */}
-      <div className="royal-pattern"></div>
+      <div className="contact-bg-pattern"></div>
 
       {/* Why Contact Us Section */}
-      <section className="why-contact-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-badge">Why Reach Out</span>
-            <h2 className="section-title-main">We're Always Here For You</h2>
-            <p className="section-subtitle">
+      <section className="contact-intro-section">
+        <div className="contact-container">
+          <div className="contact-section-header">
+            <span className="contact-section-badge">Why Reach Out</span>
+            <h2 className="contact-section-title">We're Always Here For You</h2>
+            <p className="contact-section-subtitle">
               Whether you have questions, need assistance, or want to make a reservation, our dedicated team is ready to help 24/7
             </p>
           </div>
@@ -119,16 +117,16 @@ export default function Contact() {
       </section>
 
       {/* Contact Form Section */}
-      <div className="contact-form-section">
-        <div className="container">
-          <h1 className="form-main-title">Reach Out to Us</h1>
+      <div className="contact-form-wrapper">
+        <div className="contact-container">
+          <h1 className="contact-form-title">Reach Out to Us</h1>
           
-          <div className="form-container">
+          <div className="contact-form-box">
             <form onSubmit={handleSubmit} className="contact-form">
               {/* Name Field */}
-              <div className="form-row">
-                <label className="form-label">
-                  NAME<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  NAME<span className="contact-required">*</span>
                 </label>
                 <input
                   type="text"
@@ -136,15 +134,15 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name"
-                  className="form-input"
+                  className="contact-form-input"
                   required
                 />
               </div>
 
               {/* Email Field */}
-              <div className="form-row">
-                <label className="form-label">
-                  EMAIL<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  EMAIL<span className="contact-required">*</span>
                 </label>
                 <input
                   type="email"
@@ -152,18 +150,18 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter your email ID"
-                  className="form-input"
+                  className="contact-form-input"
                   required
                 />
               </div>
 
               {/* Phone Number Field */}
-              <div className="form-row">
-                <label className="form-label">
-                  PHONE NUMBER<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  PHONE NUMBER<span className="contact-required">*</span>
                 </label>
-                <div className="phone-input-group">
-                  <select className="country-select">
+                <div className="contact-phone-group">
+                  <select className="contact-country-select">
                     <option value="+91">🇮🇳 India (+91)</option>
                     <option value="+1">🇺🇸 United States (+1)</option>
                     <option value="+44">🇬🇧 United Kingdom (+44)</option>
@@ -181,16 +179,16 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Enter your number"
-                    className="form-input phone-input"
+                    className="contact-form-input contact-phone-input"
                     required
                   />
                 </div>
               </div>
 
               {/* Subject Field */}
-              <div className="form-row">
-                <label className="form-label">
-                  SUBJECT<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  SUBJECT<span className="contact-required">*</span>
                 </label>
                 <input
                   type="text"
@@ -198,45 +196,45 @@ export default function Contact() {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Enter subject"
-                  className="form-input"
+                  className="contact-form-input"
                   required
                 />
               </div>
 
               {/* Check-in Date */}
-              <div className="form-row">
-                <label className="form-label">
-                  CHECK-IN<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  CHECK-IN<span className="contact-required">*</span>
                 </label>
                 <input
                   type="date"
                   name="checkIn"
                   value={formData.checkIn}
                   onChange={handleChange}
-                  className="form-input"
+                  className="contact-form-input"
                   required
                 />
               </div>
 
               {/* Check-out Date */}
-              <div className="form-row">
-                <label className="form-label">
-                  CHECK-OUT<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  CHECK-OUT<span className="contact-required">*</span>
                 </label>
                 <input
                   type="date"
                   name="checkOut"
                   value={formData.checkOut}
                   onChange={handleChange}
-                  className="form-input"
+                  className="contact-form-input"
                   required
                 />
               </div>
 
               {/* Message Field */}
-              <div className="form-row">
-                <label className="form-label">
-                  MESSAGE<span className="required">*</span>
+              <div className="contact-form-group">
+                <label className="contact-form-label">
+                  MESSAGE<span className="contact-required">*</span>
                 </label>
                 <textarea
                   name="message"
@@ -244,21 +242,21 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Enter messages or queries"
                   rows="5"
-                  className="form-textarea"
+                  className="contact-form-textarea"
                   required
                 />
               </div>
 
               {/* Submit Button */}
-              <div className="form-row">
-                <button type="submit" className="submit-button">
+              <div className="contact-form-group">
+                <button type="submit" className="contact-submit-btn">
                   SUBMIT
                 </button>
               </div>
 
               {/* Status Message */}
               {status && (
-                <div className={`status-message ${status.includes('Error') ? 'error' : 'success'}`}>
+                <div className={`contact-status-msg ${status.includes('Error') ? 'contact-error' : 'contact-success'}`}>
                   {status}
                 </div>
               )}
@@ -268,29 +266,29 @@ export default function Contact() {
       </div>
 
       {/* FAQ Section */}
-      <section className="faq-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-badge">FAQ</span>
-            <h2 className="section-title-main">Frequently Asked Questions</h2>
-            <p className="section-subtitle">
+      <section className="contact-faq-section">
+        <div className="contact-container">
+          <div className="contact-section-header">
+            <span className="contact-section-badge">FAQ</span>
+            <h2 className="contact-section-title">Frequently Asked Questions</h2>
+            <p className="contact-section-subtitle">
               Quick answers to common questions about our hotel and services
             </p>
           </div>
           
-          <div className="faq-container">
+          <div className="contact-faq-container">
             {faqData.map((faq, index) => (
-              <div key={index} className="faq-item">
+              <div key={index} className="contact-faq-item">
                 <div 
-                  className="faq-question" 
+                  className="contact-faq-question" 
                   onClick={() => toggleFAQ(index)}
                 >
                   <h3>{faq.question}</h3>
-                  <span className={`faq-icon ${openFAQ === index ? 'open' : ''}`}>
+                  <span className={`contact-faq-icon ${openFAQ === index ? 'contact-faq-open' : ''}`}>
                     <i className="fa-solid fa-chevron-down"></i>
                   </span>
                 </div>
-                <div className={`faq-answer ${openFAQ === index ? 'open' : ''}`}>
+                <div className={`contact-faq-answer ${openFAQ === index ? 'contact-faq-open' : ''}`}>
                   <p>{faq.answer}</p>
                 </div>
               </div>
@@ -300,17 +298,17 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-badge">Location</span>
-            <h2 className="section-title-main">Find Us Here</h2>
-            <p className="section-subtitle">
+      <section className="contact-map-section">
+        <div className="contact-container">
+          <div className="contact-section-header">
+            <span className="contact-section-badge">Location</span>
+            <h2 className="contact-section-title">Find Us Here</h2>
+            <p className="contact-section-subtitle">
               Company Address: 773 OCEAN SHORES BLVD NW, OCEAN SHORES, WA - 98569
             </p>
           </div>
           
-          <div className="map-wrapper">
+          <div className="contact-map-wrapper">
             <iframe
               title="map"
               src="https://maps.google.com/maps?q=773+OCEAN+SHORES+BLVD+NW,+OCEAN+SHORES,+WA+98569&hl=en&z=16&output=embed"
@@ -323,7 +321,7 @@ export default function Contact() {
             ></iframe>
           </div>
           
-          <div className="location-details">
+          <div className="contact-location-details">
             <div className="contact-detail-item">
               <i className="fa-solid fa-location-dot"></i>
               <span><strong>Address:</strong> 773 OCEAN SHORES BLVD NW, OCEAN SHORES, WA - 98569</span>
@@ -343,7 +341,7 @@ export default function Contact() {
               href="https://maps.app.goo.gl/UEmtAnmPCw5yX7QJ7" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="directions-btn"
+              className="contact-directions-btn"
             >
               <i className="fa-solid fa-diamond-turn-right"></i>
               Get Directions

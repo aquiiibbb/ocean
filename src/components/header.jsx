@@ -72,11 +72,7 @@ const Header = () => {
                   Amenities
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/dining" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-                  Dining
-                </NavLink>
-              </li>
+            
               <li className="nav-item">
                 <NavLink to="/photo" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
                   Photo
@@ -96,7 +92,14 @@ const Header = () => {
               <span className="badge-text">BEST RATE</span>
               <span className="badge-subtext">GUARANTEED</span>
             </div>
-            <button className="book-now-btn">BOOK NOW</button>
+            <a 
+              href="https://bookingengine.stayflexi.com/?hotel_id=34243" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="book-now-btn"
+            >
+              BOOK NOW
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -124,7 +127,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-<li className="mobile-nav-item">
+            <li className="mobile-nav-item">
               <NavLink 
                 to="/rooms" 
                 className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
@@ -133,23 +136,14 @@ const Header = () => {
                 <span className="nav-icon">🛏️</span> Rooms
               </NavLink>
             </li>
- <li className="mobile-nav-item">
+            
+            <li className="mobile-nav-item">
               <NavLink 
                 to="/amenities" 
                 className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
                 onClick={closeMenu}
               >
                 <span className="nav-icon">✨</span> Amenities
-              </NavLink>
-            </li>
-
-<li className="mobile-nav-item">
-              <NavLink 
-                to="/dining" 
-                className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}
-                onClick={closeMenu}
-              >
-                <span className="nav-icon">🍽️</span> Dining
               </NavLink>
             </li>
 
@@ -172,7 +166,6 @@ const Header = () => {
                 <span className="nav-icon">📞</span> Contact
               </NavLink>
             </li>
-            
            
           </ul>
         </nav>

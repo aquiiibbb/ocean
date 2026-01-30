@@ -7,10 +7,11 @@
   box-sizing: border-box;
 }
 
-.rooms-page, .photos-container {
+.rooms-page {
   width: 100%;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
+  background: #f8fafc;
 }
 
 .container {
@@ -27,10 +28,57 @@
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 50%, rgba(106, 90, 205, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 111, 97, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(30, 58, 138, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(5, 150, 105, 0.03) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
+}
+
+/* Hero Section */
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 40px;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(5, 150, 105, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  opacity: 0.95;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Section Headers */
@@ -41,25 +89,25 @@
 
 .section-badge {
   display: inline-block;
-  padding: 8px 24px;
-  background: linear-gradient(135deg, #4169E1, #1e40af);
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #1e3a8a, #047857);
   color: white;
   border-radius: 25px;
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.4);
 }
 
 .section-title-main {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  background: linear-gradient(135deg, #1e40af 0%, #4169E1 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #047857 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   letter-spacing: -0.5px;
 }
 
@@ -71,208 +119,153 @@
   line-height: 1.6;
 }
 
-/* Hero Section */
-.photos-her {
-  min-height: 60vh;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(180, 180, 180, 0.1) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.photos-her > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero-content-wrapper {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  padding: 30px 20px;
-}
-
-.crown-icon {
-  width: 60px;
-  height: 60px;
-  background: #4169E1;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  box-shadow: 0 8px 20px rgba(65, 105, 225, 0.3);
-}
-
-.crown-icon i {
-  font-size: 2rem;
-  color: white;
-}
-
-.title-line {
-  font-size: 3.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, #4169E1, #FFA500, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.hero-subtitle {
-  font-size: 1.4rem;
-  color: white;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  opacity: 0.9;
-}
-
-.divider-line {
-  width: 100px;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #4169E1, #FFA500, transparent);
-  margin: 0 auto;
-  border-radius: 2px;
-}
-
 /* Rooms Container */
-.rooms-container, .gallery-section {
+.rooms-container {
   padding: 80px 20px;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
-.rooms-grid, .photos-grid {
+/* Rooms Grid */
+.rooms-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.photos-grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-/* Room Card & Photo Card */
-.room-card, .photo-card {
+/* Room Card */
+.room-card {
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(65, 105, 225, 0.1);
-}
-
-.photo-card {
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-}
-
-.room-card:hover, .photo-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(65, 105, 225, 0.15);
-  border-color: rgba(65, 105, 225, 0.2);
-}
-
-.room-image-wrapper, .photo-wrapper {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(30, 58, 138, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
-  height: 280px;
-  overflow: hidden;
 }
 
-.room-image-wrapper img, .photo-wrapper img {
+.room-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(30, 58, 138, 0.25);
+  border-color: rgba(30, 58, 138, 0.4);
+}
+
+/* Carousel Styles */
+.carousel {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.card-img-top {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
 }
 
-.room-card:hover .room-image-wrapper img, 
-.photo-card:hover .photo-wrapper img {
-  transform: scale(1.05);
+.room-card:hover .card-img-top {
+  transform: scale(1.08);
 }
 
-.room-overlay, .photo-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(30, 64, 175, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 45px;
+  height: 45px;
+  background: rgba(30, 58, 138, 0.9);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
+  border: 2px solid white;
 }
 
-.photo-overlay {
-  background: rgba(0, 0, 0, 0.4);
+.carousel-control-prev {
+  left: 15px;
 }
 
-.room-card:hover .room-overlay,
-.photo-card:hover .photo-overlay {
+.carousel-control-next {
+  right: 15px;
+}
+
+.room-card:hover .carousel-control-prev,
+.room-card:hover .carousel-control-next {
   opacity: 1;
 }
 
-.overlay-icon {
-  width: 60px;
-  height: 60px;
-  background: white;
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(30, 58, 138, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  bottom: 15px;
+  margin-bottom: 0;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
+  margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: #1e3a8a;
+  transform: scale(1.2);
+}
+
+/* Card Body */
+.card-body {
+  padding: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
-.overlay-icon i {
-  font-size: 1.5rem;
-  color: #4169E1;
-}
-
-.overlay-content {
-  text-align: center;
-  color: white;
-}
-
-.overlay-content i {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.photo-caption {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Room Info */
-.room-info {
-  padding: 30px 25px;
-}
-
-.room-info h2 {
+.card-title {
   font-size: 1.5rem;
   color: #1e293b;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   font-weight: 700;
+  line-height: 1.3;
 }
 
-.room-info p {
+.card-text {
   font-size: 1rem;
   line-height: 1.6;
   color: #64748b;
   margin-bottom: 20px;
+  flex-grow: 1;
 }
 
+/* Room Features */
 .room-features {
   display: flex;
   flex-wrap: wrap;
@@ -284,40 +277,64 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
-  background: rgba(65, 105, 225, 0.1);
-  border-radius: 15px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.1), rgba(5, 150, 105, 0.1));
+  border-radius: 20px;
   font-size: 0.85rem;
-  color: #4169E1;
+  color: #1e3a8a;
   font-weight: 500;
+  border: 1px solid rgba(30, 58, 138, 0.3);
 }
 
 .feature-tag i {
   font-size: 0.75rem;
+  color: #047857;
 }
 
 /* Book Button */
 .book-btn {
   width: 100%;
-  padding: 14px 30px;
-  font-size: 1rem;
+  padding: 16px 30px;
+  font-size: 1.1rem;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, #4169E1 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #047857 100%);
   border: none;
-  border-radius: 12px;
+  border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.5);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.book-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.book-btn:hover::before {
+  left: 100%;
 }
 
 .book-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(65, 105, 225, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.6);
+  background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+  color: white;
+  text-decoration: none;
 }
 
 .book-btn i {
@@ -325,65 +342,26 @@
 }
 
 .book-btn:hover i {
-  transform: translateX(3px);
-}
-
-/* Content Section */
-.gallery-content {
-  padding: 60px 20px;
-  background: white;
-}
-
-.content-card {
-  background: rgba(102, 126, 234, 0.03);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border-left: 4px solid #667eea;
-  margin-bottom: 40px;
-}
-
-.content-card:hover {
   transform: translateX(5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-}
-
-.content-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-}
-
-.content-icon i {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.section-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
 }
 
 /* CTA Section */
 .cta-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #1e40af 0%, #4169E1 100%);
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #047857 100%);
   position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
 }
 
 .cta-content {
@@ -395,302 +373,162 @@
 }
 
 .cta-content h2 {
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-weight: 800;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cta-content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   line-height: 1.6;
 }
 
 .cta-button {
   display: inline-flex;
-  padding: 16px 40px;
+  padding: 18px 40px;
   background: white;
   text-decoration: none;
-  color: #4169E1;
-  border-radius: 12px;
+  color: #1e3a8a;
+  border-radius: 15px;
   font-size: 1.1rem;
-  font-weight: 600;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
 }
 
 .cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  color: #1e3a8a;
+  text-decoration: none;
 }
 
-/* Header Styles */
-.custom-header {
-  background: transparent;
+.cta-button i {
+  transition: transform 0.3s ease;
 }
 
-.logo-pc {
-  height: 120px;
-  width: 120px;
+.cta-button:hover i {
+  transform: translateX(5px);
 }
 
-.logo-mobile {
-  height: 40px;
-  width: 40px;
-}
-
-/* ===== MOBILE RESPONSIVE (768px and below) ===== */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 8px;
+  .hero-image-container {
+    height: 40vh;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
   }
   
-  /* Hero Section Mobile */
-  .photos-her {
-    min-height: 30vh;
-    padding: 8px;
+  .rooms-container {
+    padding: 50px 15px;
   }
   
-  .hero-content-wrapper {
-    padding: 12px 8px;
-  }
-  
-  .crown-icon {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 8px;
-  }
-  
-  .crown-icon i {
-    font-size: 1rem;
-  }
-  
-  .title-line {
-    font-size: 1.4rem;
-    letter-spacing: 0.3px;
-    line-height: 1.1;
-  }
-  
-  .hero-subtitle {
-    font-size: 0.8rem;
-    letter-spacing: 0.3px;
-    margin-bottom: 8px;
-  }
-  
-  .divider-line {
-    width: 50px;
-    height: 2px;
-  }
-  
-  /* Section Headers Mobile */
-  .section-header {
-    margin-bottom: 20px;
-  }
-  
-  .section-badge {
-    padding: 4px 10px;
-    font-size: 0.65rem;
-  }
-  
-  .section-title-main {
-    font-size: 1.3rem;
-    margin-bottom: 6px;
-    line-height: 1.2;
-  }
-  
-  .section-subtitle {
-    font-size: 0.8rem;
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
     padding: 0 5px;
   }
   
-  /* Rooms & Gallery Mobile */
-  .rooms-container, .gallery-section {
-    padding: 25px 8px;
+  .room-card {
+    border-radius: 15px;
   }
   
-  .rooms-grid, .photos-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .carousel {
+    height: 250px;
   }
   
-  .room-card, .photo-card {
-    border-radius: 8px;
+  .card-body {
+    padding: 25px 20px;
   }
   
-  .room-image-wrapper, .photo-wrapper {
-    height: 140px;
+  .card-title {
+    font-size: 1.3rem;
   }
   
-  .room-info {
-    padding: 15px 12px;
-  }
-  
-  .room-info h2 {
-    font-size: 1rem;
-    margin-bottom: 6px;
-  }
-  
-  .room-info p {
-    font-size: 0.8rem;
-    margin-bottom: 12px;
-  }
-  
-  .room-features {
-    gap: 4px;
-    margin-bottom: 15px;
+  .card-text {
+    font-size: 0.95rem;
   }
   
   .feature-tag {
-    font-size: 0.7rem;
-    padding: 3px 6px;
+    font-size: 0.8rem;
+    padding: 6px 10px;
   }
   
   .book-btn {
-    padding: 8px 15px;
-    font-size: 0.8rem;
-  }
-  
-  .overlay-icon {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .overlay-icon i {
+    padding: 14px 25px;
     font-size: 1rem;
   }
   
-  .overlay-content i {
-    font-size: 1.2rem;
+  .section-header {
+    margin-bottom: 40px;
   }
   
-  .photo-caption {
-    font-size: 0.8rem;
-  }
-  
-  /* Content Section Mobile */
-  .gallery-content {
-    padding: 25px 8px;
-  }
-  
-  .content-card {
-    padding: 12px 8px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .content-icon {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 8px;
-  }
-  
-  .content-icon i {
-    font-size: 0.9rem;
-  }
-  
-  .section-title {
-    font-size: 1rem;
-    margin-bottom: 6px;
-  }
-  
-  .section-text {
-    font-size: 0.75rem;
-    line-height: 1.4;
-  }
-  
-  /* CTA Section Mobile */
   .cta-section {
-    padding: 40px 8px;
-  }
-  
-  .cta-content h2 {
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-  }
-  
-  .cta-content p {
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 0.85rem;
+    padding: 60px 15px;
   }
 }
 
-/* ===== SMALL MOBILE (480px and below) ===== */
 @media (max-width: 480px) {
-  .photos-her {
-    min-height: 25vh;
-    padding: 5px;
+  .hero-image-container {
+    height: 35vh;
   }
   
-  .title-line {
+  .carousel {
+    height: 200px;
+  }
+  
+  .card-body {
+    padding: 20px 15px;
+  }
+  
+  .card-title {
     font-size: 1.2rem;
   }
   
-  .hero-subtitle {
-    font-size: 0.7rem;
+  .card-text {
+    font-size: 0.9rem;
   }
   
-  .section-title-main {
+  .room-features {
+    gap: 6px;
+  }
+  
+  .feature-tag {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+  
+  .book-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .carousel {
+    height: 180px;
+  }
+  
+  .card-body {
+    padding: 15px 12px;
+  }
+  
+  .card-title {
     font-size: 1.1rem;
   }
   
-  .room-image-wrapper, .photo-wrapper {
-    height: 120px;
-  }
-  
-  .room-info {
-    padding: 10px 8px;
-  }
-  
-  .room-info h2 {
-    font-size: 0.9rem;
-  }
-  
-  .room-info p {
-    font-size: 0.75rem;
-  }
-  
-  .book-btn {
-    padding: 6px 12px;
-    font-size: 0.75rem;
-  }
-  
-  .content-card {
-    padding: 8px 6px;
-  }
-  
-  .section-text {
-    font-size: 0.7rem;
-  }
-}
-
-/* ===== EXTRA SMALL DEVICES (360px and below) ===== */
-@media (max-width: 360px) {
-  .title-line {
-    font-size: 1rem;
-  }
-  
-  .section-title-main {
-    font-size: 1rem;
-  }
-  
-  .room-image-wrapper, .photo-wrapper {
-    height: 100px;
-  }
-  
-  .room-info h2 {
-    font-size: 0.8rem;
-  }
-  
-  .section-text {
-    font-size: 0.65rem;
+  .card-text {
+    font-size: 0.85rem;
   }
 }
