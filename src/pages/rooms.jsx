@@ -107,7 +107,7 @@ export default function Rooms() {
         <img src={image134} alt="Ocean Paradise Hotel Rooms" />
         <div className="hero-overlay">
           <div className="hero-content">
-            <h1>Ocean Paradise Rooms</h1>
+            <h1>Ocean Paradise</h1>
             <p>Where Luxury Meets Comfort</p>
           </div>
         </div>

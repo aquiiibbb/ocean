@@ -19,8 +19,11 @@
 /* Hero Section */
 .hero-image-container {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image {
@@ -46,17 +49,20 @@
 .hero-content {
   text-align: center;
   color: white;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 .hero-title {
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 20px;
   background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  line-height: 1.2;
 }
 
 .hero-subtitle {
@@ -64,6 +70,7 @@
   font-weight: 300;
   opacity: 0.9;
   letter-spacing: 1px;
+  line-height: 1.4;
 }
 
 /* Section Header */
@@ -94,6 +101,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  line-height: 1.2;
 }
 
 .section-subtitle {
@@ -231,6 +239,7 @@
   color: #1f1f1f;
   margin-bottom: 18px;
   letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .premium-header p {
@@ -340,12 +349,14 @@
   color: white;
   margin-bottom: 20px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .cta-content p {
   font-size: 1.2rem;
   color: rgba(255,255,255,0.9);
   margin-bottom: 40px;
+  line-height: 1.5;
 }
 
 .cta-button {
@@ -382,240 +393,251 @@
 /* ===== MOBILE RESPONSIVE (768px and below) ===== */
 @media (max-width: 768px) {
   .container {
-    padding: 0 8px;
+    padding: 0 15px;
   }
   
-  /* Hero Mobile */
+  /* Hero Mobile - INCREASED HEIGHT */
   .hero-image-container {
-    height: 40vh;
+    height: 50vh; /* Increased from 40vh */
+    min-height: 400px; /* Added minimum height */
+  }
+  
+  .hero-content {
+    padding: 0 15px;
   }
   
   .hero-title {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+    font-size: 2.2rem; /* Increased from 1.8rem */
+    margin-bottom: 15px;
+    line-height: 1.1;
   }
   
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem; /* Increased from 0.9rem */
     letter-spacing: 0.5px;
   }
   
   /* Section Headers Mobile */
   .section-header {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   
   .section-badge {
-    padding: 5px 15px;
-    font-size: 0.7rem;
+    padding: 6px 18px;
+    font-size: 0.8rem;
   }
   
   .section-title {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
+    font-size: 2rem; /* Increased from 1.6rem */
+    margin-bottom: 15px;
   }
   
   .section-subtitle {
-    font-size: 0.9rem;
-    padding: 0 5px;
+    font-size: 1rem; /* Increased from 0.9rem */
+    padding: 0 10px;
   }
   
   /* Amenities Mobile */
   .amenities-section {
-    padding: 50px 0;
+    padding: 60px 0; /* Increased from 50px */
   }
   
   .amenities-grid {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 20px; /* Increased from 15px */
   }
   
   .amenity-card {
-    border-radius: 12px;
+    border-radius: 15px;
   }
   
   .amenity-image {
-    height: 120px;
+    height: 150px; /* Increased from 120px */
   }
   
   .amenity-content {
-    padding: 15px 12px;
+    padding: 20px 15px; /* Increased padding */
   }
   
   .amenity-content h3 {
-    font-size: 1rem;
-    margin-bottom: 8px;
+    font-size: 1.2rem; /* Increased from 1rem */
+    margin-bottom: 10px;
   }
   
   .amenity-content p {
-    font-size: 0.8rem;
-    line-height: 1.4;
+    font-size: 0.9rem; /* Increased from 0.8rem */
+    line-height: 1.5;
   }
   
   .amenity-icon {
-    font-size: 1.8rem;
-    width: 45px;
-    height: 45px;
+    font-size: 2.2rem; /* Increased from 1.8rem */
+    width: 55px; /* Increased from 45px */
+    height: 55px;
   }
   
   /* Premium Mobile */
   .premium-amenities {
-    padding: 60px 0;
+    padding: 70px 0; /* Increased from 60px */
   }
   
   .premium-header {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   
   .premium-badge {
-    padding: 5px 15px;
-    font-size: 0.7rem;
+    padding: 6px 18px;
+    font-size: 0.8rem;
   }
   
   .premium-header h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-  }
-  
-  .premium-header p {
-    font-size: 0.9rem;
-    padding: 0 10px;
-  }
-  
-  .premium-grid {
-    gap: 20px;
-  }
-  
-  .premium-card {
-    padding: 20px 15px;
-    border-radius: 15px;
-  }
-  
-  .premium-icon {
-    font-size: 1.8rem;
-    width: 45px;
-    height: 45px;
+    font-size: 2.2rem; /* Increased from 1.8rem */
     margin-bottom: 15px;
   }
   
+  .premium-header p {
+    font-size: 1rem; /* Increased from 0.9rem */
+    padding: 0 15px;
+  }
+  
+  .premium-grid {
+    gap: 25px;
+  }
+  
+  .premium-card {
+    padding: 25px 20px; /* Increased padding */
+    border-radius: 18px;
+  }
+  
+  .premium-icon {
+    font-size: 2.2rem; /* Increased from 1.8rem */
+    width: 55px; /* Increased from 45px */
+    height: 55px;
+    margin-bottom: 20px;
+  }
+  
   .premium-card h3 {
-    font-size: 1rem;
-    margin-bottom: 8px;
+    font-size: 1.2rem; /* Increased from 1rem */
+    margin-bottom: 10px;
   }
   
   .premium-card p {
-    font-size: 0.8rem;
-    line-height: 1.5;
+    font-size: 0.9rem; /* Increased from 0.8rem */
+    line-height: 1.6;
   }
   
   /* CTA Mobile */
   .cta-section {
-    padding: 40px 0;
+    padding: 50px 0; /* Increased from 40px */
   }
   
   .cta-content h2 {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
+    font-size: 2rem; /* Increased from 1.6rem */
+    margin-bottom: 15px;
   }
   
   .cta-content p {
-    font-size: 0.9rem;
-    margin-bottom: 25px;
+    font-size: 1rem; /* Increased from 0.9rem */
+    margin-bottom: 30px;
   }
   
   .cta-button {
-    padding: 10px 25px;
-    font-size: 0.9rem;
+    padding: 12px 30px; /* Increased padding */
+    font-size: 1rem; /* Increased from 0.9rem */
   }
 }
 
 /* ===== SMALL MOBILE (480px and below) ===== */
 @media (max-width: 480px) {
   .hero-image-container {
-    height: 35vh;
+    height: 45vh; /* Increased from 35vh */
+    min-height: 350px;
   }
   
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increased from 1.5rem */
   }
   
   .hero-subtitle {
-    font-size: 0.8rem;
+    font-size: 1rem; /* Increased from 0.8rem */
   }
   
   .section-title {
-    font-size: 1.4rem;
+    font-size: 1.7rem; /* Increased from 1.4rem */
   }
   
   .amenities-section, .premium-amenities {
-    padding: 40px 0;
+    padding: 50px 0; /* Increased from 40px */
   }
   
   .amenity-image {
-    height: 100px;
+    height: 130px; /* Increased from 100px */
   }
   
   .amenity-content, .premium-card {
-    padding: 12px 8px;
+    padding: 15px 12px; /* Increased padding */
   }
   
   .amenity-content h3, .premium-card h3 {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Increased from 0.9rem */
   }
   
   .amenity-content p, .premium-card p {
-    font-size: 0.75rem;
+    font-size: 0.85rem; /* Increased from 0.75rem */
   }
   
   .amenity-icon, .premium-icon {
-    font-size: 1.5rem;
-    width: 35px;
-    height: 35px;
+    font-size: 1.8rem; /* Increased from 1.5rem */
+    width: 45px; /* Increased from 35px */
+    height: 45px;
   }
   
   .premium-header h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increased from 1.5rem */
   }
   
   .cta-content h2 {
-    font-size: 1.4rem;
+    font-size: 1.7rem; /* Increased from 1.4rem */
   }
   
   .cta-button {
-    padding: 8px 20px;
-    font-size: 0.8rem;
+    padding: 10px 25px; /* Increased padding */
+    font-size: 0.9rem; /* Increased from 0.8rem */
   }
 }
 
 /* ===== EXTRA SMALL (360px and below) ===== */
 @media (max-width: 360px) {
+  .hero-image-container {
+    min-height: 320px;
+  }
+  
   .hero-title {
-    font-size: 1.3rem;
+    font-size: 1.6rem; /* Increased from 1.3rem */
   }
   
   .section-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased from 1.2rem */
   }
   
   .amenity-image {
-    height: 80px;
+    height: 110px; /* Increased from 80px */
   }
   
   .amenity-content, .premium-card {
-    padding: 10px 6px;
+    padding: 12px 10px; /* Increased padding */
   }
   
   .amenity-content h3, .premium-card h3 {
-    font-size: 0.8rem;
+    font-size: 0.95rem; /* Increased from 0.8rem */
   }
   
   .amenity-content p, .premium-card p {
-    font-size: 0.7rem;
+    font-size: 0.8rem; /* Increased from 0.7rem */
   }
   
   .amenity-icon, .premium-icon {
-    font-size: 1.2rem;
-    width: 30px;
-    height: 30px;
+    font-size: 1.5rem; /* Increased from 1.2rem */
+    width: 40px; /* Increased from 30px */
+    height: 40px;
   }
 }
