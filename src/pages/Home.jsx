@@ -77,7 +77,7 @@ export default function Home() {
     },
     { 
       icon: <FaInstagramSquare />, 
-      bg: '#E4405F',
+      bg: '#960620',
       href: 'https://instagram.com/yourhandle',
       title: 'Follow on Instagram'
     },

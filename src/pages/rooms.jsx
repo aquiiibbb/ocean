@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./rooms.css";
 import image134 from "../assest/image/bed1.jpg";
 import image12188 from "../assest/image/sk.jpeg";
@@ -34,71 +34,146 @@ import image1ddf901 from "../assest/image/m1.jpeg";
 import { NavLink } from 'react-router-dom';
 
 export default function Rooms() {
- const roomsData = [
-  {
-    id: 1,
-    title: "Standard Queen Room",
-    description: "Comfortable queen room with essential amenities for a pleasant stay.",
-    images: [image12188],
-    features: ["Free WiFi", "AC", "TV", "Room Service"]
-  },
-  {
-    id: 2,
-    title: "Double Queen Standard",
-    description: "Spacious room with two queen beds, perfect for families or groups.",
-    images: [image1rio, image1218b, image1218dw8, image121vf, image1218df],
-    features: ["Two Queen Beds", "Ocean View", "Mini Fridge", "Balcony"]
-  },
-  {
-    id: 3,
-    title: "Superior Double Queen",
-    description: "Enhanced room with premium amenities and two comfortable queen beds.",
-    images: [imagef, image1f, image1, image1df],
-    features: ["Premium Bedding", "Sea View", "Coffee Maker", "Work Desk"]
-  },
-  {
-    id: 4,
-    title: "Superior King",
-    description: "Upgraded king room with luxury touches and modern conveniences.",
-    images: [image1d, image1cdf, image1dl, image1ddc, image1dff],
-    features: ["King Bed", "Premium View", "Jacuzzi", "Mini Bar"]
-  },
-  {
-    id: 5,
-    title: "Luxury King with Balcony",
-    description: "Premium king suite featuring a private balcony with stunning views.",
-    images: [image1dsdf, image1daf, image1ff, image1dfe],
-    features: ["Private Balcony", "Ocean View", "Luxury Bath", "Butler Service"]
-  },
-  {
-    id: 6,
-    title: "Luxury Double Queen",
-    description: "High-end accommodation with two queen beds and luxury amenities.",
-    images: [image1ddfe1, image1ddfe2, image1ddfe3, image1ddfe4, image1ddfe5, image1ddfe6],
-    features: ["Two Queen Beds", "Luxury Amenities", "Spa Bath", "Concierge"]
-  },
-  {
-    id: 7,
-    title: "Standard Single Queen",
-    description: "Cozy single queen room with garden views and essential comforts.",
-    images: [image1ddfee, image1ddfee, image1ddfee, image1ddfee],
-    features: ["Queen Bed", "Garden View", "Work Space", "Free Breakfast"]
-  },
-  {
-    id: 8,
-    title: "Standard King",
-    description: "Classic king room with modern amenities and city views.",
-    images: [image1ddfle, image1ddfle1, image1ddfle],
-    features: ["King Bed", "Modern Amenities", "City View", "24/7 Service"]
-  },
-  {
-    id: 9,
-    title: "Luxury King Suite",
-    description: "Top-tier king suite with VIP services and premium location.",
-    images: [image1ddf901, image1ddf901],
-    features: ["King Suite", "Premium Location", "VIP Service", "All Inclusive"]
-  }
-];
+  const roomsData = [
+    {
+      id: 1,
+      title: "Standard Queen Room",
+      description: "Comfortable queen room with essential amenities for a pleasant stay.",
+      images: [image12188],
+      features: ["Free WiFi", "AC", "TV", "Room Service"]
+    },
+    {
+      id: 2,
+      title: "Double Queen Standard",
+      description: "Spacious room with two queen beds, perfect for families or groups.",
+      images: [image1rio, image1218b, image1218dw8, image121vf, image1218df],
+      features: ["Two Queen Beds", "Ocean View", "Mini Fridge", "Balcony"]
+    },
+    {
+      id: 3,
+      title: "Superior Double Queen",
+      description: "Enhanced room with premium amenities and two comfortable queen beds.",
+      images: [imagef, image1f, image1, image1df],
+      features: ["Premium Bedding", "Sea View", "Coffee Maker", "Work Desk"]
+    },
+    {
+      id: 4,
+      title: "Superior King",
+      description: "Upgraded king room with luxury touches and modern conveniences.",
+      images: [image1d, image1cdf, image1dl, image1ddc, image1dff],
+      features: ["King Bed", "Premium View", "Jacuzzi", "Mini Bar"]
+    },
+    {
+      id: 5,
+      title: "Luxury King with Balcony",
+      description: "Premium king suite featuring a private balcony with stunning views.",
+      images: [image1dsdf, image1daf, image1ff, image1dfe],
+      features: ["Private Balcony", "Ocean View", "Luxury Bath", "Butler Service"]
+    },
+    {
+      id: 6,
+      title: "Luxury Double Queen",
+      description: "High-end accommodation with two queen beds and luxury amenities.",
+      images: [image1ddfe1, image1ddfe2, image1ddfe3, image1ddfe4, image1ddfe5, image1ddfe6],
+      features: ["Two Queen Beds", "Luxury Amenities", "Spa Bath", "Concierge"]
+    },
+    {
+      id: 7,
+      title: "Standard Single Queen",
+      description: "Cozy single queen room with garden views and essential comforts.",
+      images: [image1ddfee, image1ddfee, image1ddfee, image1ddfee],
+      features: ["Queen Bed", "Garden View", "Work Space", "Free Breakfast"]
+    },
+    {
+      id: 8,
+      title: "Standard King",
+      description: "Classic king room with modern amenities and city views.",
+      images: [image1ddfle, image1ddfle1, image1ddfle],
+      features: ["King Bed", "Modern Amenities", "City View", "24/7 Service"]
+    },
+    {
+      id: 9,
+      title: "Luxury King Suite",
+      description: "Top-tier king suite with VIP services and premium location.",
+      images: [image1ddf901, image1ddf901],
+      features: ["King Suite", "Premium Location", "VIP Service", "All Inclusive"]
+    }
+  ];
+
+  // State for current slide index for each room
+  const [currentSlides, setCurrentSlides] = useState({});
+  const [isPaused, setIsPaused] = useState({});
+
+  // Initialize current slide for each room
+  useEffect(() => {
+    const initialSlides = {};
+    const initialPaused = {};
+    roomsData.forEach(room => {
+      initialSlides[room.id] = 0;
+      initialPaused[room.id] = false;
+    });
+    setCurrentSlides(initialSlides);
+    setIsPaused(initialPaused);
+  }, []);
+
+  // Auto-slide effect
+  useEffect(() => {
+    const intervals = {};
+    
+    roomsData.forEach(room => {
+      if (room.images.length > 1) {
+        intervals[room.id] = setInterval(() => {
+          if (!isPaused[room.id]) {
+            setCurrentSlides(prev => ({
+              ...prev,
+              [room.id]: (prev[room.id] + 1) % room.images.length
+            }));
+          }
+        }, 3000); // Change slide every 3 seconds
+      }
+    });
+
+    return () => {
+      Object.values(intervals).forEach(interval => clearInterval(interval));
+    };
+  }, [isPaused]);
+
+  const goToSlide = (roomId, slideIndex) => {
+    setCurrentSlides(prev => ({
+      ...prev,
+      [roomId]: slideIndex
+    }));
+  };
+
+  const nextSlide = (roomId) => {
+    const room = roomsData.find(r => r.id === roomId);
+    setCurrentSlides(prev => ({
+      ...prev,
+      [roomId]: (prev[roomId] + 1) % room.images.length
+    }));
+  };
+
+  const prevSlide = (roomId) => {
+    const room = roomsData.find(r => r.id === roomId);
+    setCurrentSlides(prev => ({
+      ...prev,
+      [roomId]: prev[roomId] === 0 ? room.images.length - 1 : prev[roomId] - 1
+    }));
+  };
+
+  const handleMouseEnter = (roomId) => {
+    setIsPaused(prev => ({
+      ...prev,
+      [roomId]: true
+    }));
+  };
+
+  const handleMouseLeave = (roomId) => {
+    setIsPaused(prev => ({
+      ...prev,
+      [roomId]: false
+    }));
+  };
 
   return (
     <div className="rooms-page">
@@ -129,58 +204,65 @@ export default function Rooms() {
 
           <div className="rooms-grid">
             {roomsData.map((room) => (
-              <div key={room.id} className="room-card">
-                {/* Carousel */}
-                <div id={`carousel-${room.id}`} className="carousel slide" data-bs-ride="carousel">
-                  <div className="carousel-inner">
+              <div 
+                key={room.id} 
+                className="room-card"
+                onMouseEnter={() => handleMouseEnter(room.id)}
+                onMouseLeave={() => handleMouseLeave(room.id)}
+              >
+                {/* Custom Auto-Sliding Carousel */}
+                <div className="custom-carousel">
+                  <div className="carousel-container">
                     {room.images.map((image, index) => (
-                      <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                        <img 
-                          src={image} 
-                          className="d-block w-100 card-img-top" 
-                          alt={`${room.title} - View ${index + 1}`} 
-                        />
-                      </div>
+                      <img
+                        key={index}
+                        src={image}
+                        className={`carousel-image ${
+                          index === (currentSlides[room.id] || 0) ? 'active' : ''
+                        }`}
+                        alt={`${room.title} - View ${index + 1}`}
+                      />
                     ))}
                   </div>
                   
-                  {/* Controls - Only show if more than 1 image */}
+                  {/* Navigation arrows - Only show if more than 1 image */}
                   {room.images.length > 1 && (
                     <>
                       <button 
-                        className="carousel-control-prev" 
-                        type="button" 
-                        data-bs-target={`#carousel-${room.id}`} 
-                        data-bs-slide="prev"
+                        className="carousel-arrow carousel-arrow-prev"
+                        onClick={() => prevSlide(room.id)}
                       >
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
+                        <i className="fas fa-chevron-left"></i>
                       </button>
                       <button 
-                        className="carousel-control-next" 
-                        type="button" 
-                        data-bs-target={`#carousel-${room.id}`} 
-                        data-bs-slide="next"
+                        className="carousel-arrow carousel-arrow-next"
+                        onClick={() => nextSlide(room.id)}
                       >
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
+                        <i className="fas fa-chevron-right"></i>
                       </button>
-                      
-                      {/* Indicators */}
-                      <div className="carousel-indicators">
-                        {room.images.map((_, index) => (
-                          <button 
-                            key={index}
-                            type="button" 
-                            data-bs-target={`#carousel-${room.id}`} 
-                            data-bs-slide-to={index} 
-                            className={index === 0 ? 'active' : ''}
-                            aria-current={index === 0 ? 'true' : 'false'}
-                            aria-label={`Slide ${index + 1}`}
-                          ></button>
-                        ))}
-                      </div>
                     </>
+                  )}
+                  
+                  {/* Navigation dots */}
+                  {room.images.length > 1 && (
+                    <div className="carousel-dots">
+                      {room.images.map((_, index) => (
+                        <button
+                          key={index}
+                          className={`dot ${
+                            index === (currentSlides[room.id] || 0) ? 'active' : ''
+                          }`}
+                          onClick={() => goToSlide(room.id, index)}
+                        />
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Pause indicator */}
+                  {isPaused[room.id] && room.images.length > 1 && (
+                    <div className="pause-indicator">
+                      <i className="fas fa-pause"></i>
+                    </div>
                   )}
                 </div>
                 
