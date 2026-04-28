@@ -18,28 +18,36 @@ export default function Contact() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   // FAQ Data
-  const faqData = [
-    {
-      question: "How close is the hotel to the beach?",
-      answer: "Ocean Paradise is located steps from the shoreline, providing quick and easy access to walks, sunsets and daily coastal activities."
-    },
-    {
-      question: "What amenities are available?",
-      answer: "Indoor pool, hot tub, spacious rooms, Wi-Fi and practical essentials for a comfortable stay."
-    },
-    {
-      question: "Is the hotel suitable for business teams?",
-      answer: "Yes. Many teams choose our hotel for retreats and planning sessions because of its calm atmosphere and practical location."
-    },
-    {
-      question: "Do you offer rooms for families and groups?",
-      answer: "Yes. We offer room types suitable for families, groups and small teams."
-    },
-    {
-      question: "Is parking available?",
-      answer: "Yes. Complimentary parking is available on-site."
-    }
-  ];
+const faqData = [
+  {
+    question: "What kind of breakfast is served at Ocean Parradise Hotel & Resort?",
+    answer: "Guests staying at Ocean Parradise Hotel & Resort can enjoy a highly-rated breakfast during their stay (guest review score: 6). Breakfast option(s) include: Continental"
+  },
+  {
+    question: "What type of room can I book at Ocean Parradise Hotel & Resort?",
+    answer: "Room options at Ocean Parradise Hotel & Resort include: Double, Twin, Single, Suite"
+  },
+  {
+    question: "What are the check-in and check-out times at Ocean Parradise Hotel & Resort?",
+    answer: "Check-in at Ocean Parradise Hotel & Resort is from 16:00, and check-out is until 11:00."
+  },
+  {
+    question: "How far conventional centre?",
+    answer: "Walking Distance."
+  },
+  {
+    question: "How much does it cost to stay at Ocean Parradise Hotel & Resort?",
+    answer: "The prices at Ocean Parradise Hotel & Resort may vary depending on your stay (e.g. dates you select, hotel's policy etc.). See the prices by entering your dates."
+  },
+  {
+    question: "How far is Ocean Parradise Hotel & Resort from the centre of Ocean Shores?",
+    answer: "Ocean Parradise Hotel & Resort is 4.1 km from the centre of Ocean Shores."
+  },
+  {
+    question: "How close to the beach is Ocean Parradise Hotel & Resort?",
+    answer: "The nearest beach is just 400 m from Ocean Parradise Hotel & Resort."
+  }
+];
 
   // Handle input change
   const handleChange = (e) => {
@@ -201,35 +209,9 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Check-in Date */}
-              <div className="contact-form-group">
-                <label className="contact-form-label">
-                  CHECK-IN<span className="contact-required">*</span>
-                </label>
-                <input
-                  type="date"
-                  name="checkIn"
-                  value={formData.checkIn}
-                  onChange={handleChange}
-                  className="contact-form-input"
-                  required
-                />
-              </div>
+             
 
-              {/* Check-out Date */}
-              <div className="contact-form-group">
-                <label className="contact-form-label">
-                  CHECK-OUT<span className="contact-required">*</span>
-                </label>
-                <input
-                  type="date"
-                  name="checkOut"
-                  value={formData.checkOut}
-                  onChange={handleChange}
-                  className="contact-form-input"
-                  required
-                />
-              </div>
+             
 
               {/* Message Field */}
               <div className="contact-form-group">
@@ -263,9 +245,9 @@ export default function Contact() {
             </form>
           </div>
         </div>
-      </div>
+       </div> 
 
-      {/* FAQ Section */}
+         {/* FAQ Section */}
       <section className="contact-faq-section">
         <div className="contact-container">
           <div className="contact-section-header">
@@ -304,7 +286,7 @@ export default function Contact() {
             <span className="contact-section-badge">Location</span>
             <h2 className="contact-section-title">Find Us Here</h2>
             <p className="contact-section-subtitle">
-              Company Address: 773 OCEAN SHORES BLVD NW, OCEAN SHORES, WA - 98569
+              Company Address: 773 Ocean Shores Blvd NW, Ocean Shores
             </p>
           </div>
           
@@ -324,17 +306,17 @@ export default function Contact() {
           <div className="contact-location-details">
             <div className="contact-detail-item">
               <i className="fa-solid fa-location-dot"></i>
-              <span><strong>Address:</strong> 773 OCEAN SHORES BLVD NW, OCEAN SHORES, WA - 98569</span>
+              <span><strong>Address: </strong>773 Ocean Shores Blvd NW, Ocean Shores, WA 98569, United States</span>
             </div>
             
             <div className="contact-detail-item">
               <i className="fa-solid fa-phone"></i>
-              <span><strong>Phone:</strong> +1 (360) 289-2040</span>
+              <span><strong>Phone:</strong> +1 360-289-0664, +1 360-289-2040</span>
             </div>
             
             <div className="contact-detail-item">
               <i className="fa-solid fa-envelope"></i>
-              <span><strong>Email:</strong> oceanshoresview@gmail.com</span>
+              <span><strong>Email: </strong>Oceanshoresview@gmail.com</span>
             </div>
             
             <a 

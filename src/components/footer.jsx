@@ -11,11 +11,9 @@ export default function Footer(){
                <div className="footer-section">
                  <div className="footer-logo">
                    <i className="fa-solid fa-crown"></i>
-                   <h2 style={{color:"#df5334",fontSize:"30px",fontWeight:"600"}}>OCEAN PARADISE</h2>
+                   <h2 style={{color:"#df5334",fontSize:"30px",fontWeight:"600"}}>OCEAN PARRADISE HOTEL & RESORT</h2>
                  </div>
-                 <p>
-                   Experience a comfortable, luxurious stay with world-class hospitality. Your comfort is our priority.
-                 </p>
+               
                  <div className="social-icons">
                    <a href="#" className="social-icon">
                      <i className="fa-brands fa-facebook"></i>
@@ -57,16 +55,33 @@ export default function Footer(){
                         <div className="policy-tooltip">
                           <div className="policy-content">
                             <h4>Hotel Policies</h4>
+                           
                             <ul>
-                              <li><strong>Check-in Time:</strong> 2:00 PM onwards</li>
-                              <li><strong>Check-out Time:</strong> 12:00 PM</li>
-                              <li><strong>Refund Policy:</strong> Processed within 7-10 business days</li>
-                              <li><strong>Child Policy:</strong> Children under 12 stay free with parents</li>
-                              <li><strong>Extra Bed Policy:</strong> Available at ₹1500 per night</li>
-                              <li><strong>Smoking Policy:</strong> Strictly non-smoking property</li>
-                              <li><strong>Payment Policy:</strong> 50% advance required at booking</li>
-                              <li><strong>ID Proof Policy:</strong> Valid government ID required at check-in</li>
-                              <li><strong>Damage Policy:</strong> Charges applicable for property damage</li>
+                              <li>
+                                <strong>Check-in:</strong> From 16:00<br/>
+                                Guests are required to show a photo <br />identification and credit card upon check-in.<br/>
+                                You'll need to let the <br /> property know in advance what time you'll arrive.
+                              </li>
+
+                              <li><strong>Check-out:</strong> Until 11:00</li>
+                              
+                              <li>
+                                <strong>Cancellation/Prepayment:</strong> Cancellation and prepayment policies vary according to accommodation type. Please check what conditions may apply to each option when making your selection.
+                              </li>
+                              
+                              <li>
+                                <strong>Refundable Damage Deposit:</strong> A damage deposit of US$150 is required on arrival. That's about ₹13,596. This will be collected by credit card. You should be reimbursed on check-out. Your deposit will be refunded in full via credit card, subject to an inspection of the property.
+                              </li>
+                              
+                              <li>
+                                <strong>Child Policies:</strong> Children of any age are welcome.<br/>
+                                To see correct prices and occupancy information, please add the number of children in your group and their ages to your search.
+                              </li>
+
+                              <li><strong>Cot and Extra Bed Policies:</strong> 0 - 2 years</li>
+                              <li><strong>Age Restriction:</strong> The minimum age for check-in is 18</li>
+                              <li><strong>Pets:</strong> Pets are allowed. Charges may be applicable.</li>
+                              <li><strong>Groups:</strong> When booking more than 5 rooms, different policies and additional supplements may apply.</li>
                             </ul>
                           </div>
                         </div>
@@ -80,22 +95,22 @@ export default function Footer(){
                  <div className="contact-details">
                    <div className="contact-detail-item">
                      <i className="fa-solid fa-location-dot"></i>
-                     <span> WA - 98569</span>
+                     <span>WA 98569, United States</span>
                    </div>
                    <div className="contact-detail-item">
                      <i className="fa-solid fa-phone"></i>
-                     <span>+13602892040 ,+13602892040 </span>
+                     <span> +1 360-289-0664, +1 360-289-2040</span>
                    </div>
                    <div className="contact-detail-item">
                      <i className="fa-solid fa-envelope"></i>
-                     <span>oceanshoresview@gmail.com</span>
+                     <span>Oceanshoresview@gmail.com</span>
                    </div>
                  </div>
                </div>
              </div>
      
              <div className="footer-bottom">
-                <p>© 2025 Ocean Paradise. All Rights Reserved. | Designed with <i className="fa-solid fa-heart"></i> for Excellence</p>
+                <p>© 2025 Ocean Parradise. All Rights Reserved. | Powered by <i className="fa-solid fa-heart"></i>Ocean Parradise</p>
              </div>
            </footer>
         </>

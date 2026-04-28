@@ -1,13 +1,17 @@
 import './home.css'
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import image16 from "../assest/image/hmm.png";
-import image17 from "../assest/image/area.jpg";
-import image18 from "../assest/image/pic2.png";
-import image19 from "../assest/image/pic3.png";
+import image17 from "../assest/image/area.png";
 import image20 from "../assest/image/pic4.png";
 import image21 from "../assest/image/upar.jpg";
 import image22 from "../assest/image/bich.webp";
+import image23 from "../assest/image/dr.png";
+import image25 from "../assest/image/oc.jpeg";
+import image26 from "../assest/image/oc1.jpeg";
+import image27 from "../assest/image/oc2.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -18,9 +22,17 @@ import { FaArrowCircleDown } from "react-icons/fa";
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // FIXED: Use real current dates instead of hardcoded ones
+  const [checkInDate, setCheckInDate] = useState(() => new Date());
+  const [checkOutDate, setCheckOutDate] = useState(() => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow;
+  });
 
   // Images array - add more images here
-  const sliderImages = [image16,image19,  image18,image20,image17,image21]; // Multiple images add kar sakte ho
+  const sliderImages = [image21, image23, image25 , image26, image27, image16, image20, image17];
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -29,266 +41,652 @@ export default function Home() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Auto-slide effect
+  // Preload images to prevent flash
+  useEffect(() => {
+    sliderImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  // Auto-slide effect with smoother transition
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // 4 seconds
+    }, 6000); // 6 seconds
 
     return () => clearInterval(interval);
   }, [sliderImages.length]);
 
   return (
     <div className="home-container">
-      {/* Hero Section */}
-  <div style={{ 
-  position: 'relative',
-  minHeight: isMobile ? '50vh' : '90vh',
-  backgroundImage: `url(${sliderImages[currentImageIndex]})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center center',
-  display: 'flex',
-  alignItems: 'flex-end',
-  overflow: 'hidden',
-  marginTop: isMobile ? '50px' : '70px',
-  // Yahan bas ye change karo - filter transition hata do
-  transition: 'background-image 0.8s ease-in-out', // Sirf background-image transition rakho
-}}>
+      {/* Custom DatePicker Styling + Smooth Slider Styles */}
+      <style jsx global>{`
+        /* React DatePicker Blue-White Theme */
+        .react-datepicker {
+          background-color: #f0f4f8;
+          border: 2px solid #073f76;
+          border-radius: 0px;
+          box-shadow: 0 12px 32px rgba(7,63,118,0.25);
+          font-family: inherit;
+          overflow: hidden;
+        }
+        
+        .react-datepicker__header {
+          background: linear-gradient(135deg, #052a54 0%, #073f76 100%);
+          border-bottom: 2px solid #D4AF37;
+          color: white;
+          padding: 12px 0;
+          border-radius: 0;
+        }
+        
+        .react-datepicker__current-month {
+          color: white;
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+        
+        .react-datepicker__day-names {
+          background: rgba(212, 175, 55, 0.1);
+          margin: 0;
+          padding: 8px 0;
+        }
+        
+        .react-datepicker__day-name {
+          color: #052a54;
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+        }
+        
+        .react-datepicker__month {
+          background: #f0f4f8;
+          padding: 8px;
+        }
+        
+        .react-datepicker__day {
+          color: #052a54;
+          border-radius: 0px;
+          font-weight: 600;
+          font-size: 14px;
+          width: 36px;
+          height: 36px;
+          line-height: 36px;
+          margin: 2px;
+          transition: all 0.2s ease;
+        }
+        
+        .react-datepicker__day:hover {
+          background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+          color: #073f76;
+          transform: scale(1.05);
+          box-shadow: 0 2px 8px rgba(7,63,118,0.2);
+        }
+        
+        .react-datepicker__day--selected {
+          background: linear-gradient(135deg, #052a54 0%, #073f76 100%);
+          color: white;
+          font-weight: 700;
+          box-shadow: 0 4px 12px rgba(5,42,84,0.3);
+        }
+        
+        .react-datepicker__day--selected:hover {
+          background: linear-gradient(135deg, #073f76 0%, #0a4d8a 100%);
+          transform: scale(1.05);
+        }
+        
+        .react-datepicker__day--today {
+          background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+          color: #052a54;
+          font-weight: 700;
+          box-shadow: 0 2px 8px rgba(212,175,55,0.3);
+        }
+        
+        .react-datepicker__day--today:hover {
+          background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+          color: #052a54;
+        }
+        
+        .react-datepicker__day--keyboard-selected {
+          background: rgba(7, 63, 118, 0.1);
+          color: #073f76;
+        }
+        
+        .react-datepicker__day--outside-month {
+          color: #ccc;
+        }
+        
+        .react-datepicker__navigation {
+          background: rgba(212, 175, 55, 0.2);
+          border-radius: 0px;
+          width: 32px;
+          height: 32px;
+          margin: 8px;
+          transition: all 0.2s ease;
+        }
+        
+        .react-datepicker__navigation:hover {
+          background: rgba(212, 175, 55, 0.4);
+          transform: scale(1.1);
+        }
+        
+        .react-datepicker__navigation-icon::before {
+          border-color: white;
+          border-width: 2px 2px 0 0;
+        }
+        
+        .react-datepicker__triangle {
+          display: none;
+        }
+        
+        /* Custom Input Styling */
+        .custom-date-input {
+          padding: 10px 12px;
+          width: 100%;
+          height: 50px;
+          border: 2px solid #073f76;
+          border-radius: 0px;
+          fontSize: 13px;
+          box-sizing: border-box;
+          outline: none;
+          box-shadow: 0 4px 12px rgba(7,63,118,0.2);
+          background-color: white;
+          color: #052a54;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23052a54' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: right 8px center;
+          background-size: 16px 16px;
+          padding-right: 35px;
+        }
+        
+        .custom-date-input:focus {
+          border-color: #D4AF37;
+          box-shadow: 0 0 0 3px rgba(212,175,55,0.3), 0 4px 12px rgba(7,63,118,0.2);
+          background-color: #f8f9ff;
+        }
+        
+        .custom-date-input:hover {
+          border-color: #0a4d8a;
+          box-shadow: 0 6px 16px rgba(7,63,118,0.3);
+        }
 
-{/* Social Icons */}
-<div style={{
-  position: 'fixed',
-  right: isMobile ? '8px' : '15px',
-  top: '50%',
-  transform: 'translateY(-50%)',
-  zIndex: 10,
-  display: 'flex',
-  flexDirection: 'column',
-  gap: isMobile ? '8px' : '12px'
-}}>
-  {[
-    { 
-      icon: <FaArrowCircleDown />, 
-      bg: '#06469a',
-      href: '#contact',
-      title: 'Contact Us'
-    },
-    { 
-      icon: <FaInstagramSquare />, 
-      bg: '#960620',
-      href: 'https://instagram.com/yourhandle',
-      title: 'Follow on Instagram'
-    },
-    { 
-      icon: <FaFacebookSquare />, 
-      bg: '#1877F2',
-      href: 'https://facebook.com/yourpage',
-      title: 'Like on Facebook'
-    },
-    { 
-      icon: <FaWhatsapp />, 
-      bg: '#25D366',
-      href: 'https://wa.me/919876543210?text=Hi%20there!%20I%20want%20to%20know%20more%20about%20your%20services',
-      title: 'Chat on WhatsApp'
-    }
-  ].map((item, index) => (
-    <a 
-      key={index} 
-      href={item.href}
-      target={item.href.startsWith('http') ? '_blank' : '_self'}
-      rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
-      title={item.title}
-      style={{
-        width: isMobile ? '35px' : '45px',
-        height: isMobile ? '35px' : '45px',
-        backgroundColor: item.bg,
-        borderRadius: '50%',
+        /* Mobile Calendar Styles */
+        .custom-date-input-mobile {
+          width: 100%;
+          padding: 6px 6px 6px 28px;
+          font-size: 11px;
+          border: 1px solid rgba(255,255,255,0.3);
+          border-radius: 0px;
+          background: rgba(255,255,255,0.95);
+          color: #333;
+          font-weight: 500;
+          box-sizing: border-box;
+        }
+
+        .custom-date-input-mobile:focus {
+          outline: none;
+          border-color: #D4AF37;
+          box-shadow: 0 0 6px rgba(212,175,55,0.3);
+        }
+        
+        /* SMOOTH SLIDER STYLES - NEW ADDITION */
+        .hero-slider-container {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        .hero-slide {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          filter: brightness(115%) contrast(108%);
+          transition: opacity 1.5s ease-in-out;
+          will-change: opacity;
+        }
+        
+        /* FIXED SOCIAL ICONS STYLES */
+        .social-icons-container {
+          position: fixed !important;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 9999 !important;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          pointer-events: auto;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          will-change: transform;
+        }
+        
+        @media (min-width: 769px) {
+          .social-icons-container {
+            right: 15px;
+            gap: 12px;
+          }
+        }
+        
+        .social-icon-item {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 12px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+          cursor: pointer;
+          position: relative;
+        }
+        
+        @media (min-width: 769px) {
+          .social-icon-item {
+            width: 45px;
+            height: 45px;
+            font-size: 18px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+          }
+        }
+        
+        .social-icon-item:hover {
+          transform: scale(1.05) translateX(-1px);
+          box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+        }
+        
+        @media (min-width: 769px) {
+          .social-icon-item:hover {
+            transform: scale(1.1) translateX(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+          }
+        }
+        
+        /* Ensure body doesn't interfere */
+        body {
+          overflow-x: hidden;
+        }
+        
+        /* Mobile specific calendar */
+        @media (max-width: 768px) {
+          .react-datepicker {
+            font-size: 10px !important;
+            border: 1px solid #ddd !important;
+            border-radius: 0px !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+            z-index: 1000 !important;
+            padding: 1px !important;
+            width: 150px !important;
+            max-width: 150px !important;
+            position: fixed !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            top: 50% !important;
+            margin-top: -80px !important;
+          }
+
+          .react-datepicker__month-container {
+            width: 100% !important;
+          }
+
+          .react-datepicker__header {
+            background: linear-gradient(135deg, #052a54 0%, #073f76 100%) !important;
+            color: white !important;
+            border-bottom: 1px solid #D4AF37 !important;
+            padding: 4px 1px !important;
+            margin-bottom: 1px !important;
+          }
+
+          .react-datepicker__current-month {
+            font-size: 9px !important;
+            font-weight: 700 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            color: white !important;
+          }
+
+          .react-datepicker__day-names-container {
+            margin-bottom: 0px !important;
+          }
+
+          .react-datepicker__day-name {
+            width: 16px !important;
+            height: 16px !important;
+            line-height: 16px !important;
+            margin: 0px !important;
+            font-size: 7px !important;
+            font-weight: 700 !important;
+            padding: 0 !important;
+            color: #052a54 !important;
+          }
+
+          .react-datepicker__day {
+            width: 16px !important;
+            height: 16px !important;
+            line-height: 16px !important;
+            margin: 0px !important;
+            font-size: 7px !important;
+            font-weight: 600 !important;
+            padding: 0 !important;
+            color: #052a54 !important;
+          }
+
+          .react-datepicker__day--selected {
+            background: #D4AF37 !important;
+            color: #052a54 !important;
+            font-weight: bold !important;
+          }
+
+          .react-datepicker__day--keyboard-selected {
+            background: #073f76 !important;
+            color: white !important;
+          }
+
+          .react-datepicker__day:hover {
+            background: #e8d4a8 !important;
+            color: #052a54 !important;
+          }
+
+          .react-datepicker__navigation {
+            top: 1px !important;
+            line-height: 8px !important;
+            width: 10px !important;
+            height: 10px !important;
+            font-size: 6px !important;
+            margin: 1px !important;
+          }
+
+          .react-datepicker__navigation--previous {
+            left: 1px !important;
+          }
+
+          .react-datepicker__navigation--next {
+            right: 1px !important;
+          }
+
+          .react-datepicker__month {
+            margin: 0px !important;
+          }
+
+          .react-datepicker__week {
+            margin: 0 !important;
+          }
+
+          .react-datepicker__popper {
+            z-index: 1000 !important;
+          }
+        }
+      `}</style>      {/* Fixed Social Icons */}
+      <div className="social-icons-container">
+        {[
+          { 
+            icon: <FaArrowCircleDown />, 
+            bg: '#06469a',
+            href: '#contact',
+            title: 'Contact Us'
+          },
+          { 
+            icon: <FaInstagramSquare />, 
+            bg: '#960620',
+            href: 'https://instagram.com/yourhandle',
+            title: 'Follow on Instagram'
+          },
+          { 
+            icon: <FaFacebookSquare />, 
+            bg: '#1877F2',
+            href: 'https://facebook.com/yourpage',
+            title: 'Like on Facebook'
+          },
+          { 
+            icon: <FaWhatsapp />, 
+            bg: '#25D366',
+            href: 'https://wa.me/13602890664?text=Hi%20there!%20I%20want%20to%20know%20more%20about%20your%20services',
+            title: 'Chat on WhatsApp'
+          }
+        ].map((item, index) => (
+          <a 
+            key={index} 
+            href={item.href}
+            target={item.href.startsWith('http') ? '_blank' : '_self'}
+            rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
+            title={item.title}
+            className="social-icon-item"
+            style={{
+              backgroundColor: item.bg
+            }}
+          >
+            {item.icon}
+          </a>
+        ))}
+      </div>
+
+      {/* Hero Section with Smooth Slider */}
+      <div style={{ 
+        position: 'relative',
+        minHeight: isMobile ? '50vh' : '90vh',
+        height: isMobile ? '50vh' : '90vh',
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: 'white',
-        fontSize: isMobile ? '14px' : '18px',
-        textDecoration: 'none',
-        transition: 'all 0.3s ease',
-        boxShadow: '0 3px 8px rgba(0,0,0,0.2)',
-        cursor: 'pointer'
-      }}
-      onMouseOver={(e) => {
-        e.currentTarget.style.transform = isMobile ? 'scale(1.05) translateX(-2px)' : 'scale(1.1) translateX(-3px)';
-        e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.3)';
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.transform = 'scale(1) translateX(0)';
-        e.currentTarget.style.boxShadow = '0 3px 8px rgba(0,0,0,0.2)';
-      }}
-    >
-      {item.icon}
-    </a>
-  ))}
-</div>
- 
-{/* Booking Form */}
-<div style={{
-  width: '100%',
-  backgroundColor: 'rgba(0, 0, 0, 0.15)',
-  padding: isMobile ? '10px 6px' : '12px 15px',
-  display: 'flex',
-  justifyContent: 'center',
-  borderTop: '1px solid rgba(255,255,255,0.1)'
-}}>
-  <div style={{ 
-    display: 'flex', 
-    flexDirection: 'row',
-    gap: isMobile ? '6px' : '15px',
-    maxWidth: isMobile ? '100%' : '750px',
-    width: '100%',
-    alignItems: 'flex-end',
-    padding: isMobile ? '0 2px' : '0'
-  }}>
-  
-    {/* Check In */}
-    <div style={{ 
-      flex: '1',
-      minWidth: '0'
-    }}>
-      <label style={{ 
-        color: 'white', 
-        fontSize: isMobile ? '9px' : '13px',
-        fontWeight: '600',
-        display: 'block',
-        marginBottom: isMobile ? '3px' : '6px',
-        textShadow: '0 1px 2px rgba(0,0,0,0.7)',
-        textTransform: 'uppercase',
-        letterSpacing: '0.5px'
+        alignItems: 'flex-end',
+        overflow: 'hidden',
+        marginTop: isMobile ? '40px' : '50px',
+        width: '100%',
+        boxSizing: 'border-box'
       }}>
-        Check In
-      </label>
-      <input
-        type="date"
-        defaultValue="2025-12-06"
-        style={{
-          padding: isMobile ? '5px 3px' : '10px 8px',
-          width: '100%',
-          height: isMobile ? '32px' : '44px',
-          border: '1px solid rgba(255,255,255,0.2)',
-          borderRadius: '6px',
-          fontSize: isMobile ? '9px' : '13px',
-          boxSizing: 'border-box',
-          outline: 'none',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-          backgroundColor: 'rgba(255,255,255,0.95)',
-          transition: 'all 0.2s ease'
-        }}
-        onFocus={(e) => {
-          e.currentTarget.style.borderColor = '#D4AF37';
-          e.currentTarget.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.3)';
-        }}
-        onBlur={(e) => {
-          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
-          e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
-        }}
-      />
-    </div>
+        {/* Smooth Slider Implementation */}
+        <div className="hero-slider-container">
+          {sliderImages.map((image, index) => (
+            <div
+              key={index}
+              className="hero-slide"
+              style={{
+                backgroundImage: `url(${image})`,
+                opacity: index === currentImageIndex ? 1 : 0,
+                zIndex: index === currentImageIndex ? 1 : 0
+              }}
+            />
+          ))}
+        </div>
 
-    {/* Check Out */}
-    <div style={{ 
-      flex: '1',
-      minWidth: '0'
-    }}>
-      <label style={{ 
-        color: 'white', 
-        fontSize: isMobile ? '9px' : '13px',
-        fontWeight: '600',
-        display: 'block',
-        marginBottom: isMobile ? '3px' : '6px',
-        textShadow: '0 1px 2px rgba(0,0,0,0.7)',
-        textTransform: 'uppercase',
-        letterSpacing: '0.5px'
-      }}>
-        Check Out
-      </label>
-      <input
-        type="date"
-        defaultValue="2025-12-07"
-        style={{
-          padding: isMobile ? '5px 3px' : '10px 8px',
+        {/* Booking Form */}
+        <div style={{
           width: '100%',
-          height: isMobile ? '32px' : '44px',
-          border: '1px solid rgba(255,255,255,0.2)',
-          borderRadius: '6px',
-          fontSize: isMobile ? '9px' : '13px',
-          boxSizing: 'border-box',
-          outline: 'none',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-          backgroundColor: 'rgba(255,255,255,0.95)',
-          transition: 'all 0.2s ease'
-        }}
-        onFocus={(e) => {
-          e.currentTarget.style.borderColor = '#D4AF37';
-          e.currentTarget.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.3)';
-        }}
-        onBlur={(e) => {
-          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
-          e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
-        }}
-      />
-    </div>
-
-    {/* Book Button */}
-    <div style={{ 
-      flex: isMobile ? '0 0 65px' : '0 0 110px'
-    }}>
-      {!isMobile && <div style={{ height: '22px' }} />}
-      <a
-        href="https://bookingengine.stayflexi.com/?hotel_id=34243"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          height: isMobile ? '32px' : '44px',
-          width: '100%',
-          background: 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)',
-          color: 'white',
-          border: '2px solid #D4AF37',
-          borderRadius: '6px',
-          fontSize: isMobile ? '9px' : '14px',
-          fontWeight: '700',
-          cursor: 'pointer',
-          transition: 'all 0.25s ease',
-          boxShadow: '0 3px 12px rgba(5,42,84,0.3)',
-          textTransform: 'uppercase',
-          letterSpacing: isMobile ? '0.3px' : '0.8px',
-          position: 'relative',
-          overflow: 'hidden',
-          textDecoration: 'none',
+          backgroundColor: 'rgba(0, 0, 0, 0.15)',
+          padding: isMobile ? '8px 4px' : '12px 15px',
           display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-        onMouseOver={(e) => {
-          if (!isMobile) {
-            e.currentTarget.style.transform = 'translateY(-1px)';
-            e.currentTarget.style.boxShadow = '0 6px 20px rgba(5,42,84,0.4)';
-            e.currentTarget.style.borderColor = '#FFD700';
-            e.currentTarget.style.background = 'linear-gradient(135deg, #073f76 0%, #0a4d8a 50%, #0d5ba0 100%)';
-          }
-        }}
-        onMouseOut={(e) => {
-          if (!isMobile) {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 3px 12px rgba(5,42,84,0.3)';
-            e.currentTarget.style.borderColor = '#D4AF37';
-            e.currentTarget.style.background = 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)';
-          }
-        }}
-      >
-        {isMobile ? 'Book' : 'Book Now'}
-      </a>
-    </div>
-  </div>
-</div>
-</div>
+          justifyContent: 'center',
+          borderTop: '1px solid rgba(255,255,255,0.1)',
+          position: 'relative',
+          zIndex: 10
+        }}>
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'row',
+            gap: isMobile ? '4px' : '15px',
+            maxWidth: isMobile ? '100%' : '750px',
+            width: '100%',
+            alignItems: 'flex-end',
+            padding: '0'
+          }}>
+          
+            {/* Check In */}
+            <div style={{ 
+              flex: isMobile ? '1' : '1',
+              minWidth: '0',
+              position: 'relative'
+            }}>
+              <label style={{ 
+                color: 'white', 
+                fontSize: isMobile ? '9px' : '13px',
+                fontWeight: '600',
+                display: 'block',
+                marginBottom: isMobile ? '2px' : '6px',
+                textShadow: '0 1px 2px rgba(0,0,0,0.7)',
+                textTransform: 'uppercase',
+                letterSpacing: isMobile ? '0.3px' : '0.5px'
+              }}>
+                Check In
+              </label>
+              {isMobile && (
+                <div style={{ position: 'relative' }}>
+                  <span style={{
+                    position: 'absolute',
+                    left: '6px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    fontSize: '14px',
+                    zIndex: '5'
+                  }}>
+                    📅
+                  </span>
+                  <DatePicker
+                    selected={checkInDate}
+                    onChange={(date) => setCheckInDate(date)}
+                    dateFormat="yyyy-MM-dd"
+                    className="custom-date-input-mobile"
+                    minDate={new Date()}
+                    placeholderText="Select date"
+                    popperPlacement="bottom"
+                  />
+                </div>
+              )}
+              {!isMobile && (
+                <DatePicker
+                  selected={checkInDate}
+                  onChange={(date) => setCheckInDate(date)}
+                  dateFormat="yyyy-MM-dd"
+                  className="custom-date-input"
+                  minDate={new Date()}
+                  placeholderText="Select check-in date"
+                />
+              )}
+            </div>
+
+            {/* Check Out */}
+            <div style={{ 
+              flex: isMobile ? '1' : '1',
+              minWidth: '0',
+              position: 'relative'
+            }}>
+              <label style={{ 
+                color: 'white', 
+                fontSize: isMobile ? '9px' : '13px',
+                fontWeight: '600',
+                display: 'block',
+                marginBottom: isMobile ? '2px' : '6px',
+                textShadow: '0 1px 2px rgba(0,0,0,0.7)',
+                textTransform: 'uppercase',
+                letterSpacing: isMobile ? '0.3px' : '0.5px'
+              }}>
+                Check Out
+              </label>
+              {isMobile && (
+                <div style={{ position: 'relative' }}>
+                  <span style={{
+                    position: 'absolute',
+                    left: '6px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    fontSize: '14px',
+                    zIndex: '5'
+                  }}>
+                    📅
+                  </span>
+                  <DatePicker
+                    selected={checkOutDate}
+                    onChange={(date) => setCheckOutDate(date)}
+                    dateFormat="yyyy-MM-dd"
+                    className="custom-date-input-mobile"
+                    minDate={checkInDate || new Date()}
+                    placeholderText="Select date"
+                    popperPlacement="bottom"
+                  />
+                </div>
+              )}
+              {!isMobile && (
+                <DatePicker
+                  selected={checkOutDate}
+                  onChange={(date) => setCheckOutDate(date)}
+                  dateFormat="yyyy-MM-dd"
+                  className="custom-date-input"
+                  minDate={checkInDate || new Date()}
+                  placeholderText="Select check-out date"
+                />
+              )}
+            </div>
+
+            {/* Book Button */}
+            <div style={{ 
+              flex: isMobile ? '0 0 60px' : '0 0 140px'
+            }}>
+              {!isMobile && <div style={{ height: '22px' }} />}
+              <a
+                href="https://bookingengine.stayflexi.com/?hotel_id=34243"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  height: isMobile ? '32px' : '50px',
+                  width: '100%',
+                  background: 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)',
+                  color: 'white',
+                  border: '2px solid #D4AF37',
+                  borderRadius: '0px',
+                  fontSize: isMobile ? '9px' : '14px',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  transition: 'all 0.25s ease',
+                  boxShadow: '0 4px 16px rgba(5,42,84,0.3)',
+                  textTransform: 'uppercase',
+                  letterSpacing: isMobile ? '0.3px' : '0.8px',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  textDecoration: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+                onMouseOver={(e) => {
+                  if (!isMobile) {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 8px 24px rgba(5,42,84,0.4)';
+                    e.currentTarget.style.borderColor = '#FFD700';
+                    e.currentTarget.style.background = 'linear-gradient(135deg, #073f76 0%, #0a4d8a 50%, #0d5ba0 100%)';
+                  }
+                }}
+                onMouseOut={(e) => {
+                  if (!isMobile) {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 16px rgba(5,42,84,0.3)';
+                    e.currentTarget.style.borderColor = '#D4AF37';
+                    e.currentTarget.style.background = 'linear-gradient(135deg, #052a54 0%, #073f76 50%, #0a4d8a 100%)';
+                  }
+                }}
+              >
+                {isMobile ? 'Book' : 'Book Now'}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* About Section */}
       <div className="container-clone">
@@ -299,9 +697,9 @@ export default function Home() {
      
           <div className="about-content-clone">
             <span className="section-badge-clone">About Us:</span>
-            <h2 style={{color:"blue"}} className="section-title-clone">OCEAN PARADISE</h2>
+            <h2 style={{color:"blue"}} className="section-title-clone">OCEAN PARRADISE</h2>
             <p className="about-text-clone">
-              Ocean Paradise Hotel & Resort is where comfort, value, and the beauty of Ocean Shores come together. Situated at 773 Ocean Shores Blvd NW, our property gives guests easy access to the beach—just a short two-minute walk away—while offering a peaceful place to relax after a day of exploring.
+              Ocean Parradise Hotel & Resort is where comfort, value, and the beauty of Ocean Shores come together. Situated at 773 Ocean Shores Blvd NW, our property gives guests easy access to the beach—just a short two-minute walk away—while offering a peaceful place to relax after a day of exploring.
               <br /><br />
               With 62 rooms ranging from standard accommodations to ocean-view rooms, suites, and spa-jacuzzi options, we're able to welcome all types of travelers. Every guest room includes practical essentials like AC/heater, TV, mini-fridge, microwave, and a coffee maker, ensuring a convenient and pleasant stay.
               <br /><br />
@@ -320,7 +718,7 @@ export default function Home() {
         <div className="line left"></div>
         <div className="text-block">
           <p className="caption">Discover the Difference</p>
-          <h2 className="title">OCEAN PARADISE PROMISES</h2>
+          <h2 className="title">OCEAN PARRADISE PROMISES</h2>
         </div>
         <div className="line right"></div>
       </div>
@@ -357,161 +755,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Popup */}
-      <div
-        id="offerPopup"
-        onClick={() => {
-          document.getElementById("offerPopup").style.display = "none";
-          sessionStorage.setItem("offerPopup", "1");
-        }}
-        style={{
-          display: sessionStorage.getItem("offerPopup") ? "none" : "flex",
-          position: "fixed",
-          inset: 0,
-          background: "rgba(0,0,0,0.85)",
-          zIndex: 999999,
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "15px",
-        }}
-      >
-        <div
-          onClick={(e) => e.stopPropagation()}
-          style={{
-            width: "100%",
-            maxWidth: "360px",
-            background: "linear-gradient(135deg,#ff6fae,#ffb6d5)",
-            borderRadius: "22px",
-            padding: "25px 20px",
-            textAlign: "center",
-            boxShadow: "0 20px 50px rgba(255,105,180,0.45)",
-            animation: "pop 0.4s ease-out",
-            position: "relative",
-          }}
-        >
-          <div
-            onClick={() => {
-              document.getElementById("offerPopup").style.display = "none";
-              sessionStorage.setItem("offerPopup", "1");
-            }}
-            style={{
-              position: "absolute",
-              top: "12px",
-              right: "12px",
-              width: "32px",
-              height: "32px",
-              borderRadius: "50%",
-              background: "#fff",
-              color: "#ff4f9a",
-              fontWeight: "bold",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-            }}
-          >
-            ✕
-          </div>
-
-          <div style={{ fontSize: "40px", marginBottom: "10px" }}>💕 🎉 💝</div>
-          <div style={{ fontSize: "22px", fontWeight: "900", color: "#fff", marginBottom: "6px" }}>
-            New Year & Valentine Special
-          </div>
-          <div style={{ fontSize: "14px", color: "#fff", opacity: 0.95, marginBottom: "15px" }}>
-            Celebrate love & new beginnings
-          </div>
-          <div style={{
-            background: "#fff",
-            color: "#ff2f92",
-            fontSize: "30px",
-            fontWeight: "900",
-            padding: "12px",
-            borderRadius: "50px",
-            marginBottom: "15px",
-            boxShadow: "0 8px 20px rgba(255,47,146,0.35)",
-          }}>
-            💖 40% OFF 💖
-          </div>
-          <div style={{
-            background: "rgba(255,255,255,0.25)",
-            borderRadius: "14px",
-            padding: "12px",
-            marginBottom: "15px",
-            fontSize: "13px",
-            color: "#fff",
-            fontWeight: "600",
-            lineHeight: "1.6",
-          }}>
-            🌹 Romantic Room Decor <br />
-            🍷 Candle Light Dinner <br />
-            ⏰ Late Checkout <br />
-            🎁 Couple Surprise Gift
-          </div>
-          <div style={{
-            fontSize: "12px",
-            fontWeight: "700",
-            background: "#ff2f92",
-            color: "#fff",
-            padding: "8px",
-            borderRadius: "10px",
-            marginBottom: "14px",
-          }}>
-            📅 Valid till 14 Feb
-          </div>
-          <div style={{
-            background: "#ff2f92",
-            color: "#fff",
-            padding: "14px",
-            borderRadius: "40px",
-            fontSize: "15px",
-            fontWeight: "800",
-            cursor: "pointer",
-            boxShadow: "0 8px 25px rgba(255,47,146,0.45)",
-          }}>
-            💕 BOOK YOUR ROMANTIC STAY 💕
-          </div>
-        </div>
-
-        <style>{`
-          @keyframes pop {
-            from { transform: scale(0.9); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-          }
-        `}</style>
-      </div>
-
-      {/* Reviews Section */}
-      <section className="reviews-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-badge">Testimonials</span>
-            <h2 className="section-title-main">What Our Guests Say</h2>
-            <p className="section-subtitle">Real experiences shared by our valued guests</p>
-          </div>
-
-          <div className="reviews-grid">
-            {[
-              { name: "Lofi Rovel", location: "Texas, USA", stars: 5, text: "Amazing stay! Rooms were spotless and staff was extremely polite. The overall experience exceeded expectations." },
-              { name: "Cruss Lambargo", location: "Marshall, TX", stars: 4, text: "Great location and very comfortable rooms. Breakfast was tasty and service was prompt." },
-              { name: "Sonbat Sohn", location: "Dallas, TX", stars: 5, text: "Very peaceful environment with excellent hospitality. Would definitely visit again." },
-              { name: "John Son", location: "Houston, TX", stars: 3, text: "Nice hotel and friendly staff. Wi-Fi could be better, but overall a decent stay." },
-              { name: "Morriss John", location: "Austin, TX", stars: 4, text: "Calm atmosphere and courteous staff. Perfect place for a relaxed stay." },
-              { name: "Sarah Johnson", location: "San Antonio, TX", stars: 5, text: "Exceptional service and premium rooms. Everything was well-maintained and comfortable." }
-            ].map((review, index) => (
-              <div key={index} className="review-card">
-                <div className="review-stars">
-                  {[...Array(5)].map((_, i) => (
-                    <i key={i} className={i < review.stars ? "fa-solid fa-star" : "fa-regular fa-star"}></i>
-                  ))}
-                </div>
-                <p className="review-text">{review.text}</p>
-                <h4 className="review-name">{review.name}</h4>
-                <span className="review-location">{review.location}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

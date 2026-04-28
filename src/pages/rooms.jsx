@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./rooms.css";
-import image134 from "../assest/image/bed1.jpg";
+import image134 from "../assest/image/k2.jpeg";
 import image12188 from "../assest/image/sk.jpeg";
 import image1rio from "../assest/image/d1.jpeg";
 import image1218b from "../assest/image/d2.jpeg";
@@ -119,7 +119,7 @@ export default function Rooms() {
   // Auto-slide effect
   useEffect(() => {
     const intervals = {};
-    
+
     roomsData.forEach(room => {
       if (room.images.length > 1) {
         intervals[room.id] = setInterval(() => {
@@ -176,82 +176,80 @@ export default function Rooms() {
   };
 
   return (
-    <div className="rooms-page">
+    <div className="oceanparadise-rooms-page">
       {/* Hero Section */}
-      <div className="hero-image-container">
+      <div className="oceanparadise-hero-image-container">
         <img src={image134} alt="Ocean Paradise Hotel Rooms" />
-        <div className="hero-overlay">
-          <div className="hero-content">
-            <h1>Ocean Paradise</h1>
+        <div className="oceanparadise-hero-overlay">
+          <div className="oceanparadise-hero-content">
+            <h1>Ocean Parradise</h1>
             <p>Where Luxury Meets Comfort</p>
           </div>
         </div>
       </div>
-      
+
       {/* Decorative Pattern */}
-      <div className="royal-pattern"></div>
+      <div className="oceanparadise-royal-pattern"></div>
 
       {/* Rooms Section */}
-      <section className="rooms-container">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-badge">Accommodation</span>
-            <h2 className="section-title-main">Choose Your Perfect Room</h2>
-            <p className="section-subtitle">
-              Experience luxury and comfort in our carefully designed rooms and suites at Ocean Paradise
+      <section className="oceanparadise-rooms-container">
+        <div className="oceanparadise-container">
+          <div className="oceanparadise-section-header">
+            <span className="oceanparadise-section-badge">Accommodation</span>
+            <h2 className="oceanparadise-section-title-main">Choose Your Perfect Room</h2>
+            <p className="oceanparadise-section-subtitle">
+              Experience luxury and comfort in our carefully designed rooms and suites at Ocean Parradise
             </p>
           </div>
 
-          <div className="rooms-grid">
+          <div className="oceanparadise-rooms-grid">
             {roomsData.map((room) => (
-              <div 
-                key={room.id} 
-                className="room-card"
+              <div
+                key={room.id}
+                className="oceanparadise-room-card"
                 onMouseEnter={() => handleMouseEnter(room.id)}
                 onMouseLeave={() => handleMouseLeave(room.id)}
               >
                 {/* Custom Auto-Sliding Carousel */}
-                <div className="custom-carousel">
-                  <div className="carousel-container">
+                <div className="oceanparadise-custom-carousel">
+                  <div className="oceanparadise-carousel-container">
                     {room.images.map((image, index) => (
                       <img
                         key={index}
                         src={image}
-                        className={`carousel-image ${
-                          index === (currentSlides[room.id] || 0) ? 'active' : ''
-                        }`}
+                        className={`oceanparadise-carousel-image ${index === (currentSlides[room.id] || 0) ? 'active' : ''
+                          }`}
                         alt={`${room.title} - View ${index + 1}`}
                       />
                     ))}
                   </div>
-                  
+
                   {/* Navigation arrows - Only show if more than 1 image */}
                   {room.images.length > 1 && (
                     <>
-                      <button 
-                        className="carousel-arrow carousel-arrow-prev"
+                      <button
+                        className="oceanparadise-carousel-arrow oceanparadise-carousel-arrow-prev"
                         onClick={() => prevSlide(room.id)}
                       >
                         <i className="fas fa-chevron-left"></i>
                       </button>
-                      <button 
-                        className="carousel-arrow carousel-arrow-next"
+                      <button
+                        className="oceanparadise-carousel-arrow oceanparadise-carousel-arrow-next"
                         onClick={() => nextSlide(room.id)}
                       >
                         <i className="fas fa-chevron-right"></i>
                       </button>
                     </>
                   )}
-                  
+
                   {/* Navigation dots */}
                   {room.images.length > 1 && (
-                    <div className="carousel-dots">
+                    <div className="oceanparadise-carousel-dots">
                       {room.images.map((_, index) => (
                         <button
                           key={index}
-                          className={`dot ${
-                            index === (currentSlides[room.id] || 0) ? 'active' : ''
-                          }`}
+                          className={`oceanparadise-dot ${index === (currentSlides[room.id] || 0) ? 'active' : ''
+                            }`}
                           onClick={() => goToSlide(room.id, index)}
                         />
                       ))}
@@ -260,32 +258,32 @@ export default function Rooms() {
 
                   {/* Pause indicator */}
                   {isPaused[room.id] && room.images.length > 1 && (
-                    <div className="pause-indicator">
+                    <div className="oceanparadise-pause-indicator">
                       <i className="fas fa-pause"></i>
                     </div>
                   )}
                 </div>
-                
+
                 {/* Card Body */}
-                <div className="card-body">
-                  <h5 className="card-title">{room.title}</h5>
-                  <p className="card-text">{room.description}</p>
-                  
+                <div className="oceanparadise-card-body">
+                  <h5 className="oceanparadise-card-title">{room.title}</h5>
+                  <p className="oceanparadise-card-text">{room.description}</p>
+
                   {/* Features */}
-                  <div className="room-features">
+                  <div className="oceanparadise-room-features">
                     {room.features.map((feature, index) => (
-                      <span key={index} className="feature-tag">
+                      <span key={index} className="oceanparadise-feature-tag">
                         <i className="fas fa-check"></i>
                         {feature}
                       </span>
                     ))}
                   </div>
-                  
-                  <a 
-                    href="https://bookingengine.stayflexi.com/?hotel_id=34243" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="btn btn-primary book-btn"
+
+                  <a
+                    href="https://bookingengine.stayflexi.com/?hotel_id=34243"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="oceanparadise-book-btn"
                   >
                     <span>Book Now</span>
                     <i className="fas fa-arrow-right"></i>
@@ -297,19 +295,6 @@ export default function Rooms() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Book Your Stay?</h2>
-            <p>Experience luxury and comfort at Ocean Paradise. Book now and enjoy exclusive benefits</p>
-            <NavLink to="/contact" className="cta-button">
-              <span>Contact Us</span>
-              <i className="fa-solid fa-arrow-right"></i>
-            </NavLink>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

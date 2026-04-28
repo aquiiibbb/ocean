@@ -41,7 +41,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 6px;
 }
 
@@ -186,6 +185,11 @@
   gap: 8px;
 }
 
+.contact-form-group:last-child {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .contact-form-label {
   font-size: clamp(0.9rem, 2.5vw, 1rem);
   color: #4169E1;
@@ -204,20 +208,68 @@
   width: 100%;
   padding: clamp(10px, 2vw, 12px) clamp(12px, 3vw, 15px);
   font-size: clamp(0.85rem, 2vw, 1rem);
-  border: 2px solid rgba(200, 200, 200, 0.5);
+  border: 1px solid #ddd;
   border-radius: 6px;
   background: #ffffff;
   color: #333;
-  outline: none;
+  outline: none !important;
   font-family: 'Arial', sans-serif;
   transition: all 0.3s ease;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-input:focus,
 .contact-country-select:focus,
 .contact-form-textarea:focus {
-  border-color: #4169E1;
-  box-shadow: 0 2px 8px rgba(65, 105, 225, 0.15);
+  border: 1px solid #4169E1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  outline: none !important;
+}
+
+.contact-form-input:focus-visible,
+.contact-country-select:focus-visible,
+.contact-form-textarea:focus-visible {
+  outline: none !important;
+  border: 1px solid #4169E1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Date input specific styling */
+.contact-form-input[type="date"] {
+  position: relative;
+  cursor: pointer;
+  color: #333;
+  background: #ffffff;
+  padding-right: 40px;
+}
+
+.contact-form-input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234169E1' viewBox='0 0 24 24'%3E%3Cpath d='M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.contact-form-input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+.contact-form-input[type="date"]::-moz-focus-inner {
+  border: 0;
+  outline: none;
+}
+
+.contact-form-input[type="date"]::-webkit-inner-spin-button,
+.contact-form-input[type="date"]::-webkit-clear-button {
+  display: none;
 }
 
 .contact-phone-group {
@@ -229,14 +281,6 @@
 .contact-country-select {
   width: 100%;
   cursor: pointer;
-}
-
-.contact-phone-input {
-  width: 100%;
-}
-
-.contact-country-select {
-  cursor: pointer;
   appearance: none;
   background-image: linear-gradient(45deg, transparent 50%, #4169E1 50%), 
                     linear-gradient(135deg, #4169E1 50%, transparent 50%);
@@ -246,33 +290,100 @@
   background-repeat: no-repeat;
 }
 
+.contact-phone-input {
+  width: 100%;
+}
+
 .contact-form-textarea {
   resize: vertical;
   min-height: 80px;
 }
 
+/* ============================================
+   SUBMIT BUTTON STYLING - LEFT ALIGNED
+   ============================================ */
 .contact-submit-btn {
-  width: 100%;
-  padding: clamp(12px, 3vw, 15px);
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  width: auto;
+  padding: clamp(10px, 2vw, 12px) clamp(12px, 3vw, 15px);
+  font-size: clamp(0.85rem, 2vw, 1rem);
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #ffffff;
-  background: linear-gradient(135deg, #4169E1 0%, #0a2167 100%);
-  border: none;
+  background: linear-gradient(135deg, #4169E1 0%, #1e3a8a 100%);
+  border: 1px solid #4169E1;
   border-radius: 6px;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(65, 105, 225, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none !important;
+  font-family: 'Arial', sans-serif;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: auto;
+  min-height: auto;
 }
 
+/* Shimmer Effect for Submit Button */
+.contact-submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+  pointer-events: none;
+}
+
+/* Submit Button Hover Effects */
 .contact-submit-btn:hover {
-  background: linear-gradient(135deg, #0a2167 0%, #4169E1 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #4169E1 100%);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(65, 105, 225, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+.contact-submit-btn:hover::before {
+  left: 100%;
+}
+
+/* Submit Button Focus State */
+.contact-submit-btn:focus {
+  outline: none !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #4169E1 100%);
+  box-shadow: 0 2px 8px rgba(65, 105, 225, 0.3);
+}
+
+/* Submit Button Active/Click State */
+.contact-submit-btn:active {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  transform: translateY(0px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button Entrance Animation */
+@keyframes buttonSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-submit-btn {
+  animation: buttonSlideIn 0.6s ease-out 0.3s both;
+}
+
+/* Status Messages */
 .contact-status-msg {
   margin-top: 12px;
   padding: 10px 15px;
@@ -290,6 +401,75 @@
 .contact-status-msg.contact-error {
   background: linear-gradient(135deg, #f093fb, #f5576c);
   color: white;
+}
+
+/* ================================================================================== */
+
+/* Desktop - Large Screens (1024px+) */
+@media (min-width: 1024px) {
+  /* No changes needed - clamp handles it */
+}
+
+/* Tablet - Medium Screens (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-phone-group {
+    flex-direction: row;
+  }
+  
+  .contact-country-select {
+    width: 200px;
+    flex-shrink: 0;
+  }
+  
+  .contact-phone-input {
+    flex: 1;
+  }
+}
+
+/* Small Tablet - (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* No changes needed - clamp handles it */
+}
+
+/* Mobile - Small Screens (480px and below) */
+@media (max-width: 480px) {
+  .contact-form-group:last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Placeholder styling */
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.contact-form-input:focus::placeholder,
+.contact-form-textarea:focus::placeholder {
+  opacity: 0.7;
+}
+
+/* Remove all possible browser outlines */
+* {
+  outline: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+
+/* Additional browser-specific fixes */
+.contact-form-input::-moz-focus-inner,
+.contact-country-select::-moz-focus-inner,
+.contact-form-textarea::-moz-focus-inner,
+.contact-submit-btn::-moz-focus-inner {
+  border: 0;
+  outline: none;
 }
 
 /* FAQ Section - Compact */

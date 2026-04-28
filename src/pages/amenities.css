@@ -1,643 +1,618 @@
-/* Global Styles */
+/* Reset and Base Styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.amenities-page {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.ocean-amenities-main {
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Hero Section */
-.hero-image-container {
+.ocean-hero-banner {
   position: relative;
-  height: 80vh;
+  height: 70vh;
+  min-height: 400px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.hero-image {
+.ocean-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0 0 30px 30px;
+  filter: brightness(0.7);
 }
 
-.hero-overlay {
+.ocean-hero-content-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+  inset: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 0 0 30px 30px;
-}
-
-.hero-content {
-  text-align: center;
   color: white;
-  max-width: 800px;
-  padding: 0 20px;
+  text-align: center;
+  padding: 2rem;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+.ocean-hero-content-overlay h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   line-height: 1.2;
 }
 
-.hero-subtitle {
-  font-size: 1.5rem;
+.ocean-hero-content-overlay p {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
   font-weight: 300;
   opacity: 0.9;
-  letter-spacing: 1px;
-  line-height: 1.4;
-}
-
-/* Section Header */
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-badge {
-  display: inline-block;
-  padding: 8px 24px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-}
-
-.section-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #333 0%, #666 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1.2;
-}
-
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #666;
   max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
 }
 
-/* Amenities Section */
-.amenities-section {
-  padding: 100px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+/* Amenities Wrapper - MOBILE OPTIMIZED */
+.ocean-amenities-container {
+  background: rgb(251, 251, 247);
+  padding: 2rem 2rem;
+  min-height: 50vh;
 }
 
-.amenities-grid {
+.ocean-amenity-category {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+.ocean-amenity-category:last-child {
+  margin-bottom: 0;
+}
+
+.ocean-amenity-category h2 {
+  color: #ffd700;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  line-height: 1.3;
+}
+
+/* Slider Container */
+.ocean-slider-container {
+  position: relative;
+}
+
+/* Grid Layout - Desktop: 3 columns, Mobile: 2 columns */
+.ocean-amenities-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+  transition: all 0.5s ease;
 }
 
-.amenity-card {
+/* Amenity Cards */
+.ocean-amenity-item {
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
-.amenity-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+.ocean-amenity-item:nth-child(1) { animation-delay: 0.1s; }
+.ocean-amenity-item:nth-child(2) { animation-delay: 0.2s; }
+.ocean-amenity-item:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.amenity-image {
-  position: relative;
+.ocean-amenity-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.ocean-item-image {
   height: 200px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
-.amenity-image img {
+.ocean-item-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.amenity-card:hover .amenity-image img {
-  transform: scale(1.1);
-}
-
-.amenity-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.amenity-card:hover .amenity-overlay {
-  opacity: 1;
-}
-
-.amenity-icon {
-  font-size: 3rem;
-  background: rgba(255,255,255,0.9);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.amenity-content {
-  padding: 30px 25px;
-  text-align: center;
-}
-
-.amenity-content h3 {
-  font-size: 1.4rem;
-  color: #333;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.amenity-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-}
-
-/* Premium Amenities */
-.premium-amenities {
-  padding: 120px 0;
-  background: linear-gradient(180deg, #fdfcf9 0%, #dbc599 100%);
-  position: relative;
-}
-
-.premium-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.premium-badge {
-  display: inline-block;
-  padding: 8px 26px;
-  border-radius: 40px;
-  background: linear-gradient(135deg, #b89644, #f5dc9c);
-  color: #2d2306;
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  margin-bottom: 18px;
-  box-shadow: 0 6px 20px rgba(184,150,68,0.4);
-}
-
-.premium-header h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #1f1f1f;
-  margin-bottom: 18px;
-  letter-spacing: -0.5px;
-  line-height: 1.2;
-}
-
-.premium-header p {
-  font-size: 1.15rem;
-  color: #555;
-  max-width: 650px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-.premium-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-}
-
-.premium-card {
-  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
-  border-radius: 22px;
-  padding: 45px 35px;
-  text-align: center;
-  position: relative;
-  box-shadow:
-    0 10px 25px rgba(0,0,0,0.08),
-    inset 0 0 0 1px rgba(201,162,77,0.15);
-  transition: all 0.4s ease;
-  overflow: hidden;
-}
-
-.premium-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #e6c36a, transparent);
-  transition: all 0.6s ease;
-}
-
-.premium-card:hover::before {
-  left: 100%;
-}
-
-.premium-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.15),
-    inset 0 0 0 1px rgba(201,162,77,0.3);
-}
-
-.premium-icon {
-  font-size: 3rem;
-  margin-bottom: 25px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: radial-gradient(circle at top, #fff6d6, #f0d58c);
-  box-shadow:
-    0 8px 25px rgba(201,162,77,0.45),
-    inset 0 2px 5px rgba(255,255,255,0.6);
-}
-
-.premium-card h3 {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #2b2b2b;
-  margin-bottom: 14px;
-}
-
-.premium-card p {
-  font-size: 0.98rem;
-  color: #5f5f5f;
-  line-height: 1.7;
-}
-
-/* CTA Section */
-.cta-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-  background-size: cover;
-}
-
-.cta-content {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.cta-content h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.cta-content p {
-  font-size: 1.2rem;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 40px;
-  line-height: 1.5;
-}
-
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 40px;
-  background: rgba(255,255,255,0.2);
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.3);
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.cta-button:hover {
-  background: rgba(255,255,255,0.3);
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-}
-
-.cta-button i {
   transition: transform 0.3s ease;
 }
 
-.cta-button:hover i {
-  transform: translateX(5px);
+.ocean-amenity-item:hover .ocean-item-image img {
+  transform: scale(1.05);
 }
 
-/* ===== MOBILE RESPONSIVE (768px and below) ===== */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 15px;
+.ocean-item-details {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ocean-item-details h3 {
+  color: #2a5298;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.ocean-item-details p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Dots Navigation */
+.ocean-dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.ocean-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ocean-dot:hover {
+  background: rgba(255, 215, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.ocean-dot.active {
+  background: #ffd700;
+  transform: scale(1.2);
+}
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .ocean-amenities-container {
+    padding: 2.5rem 3rem;
   }
   
-  /* Hero Mobile - INCREASED HEIGHT */
-  .hero-image-container {
-    height: 50vh; /* Increased from 40vh */
-    min-height: 400px; /* Added minimum height */
+  .ocean-amenity-category {
+    margin-bottom: 2.5rem;
   }
   
-  .hero-content {
-    padding: 0 15px;
+  .ocean-amenity-category h2 {
+    margin-bottom: 2rem;
   }
   
-  .hero-title {
-    font-size: 2.2rem; /* Increased from 1.8rem */
-    margin-bottom: 15px;
-    line-height: 1.1;
+  .ocean-amenities-layout {
+    gap: 2.5rem;
   }
   
-  .hero-subtitle {
-    font-size: 1.1rem; /* Increased from 0.9rem */
-    letter-spacing: 0.5px;
+  .ocean-item-image {
+    height: 220px;
   }
   
-  /* Section Headers Mobile */
-  .section-header {
-    margin-bottom: 40px;
+  .ocean-item-details {
+    padding: 1.75rem;
   }
   
-  .section-badge {
-    padding: 6px 18px;
-    font-size: 0.8rem;
+  .ocean-item-details h3 {
+    font-size: 1.35rem;
   }
   
-  .section-title {
-    font-size: 2rem; /* Increased from 1.6rem */
-    margin-bottom: 15px;
-  }
-  
-  .section-subtitle {
-    font-size: 1rem; /* Increased from 0.9rem */
-    padding: 0 10px;
-  }
-  
-  /* Amenities Mobile */
-  .amenities-section {
-    padding: 60px 0; /* Increased from 50px */
-  }
-  
-  .amenities-grid {
-    grid-template-columns: 1fr;
-    gap: 20px; /* Increased from 15px */
-  }
-  
-  .amenity-card {
-    border-radius: 15px;
-  }
-  
-  .amenity-image {
-    height: 150px; /* Increased from 120px */
-  }
-  
-  .amenity-content {
-    padding: 20px 15px; /* Increased padding */
-  }
-  
-  .amenity-content h3 {
-    font-size: 1.2rem; /* Increased from 1rem */
-    margin-bottom: 10px;
-  }
-  
-  .amenity-content p {
-    font-size: 0.9rem; /* Increased from 0.8rem */
-    line-height: 1.5;
-  }
-  
-  .amenity-icon {
-    font-size: 2.2rem; /* Increased from 1.8rem */
-    width: 55px; /* Increased from 45px */
-    height: 55px;
-  }
-  
-  /* Premium Mobile */
-  .premium-amenities {
-    padding: 70px 0; /* Increased from 60px */
-  }
-  
-  .premium-header {
-    margin-bottom: 50px;
-  }
-  
-  .premium-badge {
-    padding: 6px 18px;
-    font-size: 0.8rem;
-  }
-  
-  .premium-header h2 {
-    font-size: 2.2rem; /* Increased from 1.8rem */
-    margin-bottom: 15px;
-  }
-  
-  .premium-header p {
-    font-size: 1rem; /* Increased from 0.9rem */
-    padding: 0 15px;
-  }
-  
-  .premium-grid {
-    gap: 25px;
-  }
-  
-  .premium-card {
-    padding: 25px 20px; /* Increased padding */
-    border-radius: 18px;
-  }
-  
-  .premium-icon {
-    font-size: 2.2rem; /* Increased from 1.8rem */
-    width: 55px; /* Increased from 45px */
-    height: 55px;
-    margin-bottom: 20px;
-  }
-  
-  .premium-card h3 {
-    font-size: 1.2rem; /* Increased from 1rem */
-    margin-bottom: 10px;
-  }
-  
-  .premium-card p {
-    font-size: 0.9rem; /* Increased from 0.8rem */
-    line-height: 1.6;
-  }
-  
-  /* CTA Mobile */
-  .cta-section {
-    padding: 50px 0; /* Increased from 40px */
-  }
-  
-  .cta-content h2 {
-    font-size: 2rem; /* Increased from 1.6rem */
-    margin-bottom: 15px;
-  }
-  
-  .cta-content p {
-    font-size: 1rem; /* Increased from 0.9rem */
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    padding: 12px 30px; /* Increased padding */
-    font-size: 1rem; /* Increased from 0.9rem */
+  .ocean-item-details p {
+    font-size: 1rem;
   }
 }
 
-/* ===== SMALL MOBILE (480px and below) ===== */
-@media (max-width: 480px) {
-  .hero-image-container {
-    height: 45vh; /* Increased from 35vh */
+/* Desktop (1024px - 1199px) - 3 columns */
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .ocean-amenities-container {
+    padding: 2rem 2.5rem;
+  }
+  
+  .ocean-amenity-category {
+    margin-bottom: 2rem;
+  }
+  
+  .ocean-amenity-category h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ocean-amenities-layout {
+    gap: 2rem;
+  }
+  
+  .ocean-item-image {
+    height: 190px;
+  }
+  
+  .ocean-item-details {
+    padding: 1.4rem;
+  }
+  
+  .ocean-item-details h3 {
+    font-size: 1.2rem;
+  }
+  
+  .ocean-item-details p {
+    font-size: 0.92rem;
+  }
+}
+
+/* Tablet (768px - 1023px) - 3 columns */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .ocean-hero-banner {
+    height: 50vh;
     min-height: 350px;
   }
   
-  .hero-title {
-    font-size: 1.8rem; /* Increased from 1.5rem */
+  .ocean-amenities-container {
+    padding: 1.5rem 2rem;
   }
   
-  .hero-subtitle {
-    font-size: 1rem; /* Increased from 0.8rem */
+  .ocean-amenity-category {
+    margin-bottom: 1.5rem;
   }
   
-  .section-title {
-    font-size: 1.7rem; /* Increased from 1.4rem */
+  .ocean-amenity-category h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
   }
   
-  .amenities-section, .premium-amenities {
-    padding: 50px 0; /* Increased from 40px */
+  .ocean-amenities-layout {
+    gap: 1.5rem;
   }
   
-  .amenity-image {
-    height: 130px; /* Increased from 100px */
+  .ocean-item-image {
+    height: 170px;
   }
   
-  .amenity-content, .premium-card {
-    padding: 15px 12px; /* Increased padding */
+  .ocean-item-details {
+    padding: 1.2rem;
   }
   
-  .amenity-content h3, .premium-card h3 {
-    font-size: 1rem; /* Increased from 0.9rem */
+  .ocean-item-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
   }
   
-  .amenity-content p, .premium-card p {
-    font-size: 0.85rem; /* Increased from 0.75rem */
-  }
-  
-  .amenity-icon, .premium-icon {
-    font-size: 1.8rem; /* Increased from 1.5rem */
-    width: 45px; /* Increased from 35px */
-    height: 45px;
-  }
-  
-  .premium-header h2 {
-    font-size: 1.8rem; /* Increased from 1.5rem */
-  }
-  
-  .cta-content h2 {
-    font-size: 1.7rem; /* Increased from 1.4rem */
-  }
-  
-  .cta-button {
-    padding: 10px 25px; /* Increased padding */
-    font-size: 0.9rem; /* Increased from 0.8rem */
+  .ocean-item-details p {
+    font-size: 0.88rem;
+    line-height: 1.5;
   }
 }
 
-/* ===== EXTRA SMALL (360px and below) ===== */
+/* MOBILE FIXES - ULTRA TIGHT SPACING */
+
+/* Mobile Large (481px - 767px) - 2 columns */
+@media (max-width: 767px) and (min-width: 481px) {
+  .ocean-hero-banner {
+    height: 45vh;
+    min-height: 300px;
+  }
+  
+  .ocean-amenities-container {
+    padding: 1rem 1rem; /* Reduced top/bottom */
+  }
+  
+  .ocean-amenity-category {
+    margin-bottom: 1.2rem; /* Reduced gap between sections */
+  }
+  
+  .ocean-amenity-category h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  /* 2 columns for mobile */
+  .ocean-amenities-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .ocean-amenity-item {
+    border-radius: 16px;
+  }
+  
+  .ocean-item-image {
+    height: 140px;
+  }
+  
+  .ocean-item-details {
+    padding: 0.9rem;
+  }
+  
+  .ocean-item-details h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+  }
+  
+  .ocean-item-details p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  
+  .ocean-dots-container {
+    margin-top: 0.8rem;
+  }
+  
+  .ocean-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Mobile Medium (361px - 480px) - 2 columns */
+@media (max-width: 480px) and (min-width: 361px) {
+  .ocean-hero-banner {
+    height: 40vh;
+    min-height: 280px;
+  }
+  
+  .ocean-hero-content-overlay {
+    padding: 1.5rem;
+  }
+  
+  .ocean-amenities-container {
+    padding: 0.8rem 0.8rem; /* Minimal top/bottom */
+  }
+  
+  .ocean-amenity-category {
+    margin-bottom: 1rem; /* Reduced gap */
+  }
+  
+  .ocean-amenity-category h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+  }
+  
+  .ocean-amenities-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+  
+  .ocean-amenity-item {
+    border-radius: 12px;
+  }
+  
+  .ocean-item-image {
+    height: 120px;
+  }
+  
+  .ocean-item-details {
+    padding: 0.8rem;
+  }
+  
+  .ocean-item-details h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.1;
+  }
+  
+  .ocean-item-details p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  
+  .ocean-dots-container {
+    margin-top: 0.6rem;
+  }
+  
+  .ocean-dot {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+/* Mobile Small (320px - 360px) - 2 columns */
 @media (max-width: 360px) {
-  .hero-image-container {
-    min-height: 320px;
+  .ocean-hero-banner {
+    height: 35vh;
+    min-height: 250px;
   }
   
-  .hero-title {
-    font-size: 1.6rem; /* Increased from 1.3rem */
+  .ocean-hero-content-overlay {
+    padding: 1rem;
   }
   
-  .section-title {
-    font-size: 1.5rem; /* Increased from 1.2rem */
+  .ocean-amenities-container {
+    padding: 0.6rem 0.6rem; /* Minimal */
   }
   
-  .amenity-image {
-    height: 110px; /* Increased from 80px */
+  .ocean-amenity-category {
+    margin-bottom: 0.8rem; /* Reduced */
   }
   
-  .amenity-content, .premium-card {
-    padding: 12px 10px; /* Increased padding */
+  .ocean-amenity-category h2 {
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
   }
   
-  .amenity-content h3, .premium-card h3 {
-    font-size: 0.95rem; /* Increased from 0.8rem */
+  .ocean-amenities-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
   }
   
-  .amenity-content p, .premium-card p {
-    font-size: 0.8rem; /* Increased from 0.7rem */
+  .ocean-amenity-item {
+    border-radius: 10px;
   }
   
-  .amenity-icon, .premium-icon {
-    font-size: 1.5rem; /* Increased from 1.2rem */
-    width: 40px; /* Increased from 30px */
-    height: 40px;
+  .ocean-item-image {
+    height: 100px;
+  }
+  
+  .ocean-item-details {
+    padding: 0.6rem;
+  }
+  
+  .ocean-item-details h3 {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.1;
+  }
+  
+  .ocean-item-details p {
+    font-size: 0.7rem;
+    line-height: 1.15;
+  }
+  
+  .ocean-dots-container {
+    margin-top: 0.5rem;
+  }
+  
+  .ocean-dot {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Extra Small Mobile (below 320px) - 2 columns */
+@media (max-width: 319px) {
+  .ocean-hero-banner {
+    height: 30vh;
+    min-height: 220px;
+  }
+  
+  .ocean-amenities-container {
+    padding: 0.5rem 0.5rem; /* Minimal */
+  }
+  
+  .ocean-amenity-category {
+    margin-bottom: 0.6rem; /* Minimal */
+  }
+  
+  .ocean-amenity-category h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .ocean-amenities-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .ocean-amenity-item {
+    border-radius: 8px;
+  }
+  
+  .ocean-item-image {
+    height: 80px;
+  }
+  
+  .ocean-item-details {
+    padding: 0.5rem;
+  }
+  
+  .ocean-item-details h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.1;
+  }
+  
+  .ocean-item-details p {
+    font-size: 0.65rem;
+    line-height: 1.1;
+  }
+  
+  .ocean-dots-container {
+    margin-top: 0.3rem;
+  }
+  
+  .ocean-dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .ocean-amenity-item {
+    animation: none;
+    opacity: 1;
+  }
+  
+  .ocean-amenity-item:hover {
+    transform: none;
+  }
+  
+  .ocean-amenity-item:hover .ocean-item-image img {
+    transform: none;
+  }
+}
+
+/* Touch devices optimization */
+@media (hover: none) and (pointer: coarse) {
+  .ocean-amenity-item:hover {
+    transform: none;
+  }
+  
+  .ocean-amenity-item:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .ocean-dot:hover {
+    transform: none;
+  }
+  
+  .ocean-dot:active {
+    transform: scale(1.2);
+    background: #ffd700;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .ocean-hero-content-overlay h1 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  }
+  
+  .ocean-amenity-category h2 {
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.4);
+  }
+}
+
+/* Loading states */
+.ocean-item-image img {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+}
+
+.ocean-item-image img:not([src]) {
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }
