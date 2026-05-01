@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ================================================================
+     OCEAN PARADISE HOTEL & RESORT — ACTIVITIES, BLOG & CONTENT SITEMAP
+     Domain  : https://www.oceanparadisehotel.us
+     Address : 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569, USA
+     Phone   : +1 360-289-0664  |  +1 360-289-2040
+     Email   : Oceanshoresview@gmail.com
+
+     COVERAGE: Local activities · Things to do near hotel
+               Travel blog · Ocean Shores guides · Washington coast tips
+               Guest experience pages · Awards & press
+
+     BLOG SEO KEYWORDS TARGETED:
+     things to do ocean shores washington, ocean shores travel guide,
+     best restaurants near ocean shores wa, clamming ocean shores guide,
+     best time to visit ocean shores, family travel tips ocean shores,
+     romantic things to do ocean shores wa, whale watching pacific coast wa,
+     dog friendly beach washington state, washington coast road trip,
+     olympic national park day trip from ocean shores, ocean shores events,
+     packing list beach vacation washington, horseback riding ocean shores,
+     atv rentals ocean shores wa, ocean shores seafood restaurants,
+     washington state beach towns 2025, tide chart ocean shores wa,
+     kayaking ocean shores washington, surfing ocean shores beach,
+     fishing ocean shores washington, bird watching ocean shores,
+     beachcombing ocean shores tips, ocean shores kite flying,
+     washington coast camping near hotel, budget beach vacation washington,
+     hidden gems ocean shores wa, accessible ocean shores washington,
+     winter beach storm watching washington, ocean shores golf course,
+     sand dunes ocean shores washington, ocean shores driftwood picking,
+     ocean shores razor clam season, dungeness crab ocean shores,
+     ocean shores area map guide, how far seattle to ocean shores,
+     ocean shores from portland oregon, ocean shores drive directions,
+     ocean shores annual rainfall weather, ocean shores air quality,
+     ocean shores washington population, ocean shores city guide
+
+     Last Updated: 2025-04-29
+     ================================================================ -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LOCAL ACTIVITIES PAGES
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Activity 1: Beachcombing -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/beachcombing-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Beachcombing Ocean Shores — Activities Near Ocean Paradise Hotel WA</image:title>
+      <image:caption>Beachcombing on Ocean Shores, Washington beach — just a 2-minute walk from Ocean Paradise Hotel &amp; Resort. Discover agates, sea glass, razor clam shells, driftwood, and other Pacific treasures along the miles of pristine sandy beach. Ocean Shores is one of Washington's best beachcombing destinations.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 2: Clamming -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/clamming-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Clamming Ocean Shores Washington — Razor Clam Digging Near Hotel</image:title>
+      <image:caption>Razor clam digging in Ocean Shores, Washington — one of the most beloved local activities, just steps from Ocean Paradise Hotel &amp; Resort. Ocean Shores is famous for its razor clam seasons (typically fall and spring). Bring your clam gun and limit out on the beach right in front of the hotel. WDFW licenses required.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 3: Horseback Riding -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/horseback-riding-beach</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Horseback Riding Ocean Shores Beach — Activities Near Ocean Paradise Hotel</image:title>
+      <image:caption>Horseback riding on Ocean Shores beach, Washington — one of the most memorable experiences available near Ocean Paradise Hotel &amp; Resort. Ride horses along the Pacific Ocean shoreline with local guided tours. Ocean Shores is one of the few Washington beaches where horseback riding is permitted on the sand.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 4: ATV Rentals -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/atv-rentals-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>ATV Rentals Ocean Shores WA — Off-Road Fun Near Ocean Paradise Hotel</image:title>
+      <image:caption>ATV rentals in Ocean Shores, Washington — drive ATVs, UTVs, and dune buggies on the beach and sand dunes near Ocean Paradise Hotel &amp; Resort. Multiple ATV rental companies are located within easy reach of our hotel. Experience the thrill of off-road beach driving on the wide Pacific beach at Ocean Shores, WA.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 5: Whale Watching -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/whale-watching-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Whale Watching Ocean Shores Washington — Pacific Coast Whale Tours Near Hotel</image:title>
+      <image:caption>Whale watching near Ocean Paradise Hotel in Ocean Shores, WA — gray whales migrate along the Pacific coast of Washington from March through May and November through December. Spot gray whales, orcas, and humpback whales from the shore or join guided whale watching boat tours departing from nearby Westport Marina.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA — Pacific Coast</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 6: Bird Watching -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/bird-watching-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/nature.png</image:loc>
+      <image:title>Bird Watching Ocean Shores WA — Birding Near Ocean Paradise Hotel</image:title>
+      <image:caption>Bird watching in Ocean Shores, Washington — Ocean Shores is a premier birding destination on the Pacific Flyway. Near Ocean Paradise Hotel &amp; Resort, birdwatchers can spot shorebirds, raptors, seabirds, and migratory species at the Ocean Shores Interpretive Center, Oyhut Wildlife Recreation Area, and along the beach.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 7: Fishing -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/fishing-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Fishing Ocean Shores Washington — Surf Fishing Salmon Charter Near Hotel</image:title>
+      <image:caption>Fishing in Ocean Shores, Washington — anglers near Ocean Paradise Hotel can enjoy surf fishing for perch and sea bass on the Pacific beach, crabbing in the marina, and salmon/halibut charter fishing from nearby Westport. Ocean Shores is one of Washington's top fishing destinations — license required for most fishing activities.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 8: Surfing -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/surfing-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- Activity 9: Kayaking -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/kayaking-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- Activity 10: Golf -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/golf-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Pool.jpg</image:loc>
+      <image:title>Golf Ocean Shores WA — Mini Golf at Ocean Paradise Hotel and Nearby Courses</image:title>
+      <image:caption>Golf in Ocean Shores, Washington — Ocean Paradise Hotel &amp; Resort features its own on-site mini golf area for family fun. The Ocean Shores Golf Course (18-hole municipal course) is also located nearby and is one of Washington's most scenic golf courses set against the backdrop of the Pacific coast.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Activity 11: Kite Flying -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/kite-flying-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Activity 12: Sand Dunes -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/activities/sand-dunes-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       BLOG / TRAVEL GUIDE PAGES
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Blog Main -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Blog — Ocean Shores Washington Travel Guide and Tips</image:title>
+      <image:caption>Travel blog by Ocean Paradise Hotel &amp; Resort — your complete guide to visiting Ocean Shores, Washington. Tips, guides, local recommendations, seasonal advice, and insider knowledge from the team at your favorite Ocean Shores hotel.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 1: Best Things to Do in Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/best-things-to-do-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Best Things to Do in Ocean Shores Washington 2025 — Ocean Paradise Hotel Guide</image:title>
+      <image:caption>Complete guide to the best things to do in Ocean Shores, Washington — razor clamming, ATV rides on the beach, horseback riding, whale watching, kayaking, mini golf, casino visits, kite flying, birding, fishing, and beachcombing. Ocean Shores has something for every type of traveler, and Ocean Paradise Hotel &amp; Resort is the perfect home base.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 2: Ocean Shores Travel Guide -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/ocean-shores-travel-guide</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.87</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Ocean Shores Washington Travel Guide 2025 — Complete Visitor's Guide</image:title>
+      <image:caption>Complete 2025 travel guide to Ocean Shores, Washington — everything you need to know about visiting Ocean Shores including getting there, where to stay (Ocean Paradise Hotel &amp; Resort), what to do, where to eat, weather, best times to visit, local events, and insider tips from locals and seasoned visitors.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 3: Top Restaurants Near Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/top-restaurants-near-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/ciken.jpg</image:loc>
+      <image:title>Best Restaurants Near Ocean Shores WA — Dining Guide from Ocean Paradise Hotel</image:title>
+      <image:caption>Best restaurants near Ocean Shores, Washington — from fresh Pacific seafood to casual American dining, Ocean Shores has excellent restaurants just minutes from Ocean Paradise Hotel &amp; Resort. Our staff can recommend the best places for clam chowder, fish and chips, Dungeness crab, and local Ocean Shores cuisine.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 4: Clamming Guide Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/clamming-guide-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Clamming Guide Ocean Shores WA 2025 — Razor Clam Seasons Tides Tips</image:title>
+      <image:caption>Complete clamming guide for Ocean Shores, Washington 2025 — when to go razor clamming, how to get your license, what equipment you need, best tides and spots for clamming, how to cook razor clams, and how to clean your catch. Ocean Paradise Hotel &amp; Resort is ideally located near the best clamming beaches in Ocean Shores, WA.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 5: Best Time to Visit Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/best-time-to-visit-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Best Time to Visit Ocean Shores Washington — Seasonal Guide 2025</image:title>
+      <image:caption>Best time to visit Ocean Shores, Washington — summer (June-August) brings warm weather and beach fun; fall brings storm watching and clamming; winter is dramatic and peaceful; spring brings whale watching and wildflowers. Each season has unique appeal. Ocean Paradise Hotel &amp; Resort is open year-round with seasonal specials to match every season.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 6: Family Travel Tips Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/family-travel-tips-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/family-vacation-te-220801-996315.webp</image:loc>
+      <image:title>Family Travel Tips Ocean Shores WA — Family Vacation Guide from Ocean Paradise Hotel</image:title>
+      <image:caption>Family travel tips for Ocean Shores, Washington — plan the perfect family vacation with kids. Activities for children include ATV rides, mini golf (at Ocean Paradise Hotel), horseback riding, clamming, kite flying, and building sandcastles on miles of Pacific beach. Dog-friendly too! Ocean Paradise Hotel &amp; Resort is the ideal family base in Ocean Shores.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 7: Romantic Things to Do Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/romantic-things-to-do-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/fv1.jpeg</image:loc>
+      <image:title>Romantic Things to Do Ocean Shores WA — Couples Guide Ocean Paradise Hotel</image:title>
+      <image:caption>Romantic things to do in Ocean Shores, Washington — sunset walks on the beach, horseback riding along the Pacific shoreline, whale watching, spa time in the hotel hot tub, candlelit dinners at local seafood restaurants, private balcony views, and cozy evenings by the fire. Ocean Paradise Hotel &amp; Resort's Luxury King with Balcony room is the ultimate romantic retreat.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 8: Whale Watching Pacific Coast Washington -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/whale-watching-pacific-coast-washington</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Whale Watching Pacific Coast Washington 2025 — Guide from Ocean Paradise Hotel</image:title>
+      <image:caption>Whale watching on Washington's Pacific coast — gray whale migration season runs March through May (northbound) and November through December (southbound). Spot whales from the beach near Ocean Paradise Hotel in Ocean Shores, or take a charter boat tour from Westport Marina for up-close encounters with gray whales, orcas, and humpbacks.</image:caption>
+      <image:geo_location>Pacific Coast, Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 9: Dog Friendly Beach Washington State -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/dog-friendly-beach-washington-state</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/about.jpg</image:loc>
+      <image:title>Dog Friendly Beach Washington State — Pet Friendly Ocean Shores Ocean Paradise Hotel</image:title>
+      <image:caption>Best dog-friendly beach in Washington State — Ocean Shores is one of the most dog-friendly beach towns in the Pacific Northwest. Dogs are welcome on the beach (leash required), and Ocean Paradise Hotel &amp; Resort is a pet-friendly hotel in Ocean Shores, WA that welcomes your four-legged family members for just $30/night. Fetch, splash, and explore with your dog!</image:caption>
+      <image:geo_location>Ocean Shores, Washington State, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 10: Washington Coast Road Trip -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/washington-coast-road-trip</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Washington Coast Road Trip Guide — Ocean Paradise Hotel Ocean Shores Stopover</image:title>
+      <image:caption>Washington coast road trip guide — explore the stunning Pacific coast of Washington State from Seattle or Portland. Stop at Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA for a perfect mid-trip retreat. Continue to Westport, Long Beach, and the Columbia River. Discover lighthouses, wildlife refuges, cranberry bogs, and miles of pristine Pacific beach.</image:caption>
+      <image:geo_location>Washington Coast, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 11: Olympic National Park Day Trip -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/olympic-national-park-day-trip</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/nature.png</image:loc>
+      <image:title>Olympic National Park Day Trip from Ocean Shores — Ocean Paradise Hotel Base Camp</image:title>
+      <image:caption>Day trip to Olympic National Park from Ocean Paradise Hotel in Ocean Shores, WA — the Hoh Rain Forest, Quinault Rain Forest, Kalaloch Beach, and Rialto Beach are all within a 1-2 hour drive. Stay at our Ocean Shores hotel and explore America's most diverse national park by day. Return to comfort each evening.</image:caption>
+      <image:geo_location>Ocean Shores, Washington — Near Olympic National Park</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 12: Ocean Shores Events Calendar -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/ocean-shores-events-calendar</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Ocean Shores Events Calendar 2025 — Annual Events Festival Guide Washington</image:title>
+      <image:caption>Ocean Shores, Washington events calendar 2025 — International Kite Challenge, Ocean Shores Sand and Sawdust Festival, Seagull Calling Contest, Razor Clam Festival, North Pacific Beaches Razor Clam Dig, Dick Pfenning Kite Tournament, and more. Plan your visit around Ocean Shores' best annual events from Ocean Paradise Hotel &amp; Resort.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 13: Packing List Beach Vacation -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/packing-list-beach-vacation</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- Blog 14: Hotel Tips Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/hotel-tips-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Hotel Tips Ocean Shores WA — How to Get the Best Stay at Ocean Paradise Hotel</image:title>
+      <image:caption>Hotel tips for staying at Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA — book direct for the best rates, request an ocean view room early, arrive after 4:00 PM for check-in, check out by 11:00 AM, use the heated pool in the evening, walk to the beach at sunrise, and ask our concierge for local restaurant recommendations. Your perfect Ocean Shores stay starts here.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 15: Budget Beach Vacation Washington -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/budget-beach-vacation-washington</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sk.jpeg</image:loc>
+      <image:title>Budget Beach Vacation Washington State — Affordable Ocean Shores Hotel Guide</image:title>
+      <image:caption>How to plan a budget beach vacation in Washington State — Ocean Paradise Hotel &amp; Resort offers affordable Standard Queen and Standard King rooms in Ocean Shores, WA with all essential amenities included: free WiFi, free parking, continental breakfast, AC, mini-fridge, microwave, and beach access. A budget beach vacation doesn't mean sacrificing comfort.</image:caption>
+      <image:geo_location>Ocean Shores, Washington State, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 16: Local Seafood Restaurants -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/local-seafood-restaurants</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Blog 17: Washington State Beach Towns -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/washington-state-beach-towns</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Washington State Beach Towns Guide — Ocean Shores Best Beach Town WA</image:title>
+      <image:caption>Best beach towns in Washington State — Ocean Shores, Westport, Long Beach, Ilwaco, Sekiu, La Push, and Kalaloch. Ocean Shores is the largest beach town in Washington with the most amenities, activities, and accommodation options. Ocean Paradise Hotel &amp; Resort is your ideal base for exploring Washington's spectacular Pacific coastline.</image:caption>
+      <image:geo_location>Washington State, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 18: Tide Chart Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/tide-chart-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Tide Chart Ocean Shores WA — When to Go Clamming and Beach Activities</image:title>
+      <image:caption>Tide chart information for Ocean Shores, Washington — understanding tides is essential for clamming, beach activities, and beach safety at Ocean Shores. Our hotel blog provides seasonal tide information and tips for planning your beach activities around optimal low tide windows for razor clamming and beachcombing.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 19: Horseback Riding Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/horseback-riding-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Blog 20: ATV Rentals Guide -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/atv-rentals-guide-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>ATV Rentals Guide Ocean Shores WA 2025 — Best Dune Buggy Rentals Near Hotel</image:title>
+      <image:caption>Complete guide to ATV rentals in Ocean Shores, Washington 2025 — types of ATVs available (dune buggies, UTVs, sand rails), rental companies near Ocean Paradise Hotel, pricing, rules for driving on Ocean Shores beach, age requirements, and safety tips. ATV riding on the Pacific beach is one of Ocean Shores' most popular and thrilling activities.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 21: Hidden Gems Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/hidden-gems-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/nature.png</image:loc>
+      <image:title>Hidden Gems Ocean Shores WA — Secret Spots from Ocean Paradise Hotel Locals</image:title>
+      <image:caption>Hidden gems in Ocean Shores, Washington — secret spots and lesser-known attractions recommended by Ocean Paradise Hotel &amp; Resort staff. From secluded beach areas and quiet nature trails to hidden seafood spots, the Oyhut Wildlife Recreation Area, and the Ocean Shores Interpretive Center — discover the Ocean Shores that most tourists miss.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 22: Wheelchair Accessible Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/wheelchair-accessible-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- Blog 23: Winter Beach Washington Tips -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/winter-beach-washington-tips</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/hmm.png</image:loc>
+      <image:title>Winter Beach Washington Tips — Storm Watching Ocean Shores Ocean Paradise Hotel</image:title>
+      <image:caption>Winter beach tips for Ocean Shores, Washington — storm watching is spectacular from the Pacific beach in winter. Pack layers, waterproof clothing, and prepare for dramatic ocean storms. Ocean Paradise Hotel &amp; Resort's heated indoor pool and hot tub are perfect after a cold beach walk. Winter room rates are often the most affordable of the year.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 24: How Far Seattle to Ocean Shores -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/seattle-to-ocean-shores-drive</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Seattle to Ocean Shores Drive — Ocean Paradise Hotel 3 Hour Road Trip WA</image:title>
+      <image:caption>Driving from Seattle to Ocean Shores, Washington — the drive from Seattle to Ocean Shores is approximately 2.5 to 3 hours (about 140 miles) via US-101 South or SR-8 West. Ocean Paradise Hotel &amp; Resort is located at 773 Ocean Shores Blvd NW in Ocean Shores, WA 98569. It's an easy and beautiful road trip through Washington's scenic landscapes.</image:caption>
+      <image:geo_location>Seattle to Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 25: Portland to Ocean Shores Drive -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/portland-to-ocean-shores-drive</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Portland to Ocean Shores Drive — Ocean Paradise Hotel 4 Hour Road Trip</image:title>
+      <image:caption>Driving from Portland, Oregon to Ocean Shores, Washington — approximately 3.5 to 4 hours (about 185 miles) via I-5 North and US-12 West. A perfect weekend road trip from Portland to the Washington Pacific coast. Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA is the ideal destination for Portland road-trippers seeking a beach escape.</image:caption>
+      <image:geo_location>Portland OR to Ocean Shores WA, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 26: Ocean Shores Weather Guide -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/ocean-shores-weather-guide</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Ocean Shores Weather Guide — Best Months to Visit Ocean Shores WA</image:title>
+      <image:caption>Complete weather guide for Ocean Shores, Washington — average temperatures range from 40-50°F in winter to 60-70°F in summer. Ocean Shores receives about 85 inches of rain annually. Summers are mild and partly cloudy, while winters bring dramatic storms perfect for storm watching. Ocean Paradise Hotel &amp; Resort is open year-round with heated pool regardless of weather.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 27: Tacoma to Ocean Shores Drive -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/tacoma-to-ocean-shores-drive</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- Blog 28: Olympia to Ocean Shores Drive -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/olympia-to-ocean-shores-drive</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- Blog 29: Top Hotels Ocean Shores Comparison -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/top-hotels-ocean-shores-comparison</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc.jpeg</image:loc>
+      <image:title>Top Hotels Ocean Shores WA Comparison 2025 — Why Ocean Paradise Hotel Wins</image:title>
+      <image:caption>Comparing the best hotels in Ocean Shores, Washington in 2025 — Ocean Paradise Hotel &amp; Resort stands out with its beachside location (400m from the beach), heated indoor pool and hot tub, continental breakfast included, free parking, pet-friendly policy, mini golf on-site, 62 comfortable rooms at various price points, and exceptional value for money.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Blog 30: Ocean Shores Vs Long Beach WA -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/blog/ocean-shores-vs-long-beach-washington</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ADDITIONAL LOCATION LANDING PAGES
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Visitors from Seattle -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-ocean-shores-for-seattle-visitors</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Hotel Ocean Shores for Seattle Visitors — Ocean Paradise Hotel 3 Hours from Seattle</image:title>
+      <image:caption>Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA — the perfect weekend escape for Seattle residents. Just 2.5-3 hours from downtown Seattle, our hotel offers Pacific beach access, heated pool, hot tub, and all the amenities for a perfect getaway from the Emerald City. Drive west on US-101, park free, and enjoy the Washington coast.</image:caption>
+      <image:geo_location>Ocean Shores, Washington (near Seattle), USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Visitors from Tacoma -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-ocean-shores-for-tacoma-visitors</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Visitors from Olympia -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-ocean-shores-from-olympia</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Visitors from Spokane -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-ocean-shores-from-spokane</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Visitors from Portland Oregon -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-ocean-shores-from-portland</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Hotel Ocean Shores from Portland Oregon — Ocean Paradise Hotel Pacific Beach WA</image:title>
+      <image:caption>Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA — the perfect Oregon getaway destination for Portland residents. Drive north from Portland across the Columbia River into Washington State and continue to Ocean Shores for a Pacific beach vacation with ocean views, heated pool, complimentary breakfast, and pet-friendly accommodations.</image:caption>
+      <image:geo_location>Ocean Shores, Washington (accessible from Portland OR), USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HOTEL COMPARISON / SEARCH QUERY PAGES
+       ═══════════════════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotels-in-ocean-shores-wa-98569</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc.jpeg</image:loc>
+      <image:title>Hotels in Ocean Shores WA 98569 — Ocean Paradise Hotel Zip Code 98569</image:title>
+      <image:caption>Hotels in Ocean Shores, WA zip code 98569 — Ocean Paradise Hotel &amp; Resort at 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569 is a top-rated hotel in the 98569 zip code. Grays Harbor County's best beachside accommodation with 62 rooms, heated pool, ocean views, and complimentary breakfast.</image:caption>
+      <image:geo_location>Ocean Shores, WA 98569, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/best-rated-hotel-ocean-shores-2025</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Best Rated Hotel Ocean Shores 2025 — Ocean Paradise Hotel Top Reviewed</image:title>
+      <image:caption>Best rated hotel in Ocean Shores, Washington in 2025 — Ocean Paradise Hotel &amp; Resort earns consistently high guest review scores for its prime beach location, comfortable rooms, well-maintained facilities, friendly staff, and excellent value. Read our verified guest reviews and book directly for the best rates on the Washington coast.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-deals-ocean-shores-washington</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.87</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc1.jpeg</image:loc>
+      <image:title>Hotel Deals Ocean Shores Washington 2025 — Best Prices Ocean Paradise Hotel</image:title>
+      <image:caption>Best hotel deals in Ocean Shores, Washington 2025 — Ocean Paradise Hotel &amp; Resort offers competitive rates on all room types year-round. Book direct on oceanparadisehotel.us for our best rate guarantee. No booking fees, flexible options, and exclusive direct-book perks. Call +1 360-289-0664 for current promotions and packages.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/ocean-shores-lodging-options</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/check-availability-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Check Availability Ocean Shores Hotel — Ocean Paradise Hotel Book Now</image:title>
+      <image:caption>Check room availability at Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA — select your check-in and check-out dates to view available rooms and current pricing. Book directly for the best rate guarantee. Rooms fill quickly during summer, holidays, and clamming seasons — reserve your Ocean Shores hotel room today.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       RICH KEYWORD ANCHOR PAGES — HYPER-LOCAL SEO
+       ═══════════════════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/62-room-hotel-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-2-minutes-from-beach-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Hotel 2 Minutes from Beach Ocean Shores WA — Ocean Paradise Hotel Beach Access</image:title>
+      <image:caption>Hotel just 2 minutes walk from the beach in Ocean Shores, WA — Ocean Paradise Hotel &amp; Resort is located only 400 meters from the Pacific Ocean beach. Step out of the hotel and be on the sand in just 2 minutes. No other hotel in Ocean Shores puts you closer to the beach experience.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA — 400m from Pacific Ocean Beach</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-heated-pool-year-round-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-with-mini-golf-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Pool.jpg</image:loc>
+      <image:title>Hotel with Mini Golf Ocean Shores WA — Ocean Paradise Hotel On-Site Mini Golf</image:title>
+      <image:caption>Hotel with on-site mini golf in Ocean Shores, WA — Ocean Paradise Hotel &amp; Resort features a family-friendly mini golf area on the property. Play a round of mini golf without leaving the hotel grounds. Perfect for kids and families visiting Ocean Shores, Washington. Heated pool and mini golf — entertainment for all ages.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/continental-breakfast-hotel-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-with-laundry-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-check-in-4pm-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/hotel-check-out-11am-ocean-shores</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/stayflexi-ocean-paradise-hotel-booking</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>StayFlexi Ocean Paradise Hotel Booking — Online Reservation System Ocean Shores</image:title>
+      <image:caption>Book Ocean Paradise Hotel &amp; Resort online via our StayFlexi booking system at bookingengine.stayflexi.com (hotel ID 34243). Fast, secure, and flexible online reservations for all room types. Select dates, choose your room, and confirm your Ocean Shores, WA hotel booking in minutes.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/ocean-shores-hotel-phone-number</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc.jpeg</image:loc>
+      <image:title>Ocean Shores Hotel Phone Number — Call Ocean Paradise Hotel 360-289-0664</image:title>
+      <image:caption>Ocean Paradise Hotel &amp; Resort phone number: +1 360-289-0664 and +1 360-289-2040. Call us 24/7 for reservations, inquiries, and special requests. Email: Oceanshoresview@gmail.com. Address: 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569. We're always ready to help you plan your perfect Ocean Shores, Washington vacation.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/oceanshoresview-gmail-email-hotel</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/ocean-paradise-hotel-google-maps</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Ocean Paradise Hotel Google Maps — 773 Ocean Shores Blvd NW Directions</image:title>
+      <image:caption>Find Ocean Paradise Hotel &amp; Resort on Google Maps — 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569. Get driving directions from Seattle, Tacoma, Olympia, or Portland. 4.1 km from Ocean Shores city center. Free parking on-site. GPS coordinates: approximately 46.9734° N, 124.1624° W.</image:caption>
+      <image:geo_location>773 Ocean Shores Blvd NW, Ocean Shores, Washington 98569, USA</image:geo_location>
+    </image:image>
+  </url>
+
+</urlset>

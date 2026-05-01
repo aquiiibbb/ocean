@@ -1,50 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="OCEAN PARRADISE HOTEL & RESORT" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/s4logo.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- ═══════════════════════════════════════════
+         PRIMARY SEO META TAGS
+    ═══════════════════════════════════════════ -->
+    <title>Ocean Paradise Hotel &amp; Resort | Ocean Shores, WA — Beachfront Hotel</title>
+    <meta name="description" content="Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA offers stunning beachfront accommodations, modern amenities, and unforgettable Pacific coast experiences. Book your stay today!" />
+    <meta name="keywords" content="Ocean Paradise Hotel, Ocean Shores hotel, beachfront hotel Washington, Ocean Shores WA resort, Pacific Ocean hotel, Washington coast hotel, Ocean Shores accommodation, beach resort WA" />
+    <meta name="author" content="Ocean Paradise Hotel &amp; Resort" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#006994" />
+    <link rel="canonical" href="https://www.oceanparadisehotel.us/" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ═══════════════════════════════════════════
+         OPEN GRAPH (Facebook / LinkedIn / WhatsApp)
+    ═══════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ocean Paradise Hotel &amp; Resort" />
+    <meta property="og:title" content="Ocean Paradise Hotel &amp; Resort | Beachfront Hotel in Ocean Shores, WA" />
+    <meta property="og:description" content="Experience the beauty of the Pacific coast at Ocean Paradise Hotel &amp; Resort. Stunning ocean views, premium amenities, and exceptional hospitality in Ocean Shores, WA." />
+    <meta property="og:url" content="https://www.oceanparadisehotel.us/" />
+    <meta property="og:image" content="https://www.oceanparadisehotel.us/static/media/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ocean Paradise Hotel &amp; Resort — beachfront view in Ocean Shores, WA" />
+    <meta property="og:locale" content="en_US" />
 
-  <title>OCEAN PARRADISE HOTEL & RESORT</title>
-</head>
+    <!-- ═══════════════════════════════════════════
+         TWITTER CARD
+    ═══════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ocean Paradise Hotel &amp; Resort | Ocean Shores, WA" />
+    <meta name="twitter:description" content="Beachfront hotel on the Pacific coast. Stunning views, modern amenities &amp; unforgettable experiences in Ocean Shores, WA." />
+    <meta name="twitter:image" content="https://www.oceanparadisehotel.us/static/media/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Ocean Paradise Hotel &amp; Resort beachfront" />
 
-<body>
-  <noscript>OCEAN PARRADISE HOTEL & RESORT.</noscript>
-  <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- ═══════════════════════════════════════════
+         GEO / LOCAL SEO
+    ═══════════════════════════════════════════ -->
+    <meta name="geo.region" content="US-WA" />
+    <meta name="geo.placename" content="Ocean Shores, Washington" />
+    <meta name="geo.position" content="46.9741;-124.1565" />
+    <meta name="ICBM" content="46.9741, -124.1565" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- ═══════════════════════════════════════════
+         ICONS & MANIFEST
+    ═══════════════════════════════════════════ -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</body>
 
+
+    <!-- ═══════════════════════════════════════════
+         FONT AWESOME (Social Media & UI Icons)
+    ═══════════════════════════════════════════ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdab6+sdZlPHRFNTFgBCz/FZcOZKh+0jV7UkFPd7lKXmB0cPK0FUQQOJpMBhpYFbXE3kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ═══════════════════════════════════════════
+         PRECONNECT (PERFORMANCE / CORE WEB VITALS)
+    ═══════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- ═══════════════════════════════════════════
+         JSON-LD STRUCTURED DATA
+    ═══════════════════════════════════════════ -->
+
+    <!-- Hotel / LodgingBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Ocean Paradise Hotel & Resort",
+      "url": "https://www.oceanparadisehotel.us",
+      "logo": "https://www.oceanparadisehotel.us/static/media/logo.png",
+      "image": [
+        "https://www.oceanparadisehotel.us/static/media/og-image.jpg",
+        "https://www.oceanparadisehotel.us/static/media/hotel-exterior.jpg",
+        "https://www.oceanparadisehotel.us/static/media/ocean-view.jpg"
+      ],
+      "description": "Ocean Paradise Hotel & Resort is a beachfront hotel in Ocean Shores, WA offering stunning Pacific Ocean views, premium accommodations, and exceptional hospitality.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "773 Ocean Shores Blvd NW",
+        "addressLocality": "Ocean Shores",
+        "addressRegion": "WA",
+        "postalCode": "98569",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.9741,
+        "longitude": -124.1565
+      },
+      "telephone": "+1-360-289-0664",
+      "email": "Oceanshoresview@gmail.com",
+      "sameAs": [
+        "https://www.oceanparadisehotel.us"
+      ],
+      "priceRange": "$$",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "3"
+      },
+      "checkinTime": "15:00",
+      "checkoutTime": "11:00",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Ocean View", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Pet Friendly", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Beach Access", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true }
+      ]
+    }
+    </script>
+
+    <!-- Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ocean Paradise Hotel & Resort",
+      "url": "https://www.oceanparadisehotel.us",
+      "logo": "https://www.oceanparadisehotel.us/static/media/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-360-289-0664",
+        "contactType": "reservations",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList (Homepage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oceanparadisehotel.us/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Ocean Paradise Hotel & Resort",
+      "url": "https://www.oceanparadisehotel.us",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.oceanparadisehotel.us/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>

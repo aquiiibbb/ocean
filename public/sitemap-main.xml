@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ================================================================
+     OCEAN PARADISE HOTEL & RESORT — MAIN PAGES SITEMAP
+     Domain  : https://www.oceanparadisehotel.us
+     Address : 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569, USA
+     Phone   : +1 360-289-0664  |  +1 360-289-2040
+     Email   : Oceanshoresview@gmail.com
+     Booking : https://bookingengine.stayflexi.com/?hotel_id=34243
+
+     COVERAGE: Home · Rooms (9 types) · Amenities (7 categories)
+               Photo Gallery · Contact · About · Book Direct
+               Reviews · Accessibility · Policies · Guest Services
+
+     SEO KEYWORDS TARGETED IN THIS SITEMAP:
+     ocean paradise hotel ocean shores wa, ocean paradise hotel resort,
+     hotel ocean shores washington, beach hotel ocean shores,
+     ocean shores hotel near beach, luxury hotel ocean shores wa,
+     oceanparadisehotel.us, ocean shores blvd hotel, hotel 98569,
+     pet friendly hotel ocean shores, pool hotel ocean shores wa,
+     ocean view rooms washington state, queen room ocean shores,
+     king suite ocean shores hotel, double queen hotel ocean shores,
+     luxury jacuzzi hotel washington coast, balcony ocean view hotel,
+     ocean shores resort booking, best hotel ocean shores wa 2025,
+     budget hotel ocean shores, family resort ocean shores wa,
+     continental breakfast hotel ocean shores, heated pool hotel wa,
+     mini golf hotel ocean shores, free parking ocean shores hotel,
+     wifi hotel ocean shores, 62 room hotel ocean shores,
+     hotel near ocean shores beach walk, 2 min walk to beach hotel
+
+     Last Updated: 2025-04-29
+     ================================================================ -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HOME PAGE — Ocean Paradise Hotel & Resort
+       Primary landing page | Highest SEO priority
+       Keywords: ocean paradise hotel, ocean shores hotel washington,
+       hotel resort ocean shores wa, luxury seaside hotel, beach hotel,
+       ocean shores blvd nw hotel, best hotel ocean shores 2025,
+       oceanparadisehotel.us, hotel with pool ocean shores
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel and Resort — Ocean Shores, Washington | Beachside Luxury Hotel</image:title>
+      <image:caption>Ocean Paradise Hotel &amp; Resort at 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569 — luxury beachside accommodation with stunning ocean views, heated pool, hot tub, mini golf, free parking, and complimentary continental breakfast</image:caption>
+      <image:geo_location>Ocean Shores, Grays Harbor County, Washington State, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bich.webp</image:loc>
+      <image:title>Ocean Paradise Hotel — Beachfront View Ocean Shores WA</image:title>
+      <image:caption>Beautiful beachfront view from Ocean Paradise Hotel &amp; Resort, Ocean Shores, Washington — just a 2-minute walk from the Pacific Ocean beach</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/dr.png</image:loc>
+      <image:title>Ocean Paradise Hotel — Luxurious Dining and Recreation Area</image:title>
+      <image:caption>Elegant dining and common area at Ocean Paradise Hotel &amp; Resort, offering guests a comfortable space to relax and enjoy meals</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Ocean Shores WA Exterior View</image:title>
+      <image:caption>Exterior view of Ocean Paradise Hotel &amp; Resort, a premier hotel located at 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569, offering 62 comfortable rooms and suites</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Property Overview Ocean Shores Washington</image:title>
+      <image:caption>Full property overview of Ocean Paradise Hotel &amp; Resort — featuring 62 rooms including standard rooms, ocean-view rooms, suites, and spa-jacuzzi options</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc2.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Aerial Property View Ocean Shores WA</image:title>
+      <image:caption>Aerial view of Ocean Paradise Hotel &amp; Resort and surrounding Ocean Shores area, highlighting its prime coastal location near the Pacific Ocean</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/hmm.png</image:loc>
+      <image:title>Ocean Paradise Hotel — Interior Common Area</image:title>
+      <image:caption>Comfortable interior common area at Ocean Paradise Hotel &amp; Resort, Ocean Shores, WA — designed for relaxation and guest convenience</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Ocean Paradise Hotel — Ocean Shores WA Area Map and Surroundings</image:title>
+      <image:caption>Map and area overview of Ocean Paradise Hotel &amp; Resort location in Ocean Shores, Washington — close to beach, casino, restaurants, and local attractions</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/pic4.png</image:loc>
+      <image:title>Ocean Paradise Hotel — Guest Facilities Overview</image:title>
+      <image:caption>Overview of guest facilities at Ocean Paradise Hotel &amp; Resort including heated pool, hot tub, mini golf, free parking, and complimentary breakfast in Ocean Shores, WA</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/s4logo.png</image:loc>
+      <image:title>Ocean Paradise Hotel — Official Hotel Logo</image:title>
+      <image:caption>Official logo of Ocean Paradise Hotel &amp; Resort, Ocean Shores, Washington — your premier beachside hotel destination</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://www.oceanparadisehotel.us/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oceanparadisehotel.us/"/>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ROOMS PAGE — All Room Types Overview
+       Keywords: ocean shores hotel rooms, rooms at ocean paradise,
+       ocean shores wa hotel room booking, hotel room types ocean shores,
+       queen rooms ocean shores, king rooms ocean shores wa,
+       suite ocean shores hotel, hotel accommodation ocean shores,
+       book hotel room ocean shores wa, ocean shores lodging 2025
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/k2.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel Rooms — All Room Types Ocean Shores WA</image:title>
+      <image:caption>Complete selection of hotel rooms at Ocean Paradise Hotel &amp; Resort — Standard Queen, Double Queen, Superior King, Luxury King, King Suite, and Spa-Jacuzzi rooms available in Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Standard Queen Room Interior</image:title>
+      <image:caption>Standard Queen Room at Ocean Paradise Hotel &amp; Resort, Ocean Shores, WA — featuring free WiFi, AC, flat-screen TV, mini-fridge, microwave, and coffee maker</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d2.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Double Queen Standard Room</image:title>
+      <image:caption>Spacious Double Queen Standard Room at Ocean Paradise Hotel &amp; Resort — perfect for families visiting Ocean Shores, Washington, with two queen beds and ocean view</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/f1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Superior King Room Luxury Amenities</image:title>
+      <image:caption>Superior King Room at Ocean Paradise Hotel &amp; Resort featuring premium amenities, jacuzzi, mini bar, and premium ocean views in Ocean Shores, WA</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/fv1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Luxury King with Balcony Room View</image:title>
+      <image:caption>Luxury King Room with Private Balcony at Ocean Paradise Hotel &amp; Resort — stunning ocean views, luxury bath, and butler service in Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Luxury Double Queen Room</image:title>
+      <image:caption>Luxury Double Queen Room at Ocean Paradise Hotel &amp; Resort — two queen beds, luxury amenities, spa bath, and dedicated concierge service</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/m1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Luxury King Suite Premium Room</image:title>
+      <image:caption>Top-tier Luxury King Suite at Ocean Paradise Hotel &amp; Resort — VIP services, premium location, and all-inclusive amenities for the ultimate Ocean Shores stay</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://www.oceanparadisehotel.us/rooms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oceanparadisehotel.us/rooms"/>
+  </url>
+
+  <!-- ── INDIVIDUAL ROOM PAGES ───────────────────────────────── -->
+
+  <!-- Room 1: Standard Queen Room -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/standard-queen-room</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sk.jpeg</image:loc>
+      <image:title>Standard Queen Room — Ocean Paradise Hotel Ocean Shores WA</image:title>
+      <image:caption>Standard Queen Room at Ocean Paradise Hotel &amp; Resort, 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569 — comfortable queen bed, free WiFi, AC, flat-screen TV, mini-fridge, microwave, coffee maker, and room service. Affordable hotel room with easy beach access just 2 minutes walk.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 2: Double Queen Standard -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/double-queen-standard</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d1.jpeg</image:loc>
+      <image:title>Double Queen Standard Room — Ocean Paradise Hotel Ocean Shores</image:title>
+      <image:caption>Double Queen Standard Room at Ocean Paradise Hotel &amp; Resort, Ocean Shores, WA — two queen beds, ocean view, mini-fridge, private balcony. Perfect for families or groups of 4 visiting Ocean Shores, Washington. Close to beach, casino, and local attractions.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d2.jpeg</image:loc>
+      <image:title>Double Queen Standard Room — Interior View Ocean Paradise Hotel</image:title>
+      <image:caption>Interior view of the Double Queen Standard Room at Ocean Paradise Hotel — spacious layout designed for comfort and relaxation after exploring Ocean Shores beaches</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d3.jpeg</image:loc>
+      <image:title>Double Queen Standard — Second View Hotel Room Ocean Shores WA</image:title>
+      <image:caption>Additional view of the Double Queen Standard Room showing the spacious sleeping area with two comfortable queen beds and modern décor</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d4.jpeg</image:loc>
+      <image:title>Double Queen Standard — Amenities and Furnishings</image:title>
+      <image:caption>Room amenities in the Double Queen Standard at Ocean Paradise Hotel — includes flat-screen TV, work desk, high-speed WiFi, mini-fridge, and climate control</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d5.jpeg</image:loc>
+      <image:title>Double Queen Standard — Balcony Ocean View Ocean Shores</image:title>
+      <image:caption>Private balcony view from the Double Queen Standard Room at Ocean Paradise Hotel — stunning Pacific Ocean views in Ocean Shores, Washington State</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 3: Superior Double Queen -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/superior-double-queen</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sd1.jpeg</image:loc>
+      <image:title>Superior Double Queen Room — Ocean Paradise Hotel Ocean Shores WA</image:title>
+      <image:caption>Superior Double Queen Room at Ocean Paradise Hotel &amp; Resort — enhanced premium room with two queen beds, sea view, coffee maker, and dedicated work desk. Upgraded accommodations for guests seeking elevated comfort in Ocean Shores, Washington.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sd2.jpeg</image:loc>
+      <image:title>Superior Double Queen — Premium Bedding Ocean Paradise Hotel</image:title>
+      <image:caption>Premium bedding and furnishings in the Superior Double Queen Room — crisp linens, plush pillows, and high-quality mattresses for a restful stay</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sd3.jpeg</image:loc>
+      <image:title>Superior Double Queen — Sea View Room Ocean Shores Washington</image:title>
+      <image:caption>Beautiful sea view from the Superior Double Queen Room at Ocean Paradise Hotel — watch the Pacific Ocean from the comfort of your upgraded room</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sd4.jpeg</image:loc>
+      <image:title>Superior Double Queen — Full Room Layout Ocean Shores Hotel</image:title>
+      <image:caption>Full room layout of the Superior Double Queen showing premium amenities including work desk, flat-screen TV, mini-fridge, microwave, and coffee maker</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 4: Superior King -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/superior-king</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/f1.jpeg</image:loc>
+      <image:title>Superior King Room — Ocean Paradise Hotel Ocean Shores WA</image:title>
+      <image:caption>Superior King Room at Ocean Paradise Hotel &amp; Resort, Ocean Shores, Washington — upgraded king bed, premium ocean view, in-room jacuzzi, mini bar, and luxury touches. Perfect for couples seeking a romantic getaway on the Washington coast.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/f2.jpeg</image:loc>
+      <image:title>Superior King — King Bed and Premium Decor Ocean Paradise Hotel</image:title>
+      <image:caption>Luxurious king bed with premium decor in the Superior King Room — ideal for couples or solo travelers seeking comfort and elegance in Ocean Shores</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/f3.jpeg</image:loc>
+      <image:title>Superior King — In-Room Jacuzzi Ocean Paradise Hotel</image:title>
+      <image:caption>In-room jacuzzi feature of the Superior King Room — soak in luxury while enjoying your stay at Ocean Paradise Hotel &amp; Resort, Ocean Shores, WA</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/f4.jpeg</image:loc>
+      <image:title>Superior King — Premium Ocean View Room Washington</image:title>
+      <image:caption>Premium ocean view from the Superior King Room — panoramic Pacific Ocean views visible from your king bedroom at Ocean Paradise Hotel</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/f5.jpeg</image:loc>
+      <image:title>Superior King — Mini Bar and Room Amenities</image:title>
+      <image:caption>In-room mini bar and premium amenities in the Superior King Room at Ocean Paradise Hotel — elevate your stay with convenient refreshments and luxury comforts</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 5: Luxury King with Balcony -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/luxury-king-with-balcony</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/fv1.jpeg</image:loc>
+      <image:title>Luxury King Room with Private Balcony — Ocean Paradise Hotel Ocean Shores</image:title>
+      <image:caption>Luxury King Room with Private Balcony at Ocean Paradise Hotel &amp; Resort — exclusive balcony with stunning Pacific Ocean views, luxury bath amenities, and personal butler service. Premium accommodation in Ocean Shores, Washington perfect for romantic getaways, honeymoons, and special occasions.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/fv2.jpeg</image:loc>
+      <image:title>Luxury King Balcony — Private Balcony Ocean View</image:title>
+      <image:caption>Private balcony of the Luxury King Room — breathtaking sunrise and sunset views over the Pacific Ocean from Ocean Paradise Hotel</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/fv3.jpeg</image:loc>
+      <image:title>Luxury King Balcony — Luxury Bath and Spa Features</image:title>
+      <image:caption>Luxury bathroom with spa-grade amenities in the Luxury King with Balcony Room — indulge in premium bath products and high-end fixtures</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/fv4.jpeg</image:loc>
+      <image:title>Luxury King Balcony — Full Suite Interior View</image:title>
+      <image:caption>Full interior view of the Luxury King with Balcony Room — elegantly furnished with premium king bed, seating area, luxury bath, and private balcony access</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 6: Luxury Double Queen -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/luxury-double-queen</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp1.jpeg</image:loc>
+      <image:title>Luxury Double Queen Room — Ocean Paradise Hotel Ocean Shores WA</image:title>
+      <image:caption>Luxury Double Queen Room at Ocean Paradise Hotel &amp; Resort — two premium queen beds, luxury amenities, spa bath, dedicated concierge service. High-end accommodation for families or groups in Ocean Shores, Washington. Ideal for beach vacations, family reunions, and extended stays.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp2.jpeg</image:loc>
+      <image:title>Luxury Double Queen — Two Premium Queen Beds</image:title>
+      <image:caption>Two premium queen beds in the Luxury Double Queen Room — plush mattresses, high-thread-count linens, and luxury pillows for a superior sleep experience</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp3.jpeg</image:loc>
+      <image:title>Luxury Double Queen — Spa Bath Feature</image:title>
+      <image:caption>Spa bath in the Luxury Double Queen Room — indulge in a spa-like experience right in your hotel room at Ocean Paradise Hotel &amp; Resort</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp4.jpeg</image:loc>
+      <image:title>Luxury Double Queen — Concierge and Room Service</image:title>
+      <image:caption>Dedicated concierge service available for the Luxury Double Queen Room — personalized assistance for all your needs during your Ocean Shores stay</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp5.jpeg</image:loc>
+      <image:title>Luxury Double Queen — Room View and Furnishings</image:title>
+      <image:caption>Elegant furnishings in the Luxury Double Queen Room at Ocean Paradise Hotel — premium décor, luxury seating, and high-end finishes throughout</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/sp6.jpeg</image:loc>
+      <image:title>Luxury Double Queen — Full Room Panorama</image:title>
+      <image:caption>Full panoramic view of the Luxury Double Queen Room — spacious layout with premium beds, sitting area, and luxury amenities at Ocean Paradise Hotel</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 7: Standard Single Queen -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/standard-single-queen</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/ss.jpeg</image:loc>
+      <image:title>Standard Single Queen Room — Ocean Paradise Hotel Ocean Shores</image:title>
+      <image:caption>Cozy Standard Single Queen Room at Ocean Paradise Hotel &amp; Resort — garden view, queen bed, dedicated workspace, complimentary breakfast, free WiFi, and essential comforts. Affordable solo traveler accommodation in Ocean Shores, Washington.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 8: Standard King -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/standard-king</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/k1.jpeg</image:loc>
+      <image:title>Standard King Room — Ocean Paradise Hotel Ocean Shores WA</image:title>
+      <image:caption>Classic Standard King Room at Ocean Paradise Hotel &amp; Resort — king bed, modern amenities, city and ocean views, and 24/7 room service. Comfortable and affordable king room in Ocean Shores, Washington near the beach.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/k2.jpeg</image:loc>
+      <image:title>Standard King — King Bed Modern Room Ocean Shores</image:title>
+      <image:caption>Modern king bed room at Ocean Paradise Hotel — contemporary design with all essential amenities for a comfortable stay in Ocean Shores, WA</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Room 9: Luxury King Suite -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/rooms/luxury-king-suite</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/m1.jpeg</image:loc>
+      <image:title>Luxury King Suite — Ocean Paradise Hotel Ocean Shores WA Premium Suite</image:title>
+      <image:caption>Top-tier Luxury King Suite at Ocean Paradise Hotel &amp; Resort, Ocean Shores, WA 98569 — VIP services, premium location, all-inclusive luxury amenities, personal butler, expansive suite layout, and the finest views of the Pacific Ocean. The ultimate accommodation experience on the Washington coast.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       AMENITIES PAGE — All Hotel Amenities Overview
+       Keywords: ocean shores hotel amenities, ocean paradise amenities,
+       hotel with pool ocean shores wa, hotel hot tub ocean shores,
+       heated pool hotel ocean shores, mini golf hotel washington coast,
+       pet friendly hotel ocean shores wa, free parking hotel ocean shores,
+       hotel wifi ocean shores, breakfast hotel ocean shores wa,
+       hotel laundry ocean shores, 24 hour concierge ocean shores hotel
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/chair.png</image:loc>
+      <image:title>Ocean Paradise Hotel Amenities — Full Amenities List Ocean Shores WA</image:title>
+      <image:caption>Complete amenities at Ocean Paradise Hotel &amp; Resort — beachside location, heated indoor pool, hot tub, mini golf, free parking, high-speed WiFi, continental breakfast, guest laundry, 24/7 concierge, AC, mini-fridge, microwave, coffee maker, daily housekeeping, pet-friendly rooms, and sea view balconies</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Pool.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel — Heated Indoor Pool and Hot Tub Ocean Shores</image:title>
+      <image:caption>Year-round heated indoor pool and hot tub at Ocean Paradise Hotel &amp; Resort — open to all registered guests for relaxation and recreation in Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Beachside.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel — Beachside Location Ocean Shores WA</image:title>
+      <image:caption>Beachside location of Ocean Paradise Hotel &amp; Resort — steps from the Pacific Ocean shoreline in Ocean Shores, Washington. Just a 2-minute walk to the beach.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ── INDIVIDUAL AMENITY CATEGORY PAGES ──────────────────── -->
+
+  <!-- Amenity: Property Highlights -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/property-highlights</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Beachside.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Property Highlights — Beachside Ocean Shores WA</image:title>
+      <image:caption>Key property highlights of Ocean Paradise Hotel &amp; Resort — beachside location with direct beach access, convenient proximity to Ocean Shores attractions, and premium sea view rooms with private balconies</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Attractiuon.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel — Near Ocean Shores Attractions</image:title>
+      <image:caption>Ocean Paradise Hotel &amp; Resort is conveniently located near Ocean Shores attractions — casino, restaurants, shopping, ATV rentals, horseback riding, kite flying, and the Pacific Ocean beach</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Amenity: Room Amenities -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/room-amenities</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bedroom.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Room Amenities — AC, WiFi, TV, Fridge, Microwave</image:title>
+      <image:caption>Full list of room amenities at Ocean Paradise Hotel &amp; Resort — individual AC/heater, climate control, mini-fridge, microwave, coffee maker, high-speed WiFi, flat-screen TV, daily housekeeping, and in-room refreshments included with every room</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Amenity: Food and Beverage -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/food-and-beverage</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.83</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/ciken.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Food and Beverage — Continental Breakfast Ocean Shores</image:title>
+      <image:caption>Complimentary continental breakfast at Ocean Paradise Hotel &amp; Resort — fresh pastries, coffee, juice, and seasonal items served daily to all registered guests in Ocean Shores, WA. In-room tea, coffee, and bottled water also provided.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Amenity: Leisure and Recreation -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/leisure-and-recreation</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://oceanparadisehotelresort.com/wp-content/uploads/2025/11/Pool.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Leisure — Heated Pool Hot Tub Mini Golf Ocean Shores</image:title>
+      <image:caption>Leisure and recreation facilities at Ocean Paradise Hotel &amp; Resort — year-round heated indoor pool, therapeutic hot tub, and family-friendly mini golf area. Entertainment for guests of all ages in Ocean Shores, Washington.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Amenity: Pet Friendly -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/pet-friendly</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/about.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Pet Friendly — Dogs Welcome Ocean Shores WA</image:title>
+      <image:caption>Pet-friendly hotel in Ocean Shores, Washington — Ocean Paradise Hotel &amp; Resort welcomes your furry family members at just $30/night. Bring your dogs and enjoy the Ocean Shores beach together. Pet policy: pets must be leashed, pet-designated rooms available.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Amenity: Parking and Transportation -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/parking-and-transportation</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/area.png</image:loc>
+      <image:title>Ocean Paradise Hotel Free Parking — Ocean Shores WA Secure Parking</image:title>
+      <image:caption>Free and secure parking at Ocean Paradise Hotel &amp; Resort, 773 Ocean Shores Blvd NW — complimentary parking for all registered guests, 24/7 monitored parking area, luggage assistance available on request</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Amenity: Guest Services -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/amenities/guest-services</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/pic2.png</image:loc>
+      <image:title>Ocean Paradise Hotel Guest Services — 24/7 Concierge Laundry Ocean Shores</image:title>
+      <image:caption>Premium guest services at Ocean Paradise Hotel &amp; Resort — 24/7 concierge assistance, on-site guest laundry, meeting areas, power backup, luggage handling, and professional staff dedicated to making your Ocean Shores stay exceptional</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PHOTO GALLERY PAGE
+       Keywords: ocean paradise hotel photos, ocean shores hotel pictures,
+       ocean shores hotel gallery, hotel room photos ocean shores wa,
+       hotel pool pictures ocean shores, ocean shores hotel images,
+       best hotel photos washington coast, hotel interior photos ocean shores
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/photo</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/about.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Photo Gallery — Ocean Shores WA Hotel Photos</image:title>
+      <image:caption>Photo gallery of Ocean Paradise Hotel &amp; Resort — browse our collection of hotel rooms, pool, hot tub, mini golf, beachside views, and property facilities in Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bedroom.jpg</image:loc>
+      <image:title>Ocean Paradise Hotel Gallery — Bedroom Interior Photos</image:title>
+      <image:caption>Bedroom interior photos at Ocean Paradise Hotel &amp; Resort — view our standard rooms, superior rooms, luxury suites, and king rooms in Ocean Shores, WA</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bedroom2.jpg</image:loc>
+      <image:title>Hotel Room Interior — Ocean Paradise Hotel Ocean Shores</image:title>
+      <image:caption>Room interior photo at Ocean Paradise Hotel — modern furnishings and comfortable layout for a relaxing stay in Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bedroom3.jpg</image:loc>
+      <image:title>Hotel Room — Premium View Ocean Paradise Hotel</image:title>
+      <image:caption>Premium hotel room at Ocean Paradise Hotel &amp; Resort showing high-quality furnishings and décor</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bedroom4.jpg</image:loc>
+      <image:title>Hotel Room Interior — Ocean Shores Hotel Washington State</image:title>
+      <image:caption>Well-appointed hotel room at Ocean Paradise Hotel showing the comfortable layout available for guests visiting Ocean Shores, WA</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/bedroom5.jpeg</image:loc>
+      <image:title>Hotel Bedroom — Ocean Paradise Luxury Accommodation</image:title>
+      <image:caption>Luxury bedroom accommodation at Ocean Paradise Hotel &amp; Resort — premium bedding, modern amenities, and elegant design for your Washington coast retreat</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/IMG_7278.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Property Photo Ocean Shores WA</image:title>
+      <image:caption>Property photo of Ocean Paradise Hotel &amp; Resort in Ocean Shores, Washington — showcasing our beautiful coastal location and well-maintained facilities</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/IMG_7288.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Exterior Property Photo</image:title>
+      <image:caption>Exterior property photo of Ocean Paradise Hotel &amp; Resort showing our welcoming facade and landscaped grounds in Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/IMG_7293.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Hotel Grounds and Surroundings</image:title>
+      <image:caption>Hotel grounds and surroundings of Ocean Paradise Hotel &amp; Resort in Ocean Shores, WA — beautifully maintained property near the Pacific Ocean beach</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/IMG_7358.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel — Guest Area and Facilities</image:title>
+      <image:caption>Guest areas and facilities at Ocean Paradise Hotel &amp; Resort — comfortable spaces for relaxation and socialization during your Ocean Shores, WA vacation</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/d1.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel Gallery — Room Interior Photo 1</image:title>
+      <image:caption>Gallery photo of hotel room interior at Ocean Paradise Hotel &amp; Resort, Ocean Shores, Washington</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CONTACT PAGE
+       Keywords: ocean paradise hotel contact, ocean shores hotel phone,
+       ocean shores hotel address, contact ocean paradise resort,
+       773 ocean shores blvd nw contact, ocean shores hotel wa map,
+       ocean shores hotel directions, how to reach ocean paradise hotel,
+       hotel ocean shores email, reservation ocean shores hotel
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/contact</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/oc.jpeg</image:loc>
+      <image:title>Ocean Paradise Hotel Contact — 773 Ocean Shores Blvd NW Ocean Shores WA 98569</image:title>
+      <image:caption>Contact Ocean Paradise Hotel &amp; Resort — Address: 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569, USA. Phone: +1 360-289-0664 | +1 360-289-2040. Email: Oceanshoresview@gmail.com. We're open 24/7 to assist you with reservations, inquiries, and special requests.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       BOOK DIRECT / BOOKING PAGES
+       Keywords: book ocean paradise hotel direct, best rate ocean shores hotel,
+       book hotel online ocean shores wa, reserve hotel ocean shores,
+       online booking ocean paradise hotel, stayflexi ocean paradise,
+       best price hotel ocean shores, direct hotel booking ocean shores
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/book-direct</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>Book Direct — Ocean Paradise Hotel Best Rate Guarantee Ocean Shores WA</image:title>
+      <image:caption>Book directly with Ocean Paradise Hotel &amp; Resort for the best available rate — guaranteed lowest prices, flexible cancellation, and exclusive perks. Reserve your Ocean Shores, Washington room today via our official booking system.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/best-rate-guarantee</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/special-offers</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ABOUT PAGE
+       Keywords: about ocean paradise hotel, ocean shores hotel history,
+       about us ocean paradise resort, ocean paradise hotel ownership,
+       who owns ocean paradise hotel ocean shores, hotel story ocean shores wa
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/about-us</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.oceanparadisehotel.us/static/media/upar.jpg</image:loc>
+      <image:title>About Ocean Paradise Hotel and Resort — Ocean Shores Washington</image:title>
+      <image:caption>About Ocean Paradise Hotel &amp; Resort — located at 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569. A comfortable, value-focused, 62-room beachside property offering ocean views, modern rooms, and quality services just 2 minutes from the Pacific Ocean beach.</image:caption>
+      <image:geo_location>Ocean Shores, Washington, USA</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       REVIEWS / TESTIMONIALS PAGES
+       Keywords: ocean paradise hotel reviews, ocean shores hotel reviews 2025,
+       ocean paradise resort tripadvisor, hotel reviews ocean shores wa,
+       guest reviews ocean paradise, booking.com ocean paradise hotel,
+       expedia ocean shores hotel reviews, best reviewed hotel ocean shores
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/reviews</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/testimonials</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/guest-stories</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       POLICY PAGES
+       Keywords: ocean paradise hotel cancellation policy, pet policy hotel ocean shores,
+       ocean paradise hotel check in time, hotel policies ocean shores wa,
+       hotel pool rules ocean shores, hotel smoking policy ocean shores,
+       ocean shores hotel check out time, accessible hotel ocean shores wa
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/privacy-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/terms-and-conditions</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/cancellation-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/pet-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/check-in-check-out-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/child-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.68</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/smoking-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/pool-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.68</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/parking-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/accessibility-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FAQ PAGE
+       Keywords: ocean paradise hotel faq, hotel questions ocean shores,
+       ocean paradise resort frequently asked questions,
+       what time check in ocean paradise hotel ocean shores,
+       is ocean paradise hotel pet friendly, does ocean paradise have pool,
+       ocean paradise hotel breakfast included, wifi hotel ocean shores
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/check-in-check-out-times</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/breakfast-options</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/room-types</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/pool-hours</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/pet-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/parking-information</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/wi-fi-access</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.68</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/cancellation-policy</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/directions</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/distance-to-beach</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/room-pricing</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/faq/distance-from-ocean-shores-center</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.68</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ACCESSIBILITY & ADDITIONAL PAGES
+       ═══════════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.oceanparadisehotel.us/accessibility</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/sustainability</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/awards</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/press</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/careers</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://www.oceanparadisehotel.us/our-team</loc>
+    <lastmod>2025-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.62</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ================================================================
+     OCEAN PARADISE HOTEL & RESORT — MASTER SITEMAP INDEX
+     Domain  : https://www.oceanparadisehotel.us
+     Address : 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569
+     Phone   : +1 360-289-0664  |  +1 360-289-0664
+     Email   : Oceanshoresview@gmail.com
+     Purpose : SEO Master Index — links all sub-sitemaps for maximum
+               crawl coverage and Google ranking dominance.
+     Last Updated: 2025-04-29
+     ================================================================ -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+              http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+
+  <!-- ── SITEMAP 1: CORE PAGES + ROOMS + AMENITIES ────────────── -->
+  <sitemap>
+    <loc>https://www.oceanparadisehotel.us/sitemap-main.xml</loc>
+    <lastmod>2025-04-29</lastmod>
+  </sitemap>
+
+  <!-- ── SITEMAP 2: LOCATION + SEASONAL + SPECIAL OFFERS ─────── -->
+  <sitemap>
+    <loc>https://www.oceanparadisehotel.us/sitemap-locations.xml</loc>
+    <lastmod>2025-04-29</lastmod>
+  </sitemap>
+
+  <!-- ── SITEMAP 3: ACTIVITIES + BLOG + FAQ + POLICIES ───────── -->
+  <sitemap>
+    <loc>https://www.oceanparadisehotel.us/sitemap-activities.xml</loc>
+    <lastmod>2025-04-29</lastmod>
+  </sitemap>
+
+  <!-- ── SITEMAP 4: IMAGE SITEMAP (ALL PROPERTY IMAGES) ──────── -->
+  <sitemap>
+    <loc>https://www.oceanparadisehotel.us/sitemap-images.xml</loc>
+    <lastmod>2025-04-29</lastmod>
+  </sitemap>
+
+</sitemapindex>
