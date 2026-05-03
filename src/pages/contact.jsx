@@ -20,32 +20,32 @@ export default function Contact() {
 
   const faqData = [
     {
-      question: "What kind of breakfast is served at Ocean Parradise Hotel & Resort?",
-      answer: "Guests staying at Ocean Parradise Hotel & Resort can enjoy a highly-rated breakfast during their stay (guest review score: 6). Breakfast option(s) include: Continental"
+      question: "What kind of breakfast is served at Ocean Paradise Hotel & Resort?",
+      answer: "Guests staying at Ocean Paradise Hotel & Resort can enjoy a highly-rated breakfast during their stay (guest review score: 6). Breakfast option(s) include: Continental"
     },
     {
-      question: "What type of room can I book at Ocean Parradise Hotel & Resort?",
-      answer: "Room options at Ocean Parradise Hotel & Resort include: Double, Twin, Single, Suite"
+      question: "What type of room can I book at Ocean Paradise Hotel & Resort?",
+      answer: "Room options at Ocean Paradise Hotel & Resort include: Double, Twin, Single, Suite"
     },
     {
-      question: "What are the check-in and check-out times at Ocean Parradise Hotel & Resort?",
-      answer: "Check-in at Ocean Parradise Hotel & Resort is from 16:00, and check-out is until 11:00."
+      question: "What are the check-in and check-out times at Ocean Paradise Hotel & Resort?",
+      answer: "Check-in at Ocean Paradise Hotel & Resort is from 16:00, and check-out is until 11:00."
     },
     {
       question: "How far conventional centre?",
       answer: "Walking Distance."
     },
     {
-      question: "How much does it cost to stay at Ocean Parradise Hotel & Resort?",
-      answer: "The prices at Ocean Parradise Hotel & Resort may vary depending on your stay (e.g. dates you select, hotel's policy etc.). See the prices by entering your dates."
+      question: "How much does it cost to stay at Ocean Paradise Hotel & Resort?",
+      answer: "The prices at Ocean Paradise Hotel & Resort may vary depending on your stay (e.g. dates you select, hotel's policy etc.). See the prices by entering your dates."
     },
     {
-      question: "How far is Ocean Parradise Hotel & Resort from the centre of Ocean Shores?",
-      answer: "Ocean Parradise Hotel & Resort is 4.1 km from the centre of Ocean Shores."
+      question: "How far is Ocean Paradise Hotel & Resort from the centre of Ocean Shores?",
+      answer: "Ocean Paradise Hotel & Resort is 4.1 km from the centre of Ocean Shores."
     },
     {
-      question: "How close to the beach is Ocean Parradise Hotel & Resort?",
-      answer: "The nearest beach is just 400 m from Ocean Parradise Hotel & Resort."
+      question: "How close to the beach is Ocean Paradise Hotel & Resort?",
+      answer: "The nearest beach is just 400 m from Ocean Paradise Hotel & Resort."
     }
   ];
 

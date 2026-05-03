@@ -1,44 +1,4 @@
-# ==============================================================
-# robots.txt — Ocean Paradise Hotel & Resort
-# Website : https://www.oceanparadisehotel.us
-# Address : 773 Ocean Shores Blvd NW, Ocean Shores, WA 98569
-# Phone   : +1 360-289-0664
-# Email   : Oceanshoresview@gmail.com
-# ==============================================================
-
-# ── Allow all search engine bots ──────────────────────────────
 User-agent: *
-Disallow: /static/js/
-Disallow: /static/css/
-Disallow: /node_modules/
-Disallow: /src/
-Disallow: /.git/
-Disallow: /api/
-Disallow: /admin/
 Allow: /
 
-# ── Google Bot ────────────────────────────────────────────────
-User-agent: Googlebot
-Allow: /
-Allow: /static/media/
-Disallow: /node_modules/
-Disallow: /.git/
-
-# ── Google Image Bot ──────────────────────────────────────────
-User-agent: Googlebot-Image
-Allow: /static/media/
-Allow: /
-
-# ── Bing Bot ──────────────────────────────────────────────────
-User-agent: Bingbot
-Allow: /
-
-# ── Sitemaps (Master Index — links all 4 sub-sitemaps) ────────
 Sitemap: https://www.oceanparadisehotel.us/sitemap.xml
-Sitemap: https://www.oceanparadisehotel.us/sitemap-main.xml
-Sitemap: https://www.oceanparadisehotel.us/sitemap-locations.xml
-Sitemap: https://www.oceanparadisehotel.us/sitemap-activities.xml
-Sitemap: https://www.oceanparadisehotel.us/sitemap-images.xml
-
-# ── Crawl delay ───────────────────────────────────────────────
-Crawl-delay: 1

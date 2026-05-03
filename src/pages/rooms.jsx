@@ -210,7 +210,7 @@ export default function Rooms() {
     <img src={image134} alt="Ocean Paradise Hotel rooms and suites — Ocean Shores WA beachfront hotel" />
     <div className="oceanparadise-hero-overlay">
     <div className="oceanparadise-hero-content">
-    <h1>Ocean Parradise</h1>
+    <h1>Ocean Paradise</h1>
     <p>Where Luxury Meets Comfort</p>
     </div>
     </div>
@@ -226,7 +226,7 @@ export default function Rooms() {
     <span className="oceanparadise-section-badge">Accommodation</span>
     <h2 className="oceanparadise-section-title-main">Choose Your Perfect Room</h2>
     <p className="oceanparadise-section-subtitle">
-    Experience luxury and comfort in our carefully designed rooms and suites at Ocean Parradise
+    Experience luxury and comfort in our carefully designed rooms and suites at Ocean Paradise
     </p>
     </div>
 

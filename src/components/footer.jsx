@@ -12,22 +12,22 @@ export default function Footer(){
     <div className="footer-content">
     <div className="footer-section">
     <div className="footer-logo">
-    <FaCrown />
-    <h2 style={{color:"#df5334",fontSize:"30px",fontWeight:"600"}}>OCEAN PARRADISE HOTEL & RESORT</h2>
+    <FaCrown style={{color:"#df5334", fontSize:"100px", marginRight:"10px",marginBottom:"10px"}} />
+    <h2 style={{color:"#df5334",fontSize:"30px",fontWeight:"600"}}>OCEAN PARADISE HOTEL & RESORT</h2>
     </div>
 
     <div className="social-icons">
     <a href="#" className="social-icon">
-    <FaFacebook />
+    <FaFacebook style={{ height: "30px", width: "30px" }} />
     </a>
     <a href="#" className="social-icon">
-    <FaTwitter />
+    <FaTwitter style={{ height: "30px", width: "30px  " }}  />
     </a>
     <a href="#" className="social-icon">
-    <FaInstagram />
+    <FaInstagram style={{ height: "30px", width: "30px" }} />
     </a>
     <a href="#" className="social-icon">
-    <FaYoutube />
+    <FaYoutube style={{ height: "30px", width: "30px" }} />
     </a>
     </div>
     </div>
@@ -112,7 +112,7 @@ export default function Footer(){
     </div>
 
     <div className="footer-bottom">
-    <p>© 2025 Ocean Parradise. All Rights Reserved. | Powered by <FaHeart style={{display:"inline", verticalAlign:"middle"}} /> Ocean Parradise</p>
+    <p>© 2025 Ocean Paradise. All Rights Reserved. | Powered by <FaHeart style={{display:"inline", verticalAlign:"middle"}} /> Ocean Paradise</p>
     </div>
     </footer>
     </>

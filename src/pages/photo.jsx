@@ -28,29 +28,29 @@ import "./photo.css";
 
 export default function Photos() {
   const localImages = [
-    { src: image1,   alt: "Ocean Paradise Hotel & Resort exterior — Ocean Shores WA",                          gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image101, alt: "Ocean Paradise Hotel beachfront view — Ocean Shores Washington",                    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image102, alt: "Ocean Paradise Hotel ocean view from balcony — Ocean Shores WA",                   gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image103, alt: "Ocean Paradise Hotel & Resort Pacific coast view — Ocean Shores",                  gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image2,   alt: "Ocean Paradise Hotel outdoor area and surroundings — Ocean Shores WA",             gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image3,   alt: "Ocean Paradise Hotel comfortable bed and room setup — Ocean Shores",               gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)" },
-    { src: image4,   alt: "Ocean Paradise Hotel standard bedroom interior — Ocean Shores WA",                 gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)" },
-    { src: image5,   alt: "Ocean Paradise Hotel queen bedroom with ocean view — Ocean Shores",                gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)" },
-    { src: image6,   alt: "Ocean Paradise Hotel double queen room interior — Ocean Shores WA",                gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)" },
-    { src: image7,   alt: "Ocean Paradise Hotel luxury bedroom with modern amenities — Ocean Shores",         gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)" },
-    { src: image9,   alt: "Ocean Paradise Hotel cozy bedroom with Pacific views — Ocean Shores WA",          gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)" },
-    { src: image10,  alt: "Ocean Paradise Hotel lounge seating area — Ocean Shores Washington",               gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
-    { src: image11,  alt: "Ocean Paradise Hotel dining and food options — Ocean Shores WA",                   gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image12,  alt: "Ocean Paradise Hotel property overview — Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image13,  alt: "Ocean Paradise Hotel guest room view — 773 Ocean Shores Blvd NW",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image14,  alt: "Ocean Paradise Hotel room with balcony — Ocean Shores WA",                         gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image15,  alt: "Ocean Paradise Hotel sea view room — Ocean Shores Washington",                      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image16,  alt: "Ocean Paradise Hotel premium room interior — Ocean Shores WA",                      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image17,  alt: "Ocean Paradise Hotel resort facilities — Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image18,  alt: "Ocean Paradise Hotel heated indoor pool and hot tub — Ocean Shores WA",            gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image19,  alt: "Ocean Paradise Hotel mini golf area — Ocean Shores WA",                            gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image20,  alt: "Ocean Paradise Hotel free parking area — Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
-    { src: image21,  alt: "Ocean Paradise Hotel pet-friendly rooms — Ocean Shores WA",                        gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image1,   alt: " Ocean Shores Washington",                          gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image101, alt: " Ocean Shores Washington",                    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image102, alt: " Ocean Shores Washington",                   gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image103, alt: " Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image2,   alt: " Ocean Shores Washington",             gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image3,   alt: " Ocean Shores Washington",               gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)" },
+    { src: image4,   alt: " Ocean Shores Washington",                 gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)" },
+    { src: image5,   alt: " Ocean Shores Washington",                gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)" },
+    { src: image6,   alt: " Ocean Shores Washington",                gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)" },
+    { src: image7,   alt: " Ocean Shores Washington",         gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)" },
+    { src: image9,   alt: " Ocean Shores Washington",          gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)" },
+    { src: image10,  alt: " Ocean Shores Washington",               gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { src: image11,  alt: " Ocean Shores Washington",                   gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image12,  alt: " Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image13,  alt: " Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image14,  alt: " Ocean Shores Washington",                         gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image15,  alt: " Ocean Shores Washington",                      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image16,  alt: " Ocean Shores Washington",                      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image17,  alt: " Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image18,  alt: " Ocean Shores Washington",            gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image19,  alt: " Ocean Shores Washington",                            gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image20,  alt: " Ocean Shores Washington",                  gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
+    { src: image21,  alt: " Ocean Shores Washington",                        gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" },
   ];
 
   const unsplashImages = [];
@@ -63,7 +63,7 @@ export default function Photos() {
 
     {/* Hero Section */}
     <div className="photos-her">
-    <img src={imag1} alt="Ocean Paradise Hotel & Resort photo gallery hero — Ocean Shores WA" />
+    <img src={imag1} alt="Ocean Paradise Hotel & Resort photo gallery hero — Ocean Shores Washington" />
     <div className="hero-particles"></div>
     </div>
 

@@ -45,7 +45,7 @@ const Header = () => {
         <div className="notice-bar">
           <div className="notice-content">
             <span className="notice-text">
-              Ocean Parradise Hotel is a comfortable and luxurious seaside hotel offering beautiful ocean views, modern rooms, quality services, and a relaxing stay for guests.
+              Ocean Paradise Hotel is a comfortable and luxurious seaside hotel offering beautiful ocean views, modern rooms, quality services, and a relaxing stay for guests.
             </span>
           </div>
           <div className="contact-info">

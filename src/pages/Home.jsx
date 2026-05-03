@@ -694,14 +694,14 @@ export default function Home() {
       <div className="container-clone">
       <div className="about-grid-clone">
       <div className="about-image-left-clone">
-      <img src={image21} alt="Ocean Parradise Hotel luxury lobby entrance with elegant reception area and comfortable seating" />
+      <img src={image21} alt="Ocean Paradise Hotel luxury lobby entrance with elegant reception area and comfortable seating" />
       </div>
 
       <div className="about-content-clone">
       <span className="section-badge-clone">About Us:</span>
-      <h2 style={{color:"blue"}} className="section-title-clone">OCEAN PARRADISE</h2>
+      <h2 style={{color:"blue"}} className="section-title-clone">OCEAN PARADISE</h2>
       <p className="about-text-clone">
-      Ocean Parradise Hotel & Resort is where comfort, value, and the beauty of Ocean Shores come together. Situated at 773 Ocean Shores Blvd NW, our property gives guests easy access to the beach—just a short two-minute walk away—while offering a peaceful place to relax after a day of exploring.
+      Ocean Paradise Hotel & Resort is where comfort, value, and the beauty of Ocean Shores come together. Situated at 773 Ocean Shores Blvd NW, our property gives guests easy access to the beach—just a short two-minute walk away—while offering a peaceful place to relax after a day of exploring.
       <br /><br />
       With 62 rooms ranging from standard accommodations to ocean-view rooms, suites, and spa-jacuzzi options, we're able to welcome all types of travelers. Every guest room includes practical essentials like AC/heater, TV, mini-fridge, microwave, and a coffee maker, ensuring a convenient and pleasant stay.
       <br /><br />
@@ -710,7 +710,7 @@ export default function Home() {
       </div>
 
       <div className="about-image-right-clone">
-      <img src={image22} alt="Ocean Parradise Hotel oceanview room with comfortable bedding and modern amenities overlooking the Pacific coast" />
+      <img src={image22} alt="Ocean Paradise Hotel oceanview room with comfortable bedding and modern amenities overlooking the Pacific coast" />
       </div>
       </div>
       </div>
@@ -720,7 +720,7 @@ export default function Home() {
       <div className="line left"></div>
       <div className="text-block">
       <p className="caption">Discover the Difference</p>
-      <h2 className="title">OCEAN PARRADISE PROMISES</h2>
+      <h2 className="title">OCEAN PARADISE PROMISES</h2>
       </div>
       <div className="line right"></div>
       </div>
@@ -730,27 +730,27 @@ export default function Home() {
       <div className="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget summit-collage-widget-mobile cards-container-4 cards-wrapper" id="iyssai">
       <div className="card-layout collage-grid">
       <div className="collage-box big">
-      <img src="https://assets.simplotel.com/simplotel/image/upload/x_0,y_751,w_4500,h_3000,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/3._24x7_support_&amp;_service_f222525a" alt="Ocean Parradise Hotel 24/7 front desk support and friendly customer service staff ready to assist guests" />
+      <img src="https://assets.simplotel.com/simplotel/image/upload/x_0,y_751,w_4500,h_3000,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/3._24x7_support_&amp;_service_f222525a" alt="Ocean Paradise Hotel 24/7 front desk support and friendly customer service staff ready to assist guests" />
       <div className="overlay">24/7 SUPPORT & FRIENDLY SERVICE</div>
       </div>
 
       <div className="collage-box big">
-      <img src="https://assets.simplotel.com/simplotel/image/upload/x_118,y_0,w_4095,h_2730,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/crsip_linen_7f7d2d4a" alt="Ocean Parradise Hotel crisp white linens and comfortable bedding for cozy guest room accommodations" />
+      <img src="https://assets.simplotel.com/simplotel/image/upload/x_118,y_0,w_4095,h_2730,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/crsip_linen_7f7d2d4a" alt="Ocean Paradise Hotel crisp white linens and comfortable bedding for cozy guest room accommodations" />
       <div className="overlay">COZY COMFORT WITH CRISP LINENS</div>
       </div>
 
       <div className="collage-box small">
-      <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_0,w_5000,h_3333,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/DSC02324_384edf2d" alt="Ocean Parradise Hotel local Pacific Northwest cuisine and dining experience featuring fresh regional ingredients" />
+      <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_0,w_5000,h_3333,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/DSC02324_384edf2d" alt="Ocean Paradise Hotel local Pacific Northwest cuisine and dining experience featuring fresh regional ingredients" />
       <div className="overlay">LOCAL EXPERIENCE & CUISINE</div>
       </div>
 
       <div className="collage-box small">
-      <img src="https://assets.simplotel.com/simplotel/image/upload/x_0,y_1496,w_4500,h_3001,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/6._Powerful_Shower_64757259" alt="Ocean Parradise Hotel powerful refreshing showers with modern fixtures and hot water for guest comfort" />
+      <img src="https://assets.simplotel.com/simplotel/image/upload/x_0,y_1496,w_4500,h_3001,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/6._Powerful_Shower_64757259" alt="Ocean Paradise Hotel powerful refreshing showers with modern fixtures and hot water for guest comfort" />
       <div className="overlay">POWERFUL REFRESHING SHOWERS</div>
       </div>
 
       <div className="collage-box small">
-      <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_0,w_5000,h_3333,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/DSC09120_0efa5108" alt="Ocean Parradise Hotel elegant lobby experience with welcoming atmosphere and modern interior design" />
+      <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_0,w_5000,h_3333,r_0,c_crop/q_60,w_1400,dpr_1,f_auto,fl_progressive,c_limit/summit-hotels-resorts/DSC09120_0efa5108" alt="Ocean Paradise Hotel elegant lobby experience with welcoming atmosphere and modern interior design" />
       <div className="overlay">ELEGANT LOBBY EXPERIENCE</div>
       </div>
       </div>
